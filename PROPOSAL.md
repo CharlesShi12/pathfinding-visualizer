@@ -1,4 +1,4 @@
-gThe project I want to do is create a Cinder visualization application for the A* pathfinding 
+The project I want to do is create a Cinder visualization application for the A* pathfinding 
 algorithm, the Bidirectional Breadth First Search, and the Breadth First Search. The program would 
 allow users to drag and create a terrain for the algorithms to run using something similar to the 
 Naive Bayes structure (users click on the mouse to draw a black square). Then, there would be a 

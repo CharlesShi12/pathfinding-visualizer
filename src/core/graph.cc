@@ -4,11 +4,10 @@
 
 #include "core/graph.h"
 
-Graph::Graph(size_t dimension) {
-  dimension_ = dimension;
-}
+Graph::Graph(const vector<vector<int>> &board) {
+  board_ = board;
+  dimension_ = board_.size();
 
-void Graph::ConvertBoardToGraph(const vector<vector<int>> &board) {
   for (int row = 0; row < dimension_; row++) {
     for (int col = 0; col < dimension_; col++) {
       Node* node = new Node(row, col);
@@ -38,6 +37,14 @@ void Graph::ConvertBoardToGraph(const vector<vector<int>> &board) {
   }
 }
 
-unordered_map<int, Graph::Node*> Graph::GetNodes() {
+const unordered_map<int, Graph::Node*> &Graph::GetNodes() {
   return nodes_;
+}
+
+const vector<vector<int>> &Graph::GetBoard() {
+  return board_;
+}
+
+size_t Graph::GetDimension() {
+  return dimension_;
 }

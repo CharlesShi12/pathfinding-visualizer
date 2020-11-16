@@ -4,6 +4,7 @@
 
 #ifndef PATH_ALGORITHM_VISUALIZER_GRAPH_H
 #define PATH_ALGORITHM_VISUALIZER_GRAPH_H
+
 #include <vector>
 #include <unordered_map>
 
@@ -11,7 +12,6 @@ using std::vector;
 using std::unordered_map;
 
 class Graph {
-
  public:
   struct Node {
     int row;
@@ -23,15 +23,15 @@ class Graph {
     }
   };
 
-  Graph(size_t dimension);
-  void ConvertBoardToGraph(const vector<vector<int>> &board);
-  unordered_map<int, Node*> GetNodes();
+  Graph(const vector<vector<int>> &board);
+  const unordered_map<int, Node*> &GetNodes();
+  const vector<vector<int>> &GetBoard();
+  size_t GetDimension();
 
  private:
   size_t dimension_;
+  vector<vector<int>> board_;
   unordered_map<int, Node*> nodes_;
-
 };
-
 
 #endif //PATH_ALGORITHM_VISUALIZER_GRAPH_H

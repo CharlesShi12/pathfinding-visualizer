@@ -82,21 +82,21 @@ void Sketchpad::RunGraphTraversalAlgorithm(bool isBFS) {
     end_col = std::rand() % (num_pixels_per_side_ - 1) + 1;
   }
 
+  Graph* board_graph = new Graph(current_board_);
+
   if (isBFS) {
-    BFS* bfs_algorithm = new BFS(current_board_);
+    BFS* bfs_algorithm = new BFS(board_graph);
     current_board_ = bfs_algorithm->RunBFS(end_row, end_col);
     delete bfs_algorithm;
 
   } else {
-    DFS* dfs_algorithm = new DFS(current_board_);
+    DFS* dfs_algorithm = new DFS(board_graph);
     current_board_ = dfs_algorithm->RunDFS(end_row, end_col);
     delete dfs_algorithm;
   }
 
-// USER INPUT
   current_board_[start_row][start_col] = 3;
   current_board_[end_row][end_col] = 3;
-
 }
 
 }  // namespace visualizer

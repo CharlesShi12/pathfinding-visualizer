@@ -32,43 +32,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6944f33e-0890-4955-9a12-95e7cd2e7b0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/include/core/bfs.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/core/dfs.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/core/graph.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/bfs.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/dfs.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/graph.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/naive-bayes-test.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/naive-bayes-test.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/naive-bayes-test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/naive-bayes-test.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/naive-bayes-test.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/naive-bayes-test.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/naive-bayes-test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/naive-bayes-test.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/naive-bayes-test.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/naive-bayes-test.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/train-model.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/train-model.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/train-model.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/train-model.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/train-model.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/train-model.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/train-model.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/train-model.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/train-model.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/train-model.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/path-algorithm-visualizer.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/path-algorithm-visualizer.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/core/graph_traversal_algorithm.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/visualizer/path_algorithm_app.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/visualizer/path_algorithm_app.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graph_traversal_algorithm.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/core/bfs.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/core/bfs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/core/dfs.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/core/dfs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/core/graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/core/graph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/bfs.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/bfs.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/dfs.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/dfs.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/graph.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graph.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/visualizer/sketchpad.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/visualizer/sketchpad.cc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +128,7 @@
       <workItem from="1605219514409" duration="213000" />
       <workItem from="1605219846604" duration="2642000" />
       <workItem from="1605301117454" duration="732000" />
-      <workItem from="1605324533551" duration="36585000" />
+      <workItem from="1605324533551" duration="37252000" />
     </task>
     <servers />
   </component>
@@ -181,35 +155,35 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1605506922941" />
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1605507425133">
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1605507442792">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605507425133" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605507442792" />
     <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1605507077298" />
     <state width="1398" height="260" key="GridCell.Tab.0.bottom/0.23.1440.815/1440.23.1920.1057@1440.23.1920.1057" timestamp="1605403182459" />
     <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.23.1440.815@0.23.1440.815" timestamp="1605494641736" />
     <state width="1398" height="260" key="GridCell.Tab.0.bottom/0.23.1440.817/1440.23.1920.1057@1440.23.1920.1057" timestamp="1605402438561" />
-    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1605507425132">
+    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1605507442790">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605507425132" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605507442790" />
     <state width="1398" height="244" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1605507077294" />
     <state width="1398" height="260" key="GridCell.Tab.0.center/0.23.1440.815/1440.23.1920.1057@1440.23.1920.1057" timestamp="1605403182458" />
     <state width="1398" height="244" key="GridCell.Tab.0.center/0.23.1440.815@0.23.1440.815" timestamp="1605494641734" />
     <state width="1398" height="260" key="GridCell.Tab.0.center/0.23.1440.817/1440.23.1920.1057@1440.23.1920.1057" timestamp="1605402438560" />
-    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1605507425131">
+    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1605507442789">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605507425131" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605507442789" />
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.23.1440.815" timestamp="1605493159338" />
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1605507077293" />
     <state width="1398" height="260" key="GridCell.Tab.0.left/0.23.1440.815/1440.23.1920.1057@1440.23.1920.1057" timestamp="1605403182457" />
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.23.1440.815@0.23.1440.815" timestamp="1605494641730" />
     <state width="1398" height="260" key="GridCell.Tab.0.left/0.23.1440.817/1440.23.1920.1057@1440.23.1920.1057" timestamp="1605402438560" />
-    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1605507425133">
+    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1605507442791">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605507425133" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605507442791" />
     <state width="1398" height="244" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1605507077297" />
     <state width="1398" height="260" key="GridCell.Tab.0.right/0.23.1440.815/1440.23.1920.1057@1440.23.1920.1057" timestamp="1605403182458" />
     <state width="1398" height="244" key="GridCell.Tab.0.right/0.23.1440.815@0.23.1440.815" timestamp="1605494641735" />

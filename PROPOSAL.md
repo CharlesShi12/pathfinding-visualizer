@@ -26,7 +26,3 @@ algorithms and linked it with the display which will show the specific algorithm
 working on testing the functionality of my algorithm I’ve implemented. By the end of Week 3, I will 
 have tested the algorithms I designed in Week 2 and start documenting my code. If I have extra time 
 in Week 3, I will start implementing the extra features of my program. 
-
-
-
-

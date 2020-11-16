@@ -71,6 +71,25 @@ void Sketchpad::Clear() {
 }
 
 void Sketchpad::RunBFS() {
+  size_t start_row = 0;
+  size_t start_col = 0;
+
+  BFS* bfs = new BFS(num_pixels_per_side_);
+
+  size_t end_row = std::rand() % num_pixels_per_side_;
+  size_t end_col = std::rand() % num_pixels_per_side_;
+
+  while (current_map_[end_row][end_col] == 1) {
+    end_row = std::rand() % num_pixels_per_side_;
+    end_col = std::rand() % num_pixels_per_side_;
+  }
+
+  current_map_ = bfs->RunBFS(current_map_, end_row, end_col);
+
+  current_map_[start_row][start_col] = 3;
+  current_map_[end_row][end_col] = 3;
+
+  delete bfs;
 }
 
 }  // namespace visualizer

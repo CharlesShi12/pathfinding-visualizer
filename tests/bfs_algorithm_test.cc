@@ -1,8 +1,8 @@
 #include <catch2/catch.hpp>
 
-#include <core/bfs_algorithm.h>
+#include <core/graph_traversal_algorithm.h>
 
-using algorithm::BFS;
+using algorithm::GraphTraversalAlgorithm;
 
 TEST_CASE("Check that 126 is the best class") {
 }

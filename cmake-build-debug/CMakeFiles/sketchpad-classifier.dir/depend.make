@@ -878,8 +878,8 @@ CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.o: /Users/charlesshi
 CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.o: /Users/charlesshi/Downloads/Cinder/include/glm/vector_relational.hpp
 CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.o: ../apps/cinder_app_main.cc
 
-CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.o: ../include/core/bfs_algorithm.h
-CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.o: ../src/core/bfs_algorithm.cc
+CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.o: ../include/core/graph_traversal_algorithm.h
+CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.o: ../src/core/graph_traversal_algorithm.cc
 
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o: ../include/visualizer/path_algorithm_app.h
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o: ../include/visualizer/sketchpad.h
@@ -1758,7 +1758,7 @@ CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o: /Use
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o: /Users/charlesshi/Downloads/Cinder/include/glm/vector_relational.hpp
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o: ../src/visualizer/path_algorithm_app.cc
 
-CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: ../include/core/bfs_algorithm.h
+CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: ../include/core/graph_traversal_algorithm.h
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: ../include/visualizer/sketchpad.h
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: /Users/charlesshi/Downloads/Cinder/include/boost/assert.hpp
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: /Users/charlesshi/Downloads/Cinder/include/boost/cerrno.hpp

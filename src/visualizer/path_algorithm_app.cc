@@ -17,7 +17,7 @@ void NaiveBayesApp::draw() {
   sketchpad_.Draw();
 
   ci::gl::drawStringCentered(
-      "Press Delete to clear the sketchpad. Press Enter to run BFS.",
+      "Press Delete to clear the sketchpad. Press 1 to run BFS. Press 2 to run DPS.",
       glm::vec2(kWindowSize / 2, kMargin / 2), ci::Color("black"));
 }
 
@@ -31,8 +31,13 @@ void NaiveBayesApp::mouseDrag(ci::app::MouseEvent event) {
 
 void NaiveBayesApp::keyDown(ci::app::KeyEvent event) {
   switch (event.getCode()) {
-    case ci::app::KeyEvent::KEY_RETURN:
-      sketchpad_.RunBFS();
+    case ci::app::KeyEvent::KEY_1:
+      sketchpad_.RunGraphTraversalAlgorithm(true);
+      sketchpad_.Draw();
+      break;
+
+    case ci::app::KeyEvent::KEY_2:
+      sketchpad_.RunGraphTraversalAlgorithm(false);
       sketchpad_.Draw();
       break;
 

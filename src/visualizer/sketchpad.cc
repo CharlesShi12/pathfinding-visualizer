@@ -1,12 +1,12 @@
 #include <visualizer/sketchpad.h>
-#include <core/bfs_algorithm.h>
+#include <core/graph_traversal_algorithm.h>
 
 namespace algorithm {
 
 namespace visualizer {
 
 using glm::vec2;
-using algorithm::BFS;
+using algorithm::GraphTraversalAlgorithm;
 
 Sketchpad::Sketchpad(const vec2& top_left_corner, size_t num_pixels_per_side,
                      double sketchpad_size, double brush_radius)
@@ -14,20 +14,20 @@ Sketchpad::Sketchpad(const vec2& top_left_corner, size_t num_pixels_per_side,
       num_pixels_per_side_(num_pixels_per_side),
       pixel_side_length_(sketchpad_size / num_pixels_per_side),
       brush_radius_(brush_radius) {
-  current_map_ = vector<vector<int>>(num_pixels_per_side_,
+  current_board_ = vector<vector<int>>(num_pixels_per_side_,
                                      vector<int>(num_pixels_per_side_, 0));
 }
 
 void Sketchpad::Draw() const {
   for (size_t row = 0; row < num_pixels_per_side_; ++row) {
     for (size_t col = 0; col < num_pixels_per_side_; ++col) {
-      if (current_map_[row][col] == 1) {
+      if (current_board_[row][col] == 1) {
         ci::gl::color(ci::Color("black"));
 
-      } else if (current_map_[row][col] == 2) {
+      } else if (current_board_[row][col] == 2) {
         ci::gl::color(ci::Color("gray"));
 
-      } else if (current_map_[row][col] == 3) {
+      } else if (current_board_[row][col] == 3) {
         ci::gl::color(ci::Color("blue"));
 
       } else {
@@ -59,37 +59,41 @@ void Sketchpad::HandleBrush(const vec2& brush_screen_coords) {
 
       if (glm::distance(brush_sketchpad_coords, pixel_center) <=
           brush_radius_) {
-        current_map_[row][col] = 1;
+        current_board_[row][col] = 1;
       }
     }
   }
 }
 
 void Sketchpad::Clear() {
-  current_map_ = vector<vector<int>>(num_pixels_per_side_,
+  current_board_ = vector<vector<int>>(num_pixels_per_side_,
                                      vector<int>(num_pixels_per_side_, 0));
 }
 
-void Sketchpad::RunBFS() {
+void Sketchpad::RunGraphTraversalAlgorithm(bool isBFS) {
   size_t start_row = 0;
   size_t start_col = 0;
 
-  BFS* bfs = new BFS(num_pixels_per_side_);
+  auto* graph_traversal_algorithm = new GraphTraversalAlgorithm(num_pixels_per_side_);
 
-  size_t end_row = std::rand() % num_pixels_per_side_;
-  size_t end_col = std::rand() % num_pixels_per_side_;
+  size_t end_row = std::rand() % (num_pixels_per_side_ - 1) + 1;
+  size_t end_col = std::rand() % (num_pixels_per_side_ - 1) + 1;
 
-  while (current_map_[end_row][end_col] == 1) {
-    end_row = std::rand() % num_pixels_per_side_;
-    end_col = std::rand() % num_pixels_per_side_;
+  while (current_board_[end_row][end_col] == 1) {
+    end_row = std::rand() % (num_pixels_per_side_ - 1) + 1;
+    end_col = std::rand() % (num_pixels_per_side_ - 1) + 1;
   }
 
-  current_map_ = bfs->RunBFS(current_map_, end_row, end_col);
+  if (isBFS) {
+    current_board_ = graph_traversal_algorithm->RunBFS(current_board_, 15, 15);
+  } else {
+    current_board_ = graph_traversal_algorithm->RunDFS(current_board_, 15, 15);
+  }
+// USER INPUT
+  current_board_[start_row][start_col] = 3;
+  current_board_[end_row][end_col] = 3;
 
-  current_map_[start_row][start_col] = 3;
-  current_map_[end_row][end_col] = 3;
-
-  delete bfs;
+  delete graph_traversal_algorithm;
 }
 
 }  // namespace visualizer

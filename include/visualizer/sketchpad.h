@@ -30,7 +30,7 @@ class Sketchpad {
    *                            pixels) from the brush that will be shaded
    */
   Sketchpad(const glm::vec2& top_left_corner, size_t num_pixels_per_side,
-            double sketchpad_size, double brush_radius = 1.15);
+            double sketchpad_size, double brush_radius = 0.5);
 
   /**
    * Displays the current state of the sketchpad in the Cinder application.
@@ -52,7 +52,7 @@ class Sketchpad {
    */
   void Clear();
 
-  void RunBFS();
+  void RunGraphTraversalAlgorithm(bool isBFS);
 
  private:
   glm::vec2 top_left_corner_;
@@ -64,7 +64,7 @@ class Sketchpad {
 
   double brush_radius_;
 
-  vector<vector<int>> current_map_;
+  vector<vector<int>> current_board_;
 };
 
 }  // namespace visualizer

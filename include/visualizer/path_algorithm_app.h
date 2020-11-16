@@ -24,7 +24,7 @@ class NaiveBayesApp : public ci::app::App {
 
   const double kWindowSize = 500;
   const double kMargin = 100;
-  const size_t kImageDimension = 15;
+  const size_t kImageDimension = 18;
 
  private:
   Sketchpad sketchpad_;

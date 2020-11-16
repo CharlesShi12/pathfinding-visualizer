@@ -94,18 +94,18 @@ CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/apps/cinder_app_main.cc -o CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.s
 
-CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.o: CMakeFiles/sketchpad-classifier.dir/flags.make
-CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.o: ../src/core/bfs_algorithm.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bfs_algorithm.cc
+CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.o: CMakeFiles/sketchpad-classifier.dir/flags.make
+CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.o: ../src/core/graph_traversal_algorithm.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph_traversal_algorithm.cc
 
-CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bfs_algorithm.cc > CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.i
+CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph_traversal_algorithm.cc > CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.i
 
-CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bfs_algorithm.cc -o CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.s
+CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph_traversal_algorithm.cc -o CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.s
 
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o: CMakeFiles/sketchpad-classifier.dir/flags.make
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o: ../src/visualizer/path_algorithm_app.cc
@@ -136,7 +136,7 @@ CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.s: cmake_force
 # Object files for target sketchpad-classifier
 sketchpad__classifier_OBJECTS = \
 "CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.o" \
-"CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.o" \
+"CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.o" \
 "CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o" \
 "CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o"
 
@@ -144,7 +144,7 @@ sketchpad__classifier_OBJECTS = \
 sketchpad__classifier_EXTERNAL_OBJECTS =
 
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.o
-Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.o
+Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.o
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/build.make

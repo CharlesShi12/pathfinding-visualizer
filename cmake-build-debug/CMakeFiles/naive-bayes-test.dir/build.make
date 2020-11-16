@@ -94,18 +94,18 @@ CMakeFiles/naive-bayes-test.dir/tests/test_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/naive-bayes-test.dir/tests/test_main.cc.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/test_main.cc -o CMakeFiles/naive-bayes-test.dir/tests/test_main.cc.s
 
-CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.o: CMakeFiles/naive-bayes-test.dir/flags.make
-CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.o: ../src/core/bfs_algorithm.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bfs_algorithm.cc
+CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.o: CMakeFiles/naive-bayes-test.dir/flags.make
+CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.o: ../src/core/graph_traversal_algorithm.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph_traversal_algorithm.cc
 
-CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bfs_algorithm.cc > CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.i
+CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph_traversal_algorithm.cc > CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.i
 
-CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bfs_algorithm.cc -o CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.s
+CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph_traversal_algorithm.cc -o CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.s
 
 CMakeFiles/naive-bayes-test.dir/src/visualizer/path_algorithm_app.cc.o: CMakeFiles/naive-bayes-test.dir/flags.make
 CMakeFiles/naive-bayes-test.dir/src/visualizer/path_algorithm_app.cc.o: ../src/visualizer/path_algorithm_app.cc
@@ -149,7 +149,7 @@ CMakeFiles/naive-bayes-test.dir/tests/bfs_algorithm_test.cc.s: cmake_force
 # Object files for target naive-bayes-test
 naive__bayes__test_OBJECTS = \
 "CMakeFiles/naive-bayes-test.dir/tests/test_main.cc.o" \
-"CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.o" \
+"CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.o" \
 "CMakeFiles/naive-bayes-test.dir/src/visualizer/path_algorithm_app.cc.o" \
 "CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o" \
 "CMakeFiles/naive-bayes-test.dir/tests/bfs_algorithm_test.cc.o"
@@ -158,7 +158,7 @@ naive__bayes__test_OBJECTS = \
 naive__bayes__test_EXTERNAL_OBJECTS =
 
 Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMakeFiles/naive-bayes-test.dir/tests/test_main.cc.o
-Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.o
+Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.o
 Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMakeFiles/naive-bayes-test.dir/src/visualizer/path_algorithm_app.cc.o
 Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o
 Debug/naive-bayes-test/naive-bayes-test.app/Contents/MacOS/naive-bayes-test: CMakeFiles/naive-bayes-test.dir/tests/bfs_algorithm_test.cc.o

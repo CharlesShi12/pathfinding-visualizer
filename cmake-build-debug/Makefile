@@ -223,38 +223,38 @@ apps/train_model_main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/apps/train_model_main.cc.s
 .PHONY : apps/train_model_main.cc.s
 
-src/core/bfs_algorithm.o: src/core/bfs_algorithm.cc.o
+src/core/graph_traversal_algorithm.o: src/core/graph_traversal_algorithm.cc.o
 
-.PHONY : src/core/bfs_algorithm.o
+.PHONY : src/core/graph_traversal_algorithm.o
 
 # target to build an object file
-src/core/bfs_algorithm.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/bfs_algorithm.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.o
-.PHONY : src/core/bfs_algorithm.cc.o
+src/core/graph_traversal_algorithm.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.o
+.PHONY : src/core/graph_traversal_algorithm.cc.o
 
-src/core/bfs_algorithm.i: src/core/bfs_algorithm.cc.i
+src/core/graph_traversal_algorithm.i: src/core/graph_traversal_algorithm.cc.i
 
-.PHONY : src/core/bfs_algorithm.i
+.PHONY : src/core/graph_traversal_algorithm.i
 
 # target to preprocess a source file
-src/core/bfs_algorithm.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/bfs_algorithm.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.i
-.PHONY : src/core/bfs_algorithm.cc.i
+src/core/graph_traversal_algorithm.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.i
+.PHONY : src/core/graph_traversal_algorithm.cc.i
 
-src/core/bfs_algorithm.s: src/core/bfs_algorithm.cc.s
+src/core/graph_traversal_algorithm.s: src/core/graph_traversal_algorithm.cc.s
 
-.PHONY : src/core/bfs_algorithm.s
+.PHONY : src/core/graph_traversal_algorithm.s
 
 # target to generate assembly for a file
-src/core/bfs_algorithm.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bfs_algorithm.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/bfs_algorithm.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/bfs_algorithm.cc.s
-.PHONY : src/core/bfs_algorithm.cc.s
+src/core/graph_traversal_algorithm.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.s
+.PHONY : src/core/graph_traversal_algorithm.cc.s
 
 src/visualizer/path_algorithm_app.o: src/visualizer/path_algorithm_app.cc.o
 
@@ -387,9 +387,9 @@ help:
 	@echo "... apps/train_model_main.o"
 	@echo "... apps/train_model_main.i"
 	@echo "... apps/train_model_main.s"
-	@echo "... src/core/bfs_algorithm.o"
-	@echo "... src/core/bfs_algorithm.i"
-	@echo "... src/core/bfs_algorithm.s"
+	@echo "... src/core/graph_traversal_algorithm.o"
+	@echo "... src/core/graph_traversal_algorithm.i"
+	@echo "... src/core/graph_traversal_algorithm.s"
 	@echo "... src/visualizer/path_algorithm_app.o"
 	@echo "... src/visualizer/path_algorithm_app.i"
 	@echo "... src/visualizer/path_algorithm_app.s"

@@ -190,7 +190,7 @@
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/apps/train_model_main.cc">
 			<Option target="train-model"/>
 		</Unit>
-		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bfs_algorithm.cc">
+		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph_traversal_algorithm.cc">
 			<Option target="sketchpad-classifier"/>
 			<Option target="train-model"/>
 			<Option target="naive-bayes-test"/>

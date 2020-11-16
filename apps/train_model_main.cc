@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include <core/bfs_algorithm.h>
+#include <core/graph_traversal_algorithm.h>
 
 // TODO: You may want to change main's signature to take in argc and argv
 int main() {

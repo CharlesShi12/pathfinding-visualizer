@@ -15,7 +15,7 @@ Sketchpad::Sketchpad(const vec2& top_left_corner, size_t num_pixels_per_side,
       pixel_side_length_(sketchpad_size / num_pixels_per_side),
       brush_radius_(brush_radius) {
   current_board_ = vector<vector<int>>(num_pixels_per_side_,
-                                     vector<int>(num_pixels_per_side_, 0));
+                                       vector<int>(num_pixels_per_side_, 0));
 }
 
 void Sketchpad::Draw() const {
@@ -87,12 +87,10 @@ void Sketchpad::RunGraphTraversalAlgorithm(bool isBFS) {
   if (isBFS) {
     BFS* bfs_algorithm = new BFS(board_graph);
     current_board_ = bfs_algorithm->RunBFS(end_row, end_col);
-    delete bfs_algorithm;
 
   } else {
     DFS* dfs_algorithm = new DFS(board_graph);
     current_board_ = dfs_algorithm->RunDFS(end_row, end_col);
-    delete dfs_algorithm;
   }
 
   current_board_[start_row][start_col] = 3;

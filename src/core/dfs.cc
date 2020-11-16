@@ -6,6 +6,7 @@
 
 DFS::DFS(Graph* board_graph) {
   board_graph_ = board_graph;
+  found_destination_ = false;
 }
 
 void DFS::RecursiveDFS(int node, size_t end_row, size_t end_col, vector<bool> &visited_nodes) {

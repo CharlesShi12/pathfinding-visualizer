@@ -1,12 +1,12 @@
 #include <visualizer/sketchpad.h>
-#include <core/graph_traversal_algorithm.h>
+#include <core/bfs.h>
+#include <core/dfs.h>
 
 namespace algorithm {
 
 namespace visualizer {
 
 using glm::vec2;
-using algorithm::GraphTraversalAlgorithm;
 
 Sketchpad::Sketchpad(const vec2& top_left_corner, size_t num_pixels_per_side,
                      double sketchpad_size, double brush_radius)
@@ -74,8 +74,6 @@ void Sketchpad::RunGraphTraversalAlgorithm(bool isBFS) {
   size_t start_row = 0;
   size_t start_col = 0;
 
-  auto* graph_traversal_algorithm = new GraphTraversalAlgorithm(num_pixels_per_side_);
-
   size_t end_row = std::rand() % (num_pixels_per_side_ - 1) + 1;
   size_t end_col = std::rand() % (num_pixels_per_side_ - 1) + 1;
 
@@ -85,15 +83,20 @@ void Sketchpad::RunGraphTraversalAlgorithm(bool isBFS) {
   }
 
   if (isBFS) {
-    current_board_ = graph_traversal_algorithm->RunBFS(current_board_, 15, 15);
+    BFS* bfs_algorithm = new BFS(current_board_);
+    current_board_ = bfs_algorithm->RunBFS(end_row, end_col);
+    delete bfs_algorithm;
+
   } else {
-    current_board_ = graph_traversal_algorithm->RunDFS(current_board_, 15, 15);
+    DFS* dfs_algorithm = new DFS(current_board_);
+    current_board_ = dfs_algorithm->RunDFS(end_row, end_col);
+    delete dfs_algorithm;
   }
+
 // USER INPUT
   current_board_[start_row][start_col] = 3;
   current_board_[end_row][end_col] = 3;
 
-  delete graph_traversal_algorithm;
 }
 
 }  // namespace visualizer

@@ -223,38 +223,104 @@ apps/train_model_main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/apps/train_model_main.cc.s
 .PHONY : apps/train_model_main.cc.s
 
-src/core/graph_traversal_algorithm.o: src/core/graph_traversal_algorithm.cc.o
+src/core/bfs.o: src/core/bfs.cc.o
 
-.PHONY : src/core/graph_traversal_algorithm.o
+.PHONY : src/core/bfs.o
 
 # target to build an object file
-src/core/graph_traversal_algorithm.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.o
-.PHONY : src/core/graph_traversal_algorithm.cc.o
+src/core/bfs.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/bfs.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/bfs.cc.o
+.PHONY : src/core/bfs.cc.o
 
-src/core/graph_traversal_algorithm.i: src/core/graph_traversal_algorithm.cc.i
+src/core/bfs.i: src/core/bfs.cc.i
 
-.PHONY : src/core/graph_traversal_algorithm.i
+.PHONY : src/core/bfs.i
 
 # target to preprocess a source file
-src/core/graph_traversal_algorithm.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.i
-.PHONY : src/core/graph_traversal_algorithm.cc.i
+src/core/bfs.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/bfs.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/bfs.cc.i
+.PHONY : src/core/bfs.cc.i
 
-src/core/graph_traversal_algorithm.s: src/core/graph_traversal_algorithm.cc.s
+src/core/bfs.s: src/core/bfs.cc.s
 
-.PHONY : src/core/graph_traversal_algorithm.s
+.PHONY : src/core/bfs.s
 
 # target to generate assembly for a file
-src/core/graph_traversal_algorithm.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph_traversal_algorithm.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/graph_traversal_algorithm.cc.s
-.PHONY : src/core/graph_traversal_algorithm.cc.s
+src/core/bfs.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/bfs.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/bfs.cc.s
+.PHONY : src/core/bfs.cc.s
+
+src/core/dfs.o: src/core/dfs.cc.o
+
+.PHONY : src/core/dfs.o
+
+# target to build an object file
+src/core/dfs.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/dfs.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/dfs.cc.o
+.PHONY : src/core/dfs.cc.o
+
+src/core/dfs.i: src/core/dfs.cc.i
+
+.PHONY : src/core/dfs.i
+
+# target to preprocess a source file
+src/core/dfs.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/dfs.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/dfs.cc.i
+.PHONY : src/core/dfs.cc.i
+
+src/core/dfs.s: src/core/dfs.cc.s
+
+.PHONY : src/core/dfs.s
+
+# target to generate assembly for a file
+src/core/dfs.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/dfs.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/dfs.cc.s
+.PHONY : src/core/dfs.cc.s
+
+src/core/graph.o: src/core/graph.cc.o
+
+.PHONY : src/core/graph.o
+
+# target to build an object file
+src/core/graph.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/graph.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/graph.cc.o
+.PHONY : src/core/graph.cc.o
+
+src/core/graph.i: src/core/graph.cc.i
+
+.PHONY : src/core/graph.i
+
+# target to preprocess a source file
+src/core/graph.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/graph.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/graph.cc.i
+.PHONY : src/core/graph.cc.i
+
+src/core/graph.s: src/core/graph.cc.s
+
+.PHONY : src/core/graph.s
+
+# target to generate assembly for a file
+src/core/graph.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/graph.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/graph.cc.s
+.PHONY : src/core/graph.cc.s
 
 src/visualizer/path_algorithm_app.o: src/visualizer/path_algorithm_app.cc.o
 
@@ -387,9 +453,15 @@ help:
 	@echo "... apps/train_model_main.o"
 	@echo "... apps/train_model_main.i"
 	@echo "... apps/train_model_main.s"
-	@echo "... src/core/graph_traversal_algorithm.o"
-	@echo "... src/core/graph_traversal_algorithm.i"
-	@echo "... src/core/graph_traversal_algorithm.s"
+	@echo "... src/core/bfs.o"
+	@echo "... src/core/bfs.i"
+	@echo "... src/core/bfs.s"
+	@echo "... src/core/dfs.o"
+	@echo "... src/core/dfs.i"
+	@echo "... src/core/dfs.s"
+	@echo "... src/core/graph.o"
+	@echo "... src/core/graph.i"
+	@echo "... src/core/graph.s"
 	@echo "... src/visualizer/path_algorithm_app.o"
 	@echo "... src/visualizer/path_algorithm_app.i"
 	@echo "... src/visualizer/path_algorithm_app.s"

@@ -90,32 +90,62 @@ CMakeFiles/train-model.dir/apps/train_model_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/train-model.dir/apps/train_model_main.cc.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/apps/train_model_main.cc -o CMakeFiles/train-model.dir/apps/train_model_main.cc.s
 
-CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.o: CMakeFiles/train-model.dir/flags.make
-CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.o: ../src/core/graph_traversal_algorithm.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph_traversal_algorithm.cc
+CMakeFiles/train-model.dir/src/core/bfs.cc.o: CMakeFiles/train-model.dir/flags.make
+CMakeFiles/train-model.dir/src/core/bfs.cc.o: ../src/core/bfs.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/train-model.dir/src/core/bfs.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/train-model.dir/src/core/bfs.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bfs.cc
 
-CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph_traversal_algorithm.cc > CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.i
+CMakeFiles/train-model.dir/src/core/bfs.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/train-model.dir/src/core/bfs.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bfs.cc > CMakeFiles/train-model.dir/src/core/bfs.cc.i
 
-CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph_traversal_algorithm.cc -o CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.s
+CMakeFiles/train-model.dir/src/core/bfs.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/train-model.dir/src/core/bfs.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bfs.cc -o CMakeFiles/train-model.dir/src/core/bfs.cc.s
+
+CMakeFiles/train-model.dir/src/core/dfs.cc.o: CMakeFiles/train-model.dir/flags.make
+CMakeFiles/train-model.dir/src/core/dfs.cc.o: ../src/core/dfs.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/train-model.dir/src/core/dfs.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/train-model.dir/src/core/dfs.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/dfs.cc
+
+CMakeFiles/train-model.dir/src/core/dfs.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/train-model.dir/src/core/dfs.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/dfs.cc > CMakeFiles/train-model.dir/src/core/dfs.cc.i
+
+CMakeFiles/train-model.dir/src/core/dfs.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/train-model.dir/src/core/dfs.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/dfs.cc -o CMakeFiles/train-model.dir/src/core/dfs.cc.s
+
+CMakeFiles/train-model.dir/src/core/graph.cc.o: CMakeFiles/train-model.dir/flags.make
+CMakeFiles/train-model.dir/src/core/graph.cc.o: ../src/core/graph.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/train-model.dir/src/core/graph.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/train-model.dir/src/core/graph.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph.cc
+
+CMakeFiles/train-model.dir/src/core/graph.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/train-model.dir/src/core/graph.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph.cc > CMakeFiles/train-model.dir/src/core/graph.cc.i
+
+CMakeFiles/train-model.dir/src/core/graph.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/train-model.dir/src/core/graph.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph.cc -o CMakeFiles/train-model.dir/src/core/graph.cc.s
 
 # Object files for target train-model
 train__model_OBJECTS = \
 "CMakeFiles/train-model.dir/apps/train_model_main.cc.o" \
-"CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.o"
+"CMakeFiles/train-model.dir/src/core/bfs.cc.o" \
+"CMakeFiles/train-model.dir/src/core/dfs.cc.o" \
+"CMakeFiles/train-model.dir/src/core/graph.cc.o"
 
 # External object files for target train-model
 train__model_EXTERNAL_OBJECTS =
 
 train-model: CMakeFiles/train-model.dir/apps/train_model_main.cc.o
-train-model: CMakeFiles/train-model.dir/src/core/graph_traversal_algorithm.cc.o
+train-model: CMakeFiles/train-model.dir/src/core/bfs.cc.o
+train-model: CMakeFiles/train-model.dir/src/core/dfs.cc.o
+train-model: CMakeFiles/train-model.dir/src/core/graph.cc.o
 train-model: CMakeFiles/train-model.dir/build.make
 train-model: CMakeFiles/train-model.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable train-model"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable train-model"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/train-model.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

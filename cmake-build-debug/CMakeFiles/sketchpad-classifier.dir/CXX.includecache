@@ -6,9 +6,17 @@
 
 #IncludeRegexTransform: 
 
-../include/core/graph_traversal_algorithm.h
-string
+../include/core/bfs.h
+vector
 -
+
+../include/core/dfs.h
+vector
+-
+graph.h
+../include/core/graph.h
+
+../include/core/graph.h
 vector
 -
 unordered_map
@@ -7824,9 +7832,23 @@ detail/setup.hpp
 detail/func_vector_relational.inl
 /Users/charlesshi/Downloads/Cinder/include/glm/detail/func_vector_relational.inl
 
+/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bfs.cc
+core/graph.h
+-
+queue
+-
+core/bfs.h
+/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/core/bfs.h
+
+/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/dfs.cc
+core/dfs.h
+/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/core/dfs.h
+
 /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/visualizer/sketchpad.cc
 visualizer/sketchpad.h
 -
-core/graph_traversal_algorithm.h
+core/bfs.h
+-
+core/dfs.h
 -
 

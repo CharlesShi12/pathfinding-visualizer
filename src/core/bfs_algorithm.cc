@@ -37,4 +37,40 @@ void BFS::ConvertBoardToGraph(const vector<vector<int>> &board) {
   }
 }
 
+vector<vector<int>> BFS::RunBFS(const vector<vector<int>> &board, size_t end_row, size_t end_col) {
+  ConvertBoardToGraph(board);
+
+  vector<vector<int>> output_board = board;
+  vector<bool> visited_nodes = vector<bool>(dimensions_ * dimensions_, false);
+  std::queue<int> next_nodes;
+  size_t first_node = 0;
+
+  next_nodes.push(first_node);
+  visited_nodes[first_node] = true;
+
+  while(!next_nodes.empty()) {
+    Node* vertex = nodes_.at(next_nodes.front());
+    visited_nodes[next_nodes.front()] = true;
+    next_nodes.pop();
+
+    if (vertex->row == end_row && vertex->col == end_col) {
+      break;
+    }
+
+    for(int neighbor : vertex->adjacent) {
+      if(!visited_nodes[neighbor]) {
+        next_nodes.push(neighbor);
+      }
+    }
+  }
+
+  for (int i = 0; i < dimensions_ * dimensions_; i++) {
+    if(visited_nodes[i]) {
+      Node* node = nodes_.at(i);
+      output_board[node->row][node->col] = 2;
+    }
+  }
+  return output_board;
+}
+
 }  // namespace algorithm

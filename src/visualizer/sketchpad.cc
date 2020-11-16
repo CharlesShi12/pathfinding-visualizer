@@ -71,7 +71,6 @@ void Sketchpad::Clear() {
 }
 
 void Sketchpad::RunBFS() {
-
 }
 
 }  // namespace visualizer

@@ -28,6 +28,7 @@ class BFS {
  public:
   BFS(int dimensions);
   void ConvertBoardToGraph(const vector<vector<int>> &board);
+  vector<vector<int>> RunBFS(const vector<vector<int>> &board, size_t end_row, size_t end_col);
 };
 
 };  // namespace algorithm

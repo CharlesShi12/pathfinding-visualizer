@@ -3,9 +3,13 @@
 #include "cinder/gl/gl.h"
 #include <vector>
 
-namespace algorithm {
+namespace graph_algorithm {
 
 using std::vector;
+
+constexpr size_t kWall = 1;
+constexpr size_t kPath = 2;
+constexpr size_t kStartAndEndNode = 3;
 
 namespace visualizer {
 
@@ -65,6 +69,11 @@ class Sketchpad {
   double brush_radius_;
 
   vector<vector<int>> current_board_;
+
+  size_t start_row_;
+  size_t start_col_;
+  size_t end_row_;
+  size_t end_col_;
 };
 
 }  // namespace visualizer

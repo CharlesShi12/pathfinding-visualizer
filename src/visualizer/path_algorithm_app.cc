@@ -17,7 +17,7 @@ void NaiveBayesApp::draw() {
   sketchpad_.Draw();
 
   ci::gl::drawStringCentered(
-      "Press Delete to clear the sketchpad. Press 1 to run BFS. Press 2 to run DPS.",
+      "Press Delete to clear. Press 1 to run BFS. Press 2 to run DPS.",
       glm::vec2(kWindowSize / 2, kMargin / 2), ci::Color("black"));
 }
 

@@ -1,8 +1,9 @@
 #include <visualizer/sketchpad.h>
 #include <core/bfs.h>
 #include <core/dfs.h>
+#include <random>
 
-namespace algorithm {
+namespace graph_algorithm {
 
 namespace visualizer {
 
@@ -16,18 +17,27 @@ Sketchpad::Sketchpad(const vec2& top_left_corner, size_t num_pixels_per_side,
       brush_radius_(brush_radius) {
   current_board_ = vector<vector<int>>(num_pixels_per_side_,
                                        vector<int>(num_pixels_per_side_, 0));
+  std::random_device dev;
+  std::mt19937 rng(dev());
+  std::uniform_int_distribution<std::mt19937::result_type> dist(1, num_pixels_per_side_ - 1);
+  start_row_ = 0;
+  start_col_ = 0;
+  end_row_ = dist(rng);
+  end_col_ = dist(rng);
+  current_board_[start_row_][start_col_] = kStartAndEndNode;
+  current_board_[end_row_][end_col_] = kStartAndEndNode;
 }
 
 void Sketchpad::Draw() const {
   for (size_t row = 0; row < num_pixels_per_side_; ++row) {
     for (size_t col = 0; col < num_pixels_per_side_; ++col) {
-      if (current_board_[row][col] == 1) {
+      if (current_board_[row][col] == kWall) {
         ci::gl::color(ci::Color("black"));
 
-      } else if (current_board_[row][col] == 2) {
+      } else if (current_board_[row][col] == kPath) {
         ci::gl::color(ci::Color("gray"));
 
-      } else if (current_board_[row][col] == 3) {
+      } else if (current_board_[row][col] == kStartAndEndNode) {
         ci::gl::color(ci::Color("blue"));
 
       } else {
@@ -58,8 +68,8 @@ void Sketchpad::HandleBrush(const vec2& brush_screen_coords) {
       vec2 pixel_center = {col + 0.5, row + 0.5};
 
       if (glm::distance(brush_sketchpad_coords, pixel_center) <=
-          brush_radius_) {
-        current_board_[row][col] = 1;
+          brush_radius_ && current_board_[row][col] != kStartAndEndNode) {
+        current_board_[row][col] = kWall;
       }
     }
   }
@@ -67,34 +77,22 @@ void Sketchpad::HandleBrush(const vec2& brush_screen_coords) {
 
 void Sketchpad::Clear() {
   current_board_ = vector<vector<int>>(num_pixels_per_side_,
-                                     vector<int>(num_pixels_per_side_, 0));
+                                       vector<int>(num_pixels_per_side_, 0));
+  current_board_[start_row_][start_col_] = kStartAndEndNode;
+  current_board_[end_row_][end_col_] = kStartAndEndNode;
 }
 
 void Sketchpad::RunGraphTraversalAlgorithm(bool isBFS) {
-  size_t start_row = 0;
-  size_t start_col = 0;
-
-  size_t end_row = std::rand() % (num_pixels_per_side_ - 1) + 1;
-  size_t end_col = std::rand() % (num_pixels_per_side_ - 1) + 1;
-
-  while (current_board_[end_row][end_col] == 1) {
-    end_row = std::rand() % (num_pixels_per_side_ - 1) + 1;
-    end_col = std::rand() % (num_pixels_per_side_ - 1) + 1;
-  }
-
-  Graph* board_graph = new Graph(current_board_);
+  auto* board_graph = new Graph(current_board_);
 
   if (isBFS) {
-    BFS* bfs_algorithm = new BFS(board_graph);
-    current_board_ = bfs_algorithm->RunBFS(end_row, end_col);
+    auto* bfs_algorithm = new bfs::BFS(board_graph);
+    current_board_ = bfs_algorithm->RunBFS(end_row_, end_col_);
 
   } else {
-    DFS* dfs_algorithm = new DFS(board_graph);
-    current_board_ = dfs_algorithm->RunDFS(end_row, end_col);
+    auto* dfs_algorithm = new dfs::DFS(board_graph);
+    current_board_ = dfs_algorithm->RunDFS(end_row_, end_col_);
   }
-
-  current_board_[start_row][start_col] = 3;
-  current_board_[end_row][end_col] = 3;
 }
 
 }  // namespace visualizer

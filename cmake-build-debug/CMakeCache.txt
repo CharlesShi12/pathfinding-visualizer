@@ -276,18 +276,6 @@ FETCHCONTENT_UPDATES_DISCONNECTED_CATCH2:BOOL=OFF
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
 //Value Computed by CMake
-final-project_BINARY_DIR:STATIC=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug
-
-//Value Computed by CMake
-final-project_SOURCE_DIR:STATIC=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46
-
-//Value Computed by CMake
-naive-bayes_BINARY_DIR:STATIC=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug
-
-//Value Computed by CMake
-naive-bayes_SOURCE_DIR:STATIC=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46
-
-//Value Computed by CMake
 path-algorithm-visualizer_BINARY_DIR:STATIC=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug
 
 //Value Computed by CMake

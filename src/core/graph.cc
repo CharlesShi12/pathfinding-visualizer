@@ -52,4 +52,4 @@ size_t Graph::GetDimension() {
   return dimension_;
 }
 
-}
+} // namespace graph_algorithm

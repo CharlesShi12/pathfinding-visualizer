@@ -1,6 +1,6 @@
 #include <visualizer/path_algorithm_app.h>
 
-namespace algorithm {
+namespace graph_algorithm {
 
 namespace visualizer {
 
@@ -49,4 +49,4 @@ void NaiveBayesApp::keyDown(ci::app::KeyEvent event) {
 
 }  // namespace visualizer
 
-}  // namespace algorithm
+}  // namespace graph_algorithm

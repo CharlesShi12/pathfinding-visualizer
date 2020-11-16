@@ -10,6 +10,7 @@
 namespace graph_algorithm {
 
 namespace bfs {
+
 using std::vector;
 
 class BFS {
@@ -19,9 +20,10 @@ class BFS {
  public:
   BFS(Graph *board_graph);
   vector<vector<int>> RunBFS(size_t end_row, size_t end_col);
-
 };
-}
-}
+
+} // namespace bfs
+
+} // namespace algorithm
 
 #endif //PATH_ALGORITHM_VISUALIZER_BFS_H

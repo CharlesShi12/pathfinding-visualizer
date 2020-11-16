@@ -97,4 +97,4 @@ void Sketchpad::RunGraphTraversalAlgorithm(bool isBFS) {
 
 }  // namespace visualizer
 
-}  // namespace algorithm
+}  // namespace graph_algorithm

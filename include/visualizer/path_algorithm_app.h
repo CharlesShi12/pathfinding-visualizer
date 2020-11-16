@@ -5,7 +5,7 @@
 #include "cinder/gl/gl.h"
 #include "sketchpad.h"
 
-namespace algorithm {
+namespace graph_algorithm {
 
 namespace visualizer {
 
@@ -32,4 +32,4 @@ class NaiveBayesApp : public ci::app::App {
 
 }  // namespace visualizer
 
-}  // namespace algorithm
+}  // namespace graph_algorithm

@@ -54,6 +54,6 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
   return output_board;
 }
 
-}
+} // namespace bfs
 
-}
+} // namespace graph_algorithm

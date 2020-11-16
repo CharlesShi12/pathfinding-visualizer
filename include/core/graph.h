@@ -9,6 +9,7 @@
 #include <unordered_map>
 
 namespace graph_algorithm {
+
 using std::vector;
 using std::unordered_map;
 
@@ -35,5 +36,6 @@ class Graph {
   unordered_map<int, Node *> nodes_;
 };
 
-}
+} // namespace graph_algorithm
+
 #endif //PATH_ALGORITHM_VISUALIZER_GRAPH_H

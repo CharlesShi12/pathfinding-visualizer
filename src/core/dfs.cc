@@ -17,15 +17,12 @@ DFS::DFS(Graph *board_graph) {
 void DFS::RecursiveDFS(int node, size_t end_row, size_t end_col,
                        vector<bool> &visited_nodes) {
   if (!found_destination_) {
+    visited_nodes[node] = true;
     if (board_graph_->GetNodes().at(node)->row == end_row
         && board_graph_->GetNodes().at(node)->col == end_col) {
       found_destination_ = true;
 
     } else {
-      if (node != 0) {
-        visited_nodes[node] = true;
-      }
-
       for (int i : board_graph_->GetNodes().at(node)->adjacent) {
         if (!visited_nodes[i]) {
           RecursiveDFS(i, end_row, end_col, visited_nodes);

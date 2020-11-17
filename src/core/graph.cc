@@ -24,8 +24,8 @@ Graph::Graph(const vector<vector<int>> &board) {
       if (board[row][col] != graph_algorithm::kWall) {
         vector<vector<int>> positions = {{row - 1, col - 1}, {row - 1, col},
                                          {row, col - 1}, {row + 1, col + 1},
-                                         {row - 1, col + 1}, {row + 1, col},
-                                         {row, col + 1}, {row + 1, col - 1}};
+                                         {row - 1, col + 1}, {row, col + 1},
+                                         {row + 1, col}, {row + 1, col - 1}};
         for (const vector<int> &position : positions) {
           int x = position[0];
           int y = position[1];

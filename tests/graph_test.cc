@@ -50,12 +50,12 @@ TEST_CASE("Testing the Graph class") {
     REQUIRE(board_graph->GetDimension() == 3);
     REQUIRE(board_graph->GetBoard() == board);
 
-    vector<int> adjacent = {4, 3, 1};
+    vector<int> adjacent = {4, 1, 3};
     REQUIRE(board_graph->GetNodes().at(0)->row == 0);
     REQUIRE(board_graph->GetNodes().at(0)->col == 0);
     REQUIRE(board_graph->GetNodes().at(0)->adjacent == adjacent);
 
-    adjacent = {0, 4, 2, 3};
+    adjacent = {0, 2, 4, 3};
     REQUIRE(board_graph->GetNodes().at(1)->row == 0);
     REQUIRE(board_graph->GetNodes().at(1)->col == 1);
     REQUIRE(board_graph->GetNodes().at(1)->adjacent == adjacent);
@@ -65,12 +65,12 @@ TEST_CASE("Testing the Graph class") {
     REQUIRE(board_graph->GetNodes().at(2)->col == 2);
     REQUIRE(board_graph->GetNodes().at(2)->adjacent == adjacent);
 
-    adjacent = {0, 1, 6, 4};
+    adjacent = {0, 1, 4, 6};
     REQUIRE(board_graph->GetNodes().at(3)->row == 1);
     REQUIRE(board_graph->GetNodes().at(3)->col == 0);
     REQUIRE(board_graph->GetNodes().at(3)->adjacent == adjacent);
 
-    adjacent = {0, 1, 3, 2, 6};
+    adjacent = { 0, 1, 3, 2, 6};
     REQUIRE(board_graph->GetNodes().at(4)->row == 1);
     REQUIRE(board_graph->GetNodes().at(4)->col == 1);
     REQUIRE(board_graph->GetNodes().at(4)->adjacent == adjacent);

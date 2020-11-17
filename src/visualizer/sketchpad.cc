@@ -94,6 +94,8 @@ void Sketchpad::RunGraphTraversalAlgorithm(bool isBFS) {
     auto* dfs_algorithm = new dfs::DFS(board_graph);
     current_board_ = dfs_algorithm->RunDFS(end_row_, end_col_);
   }
+  current_board_[start_row_][start_col_] = kStartAndEndNode;
+  current_board_[end_row_][end_col_] = kStartAndEndNode;
 }
 
 }  // namespace visualizer

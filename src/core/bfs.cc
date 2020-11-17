@@ -27,16 +27,12 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
 
   while (!next_nodes.empty()) {
     Graph::Node *vertex = board_graph_->GetNodes().at(next_nodes.front());
+    visited_nodes[next_nodes.front()] = true;
+    next_nodes.pop();
 
     if (vertex->row == end_row && vertex->col == end_col) {
       break;
     }
-
-    if (next_nodes.front() != 0) {
-      visited_nodes[next_nodes.front()] = true;
-    }
-
-    next_nodes.pop();
 
     for (int neighbor : vertex->adjacent) {
       if (!visited_nodes[neighbor]) {

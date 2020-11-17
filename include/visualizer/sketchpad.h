@@ -59,11 +59,11 @@ class Sketchpad {
   void RunGraphTraversalAlgorithm(bool isBFS);
 
  private:
+  vector<vector<int>> current_board_;
   glm::vec2 top_left_corner_;
   size_t num_pixels_per_side_;
   double pixel_side_length_;
   double brush_radius_;
-  vector<vector<int>> current_board_;
   size_t start_row_;
   size_t start_col_;
   size_t end_row_;

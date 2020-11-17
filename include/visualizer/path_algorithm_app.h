@@ -16,7 +16,6 @@ namespace visualizer {
 class NaiveBayesApp : public ci::app::App {
  public:
   NaiveBayesApp();
-
   void draw() override;
   void mouseDown(ci::app::MouseEvent event) override;
   void mouseDrag(ci::app::MouseEvent event) override;
@@ -24,7 +23,7 @@ class NaiveBayesApp : public ci::app::App {
 
   const double kWindowSize = 400;
   const double kMargin = 75;
-  const size_t kImageDimension = 18;
+  const size_t kImageDimension = 15;
 
  private:
   graph_algorithm::visualizer::Sketchpad sketchpad_;

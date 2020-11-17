@@ -19,7 +19,8 @@ Sketchpad::Sketchpad(const vec2& top_left_corner, size_t num_pixels_per_side,
                                        vector<int>(num_pixels_per_side_, 0));
   std::random_device dev;
   std::mt19937 rng(dev());
-  std::uniform_int_distribution<std::mt19937::result_type> dist(1, num_pixels_per_side_ - 1);
+  std::uniform_int_distribution<std::mt19937::result_type>
+      dist(1, num_pixels_per_side_ - 1);
   start_row_ = 0;
   start_col_ = 0;
   end_row_ = dist(rng);

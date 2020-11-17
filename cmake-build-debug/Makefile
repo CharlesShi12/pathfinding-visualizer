@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named path-algorithm-test
+
+# Build rule for target.
+path-algorithm-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 path-algorithm-test
+.PHONY : path-algorithm-test
+
+# fast build rule for target.
+path-algorithm-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/build
+.PHONY : path-algorithm-test/fast
+
+#=============================================================================
 # Target rules for targets named sketchpad-classifier
 
 # Build rule for target.
@@ -142,32 +155,6 @@ sketchpad-classifier: cmake_check_build_system
 sketchpad-classifier/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/build
 .PHONY : sketchpad-classifier/fast
-
-#=============================================================================
-# Target rules for targets named train-model
-
-# Build rule for target.
-train-model: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 train-model
-.PHONY : train-model
-
-# fast build rule for target.
-train-model/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/build
-.PHONY : train-model/fast
-
-#=============================================================================
-# Target rules for targets named naive-bayes-test
-
-# Build rule for target.
-naive-bayes-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 naive-bayes-test
-.PHONY : naive-bayes-test
-
-# fast build rule for target.
-naive-bayes-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/build
-.PHONY : naive-bayes-test/fast
 
 apps/cinder_app_main.o: apps/cinder_app_main.cc.o
 
@@ -196,42 +183,14 @@ apps/cinder_app_main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.s
 .PHONY : apps/cinder_app_main.cc.s
 
-apps/train_model_main.o: apps/train_model_main.cc.o
-
-.PHONY : apps/train_model_main.o
-
-# target to build an object file
-apps/train_model_main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/apps/train_model_main.cc.o
-.PHONY : apps/train_model_main.cc.o
-
-apps/train_model_main.i: apps/train_model_main.cc.i
-
-.PHONY : apps/train_model_main.i
-
-# target to preprocess a source file
-apps/train_model_main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/apps/train_model_main.cc.i
-.PHONY : apps/train_model_main.cc.i
-
-apps/train_model_main.s: apps/train_model_main.cc.s
-
-.PHONY : apps/train_model_main.s
-
-# target to generate assembly for a file
-apps/train_model_main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/apps/train_model_main.cc.s
-.PHONY : apps/train_model_main.cc.s
-
 src/core/bfs.o: src/core/bfs.cc.o
 
 .PHONY : src/core/bfs.o
 
 # target to build an object file
 src/core/bfs.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/bfs.cc.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/bfs.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/bfs.cc.o
 .PHONY : src/core/bfs.cc.o
 
 src/core/bfs.i: src/core/bfs.cc.i
@@ -240,9 +199,8 @@ src/core/bfs.i: src/core/bfs.cc.i
 
 # target to preprocess a source file
 src/core/bfs.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/bfs.cc.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/bfs.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/bfs.cc.i
 .PHONY : src/core/bfs.cc.i
 
 src/core/bfs.s: src/core/bfs.cc.s
@@ -251,9 +209,8 @@ src/core/bfs.s: src/core/bfs.cc.s
 
 # target to generate assembly for a file
 src/core/bfs.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/bfs.cc.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/bfs.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/bfs.cc.s
 .PHONY : src/core/bfs.cc.s
 
 src/core/dfs.o: src/core/dfs.cc.o
@@ -262,9 +219,8 @@ src/core/dfs.o: src/core/dfs.cc.o
 
 # target to build an object file
 src/core/dfs.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/dfs.cc.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/dfs.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/dfs.cc.o
 .PHONY : src/core/dfs.cc.o
 
 src/core/dfs.i: src/core/dfs.cc.i
@@ -273,9 +229,8 @@ src/core/dfs.i: src/core/dfs.cc.i
 
 # target to preprocess a source file
 src/core/dfs.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/dfs.cc.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/dfs.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/dfs.cc.i
 .PHONY : src/core/dfs.cc.i
 
 src/core/dfs.s: src/core/dfs.cc.s
@@ -284,9 +239,8 @@ src/core/dfs.s: src/core/dfs.cc.s
 
 # target to generate assembly for a file
 src/core/dfs.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/dfs.cc.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/dfs.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/dfs.cc.s
 .PHONY : src/core/dfs.cc.s
 
 src/core/graph.o: src/core/graph.cc.o
@@ -295,9 +249,8 @@ src/core/graph.o: src/core/graph.cc.o
 
 # target to build an object file
 src/core/graph.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/graph.cc.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/graph.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/graph.cc.o
 .PHONY : src/core/graph.cc.o
 
 src/core/graph.i: src/core/graph.cc.i
@@ -306,9 +259,8 @@ src/core/graph.i: src/core/graph.cc.i
 
 # target to preprocess a source file
 src/core/graph.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/graph.cc.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/graph.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/graph.cc.i
 .PHONY : src/core/graph.cc.i
 
 src/core/graph.s: src/core/graph.cc.s
@@ -317,9 +269,8 @@ src/core/graph.s: src/core/graph.cc.s
 
 # target to generate assembly for a file
 src/core/graph.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/graph.cc.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/train-model.dir/build.make CMakeFiles/train-model.dir/src/core/graph.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/core/graph.cc.s
 .PHONY : src/core/graph.cc.s
 
 src/visualizer/path_algorithm_app.o: src/visualizer/path_algorithm_app.cc.o
@@ -328,8 +279,8 @@ src/visualizer/path_algorithm_app.o: src/visualizer/path_algorithm_app.cc.o
 
 # target to build an object file
 src/visualizer/path_algorithm_app.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/visualizer/path_algorithm_app.cc.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/visualizer/path_algorithm_app.cc.o
 .PHONY : src/visualizer/path_algorithm_app.cc.o
 
 src/visualizer/path_algorithm_app.i: src/visualizer/path_algorithm_app.cc.i
@@ -338,8 +289,8 @@ src/visualizer/path_algorithm_app.i: src/visualizer/path_algorithm_app.cc.i
 
 # target to preprocess a source file
 src/visualizer/path_algorithm_app.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/visualizer/path_algorithm_app.cc.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/visualizer/path_algorithm_app.cc.i
 .PHONY : src/visualizer/path_algorithm_app.cc.i
 
 src/visualizer/path_algorithm_app.s: src/visualizer/path_algorithm_app.cc.s
@@ -348,8 +299,8 @@ src/visualizer/path_algorithm_app.s: src/visualizer/path_algorithm_app.cc.s
 
 # target to generate assembly for a file
 src/visualizer/path_algorithm_app.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/visualizer/path_algorithm_app.cc.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/visualizer/path_algorithm_app.cc.s
 .PHONY : src/visualizer/path_algorithm_app.cc.s
 
 src/visualizer/sketchpad.o: src/visualizer/sketchpad.cc.o
@@ -358,8 +309,8 @@ src/visualizer/sketchpad.o: src/visualizer/sketchpad.cc.o
 
 # target to build an object file
 src/visualizer/sketchpad.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.o
 .PHONY : src/visualizer/sketchpad.cc.o
 
 src/visualizer/sketchpad.i: src/visualizer/sketchpad.cc.i
@@ -368,8 +319,8 @@ src/visualizer/sketchpad.i: src/visualizer/sketchpad.cc.i
 
 # target to preprocess a source file
 src/visualizer/sketchpad.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.i
 .PHONY : src/visualizer/sketchpad.cc.i
 
 src/visualizer/sketchpad.s: src/visualizer/sketchpad.cc.s
@@ -378,8 +329,8 @@ src/visualizer/sketchpad.s: src/visualizer/sketchpad.cc.s
 
 # target to generate assembly for a file
 src/visualizer/sketchpad.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/src/visualizer/sketchpad.cc.s
 .PHONY : src/visualizer/sketchpad.cc.s
 
 tests/bfs_algorithm_test.o: tests/bfs_algorithm_test.cc.o
@@ -388,7 +339,7 @@ tests/bfs_algorithm_test.o: tests/bfs_algorithm_test.cc.o
 
 # target to build an object file
 tests/bfs_algorithm_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/bfs_algorithm_test.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bfs_algorithm_test.cc.o
 .PHONY : tests/bfs_algorithm_test.cc.o
 
 tests/bfs_algorithm_test.i: tests/bfs_algorithm_test.cc.i
@@ -397,7 +348,7 @@ tests/bfs_algorithm_test.i: tests/bfs_algorithm_test.cc.i
 
 # target to preprocess a source file
 tests/bfs_algorithm_test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/bfs_algorithm_test.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bfs_algorithm_test.cc.i
 .PHONY : tests/bfs_algorithm_test.cc.i
 
 tests/bfs_algorithm_test.s: tests/bfs_algorithm_test.cc.s
@@ -406,7 +357,7 @@ tests/bfs_algorithm_test.s: tests/bfs_algorithm_test.cc.s
 
 # target to generate assembly for a file
 tests/bfs_algorithm_test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/bfs_algorithm_test.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bfs_algorithm_test.cc.s
 .PHONY : tests/bfs_algorithm_test.cc.s
 
 tests/test_main.o: tests/test_main.cc.o
@@ -415,7 +366,7 @@ tests/test_main.o: tests/test_main.cc.o
 
 # target to build an object file
 tests/test_main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/test_main.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/test_main.cc.o
 .PHONY : tests/test_main.cc.o
 
 tests/test_main.i: tests/test_main.cc.i
@@ -424,7 +375,7 @@ tests/test_main.i: tests/test_main.cc.i
 
 # target to preprocess a source file
 tests/test_main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/test_main.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/test_main.cc.i
 .PHONY : tests/test_main.cc.i
 
 tests/test_main.s: tests/test_main.cc.s
@@ -433,7 +384,7 @@ tests/test_main.s: tests/test_main.cc.s
 
 # target to generate assembly for a file
 tests/test_main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/naive-bayes-test.dir/build.make CMakeFiles/naive-bayes-test.dir/tests/test_main.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/test_main.cc.s
 .PHONY : tests/test_main.cc.s
 
 # Help Target
@@ -444,15 +395,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... naive-bayes-test"
+	@echo "... path-algorithm-test"
 	@echo "... sketchpad-classifier"
-	@echo "... train-model"
 	@echo "... apps/cinder_app_main.o"
 	@echo "... apps/cinder_app_main.i"
 	@echo "... apps/cinder_app_main.s"
-	@echo "... apps/train_model_main.o"
-	@echo "... apps/train_model_main.i"
-	@echo "... apps/train_model_main.s"
 	@echo "... src/core/bfs.o"
 	@echo "... src/core/bfs.i"
 	@echo "... src/core/bfs.s"

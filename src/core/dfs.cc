@@ -14,9 +14,7 @@ DFS::DFS(Graph *board_graph) {
   found_destination_ = false;
 }
 
-void DFS::RecursiveDFS(int node,
-                       size_t end_row,
-                       size_t end_col,
+void DFS::RecursiveDFS(int node, size_t end_row, size_t end_col,
                        vector<bool> &visited_nodes) {
   if (!found_destination_) {
     if (board_graph_->GetNodes().at(node)->row == end_row

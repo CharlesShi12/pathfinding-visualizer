@@ -59,9 +59,6 @@ list(APPEND SOURCE_FILES    ${CORE_SOURCE_FILES}
 
 list(APPEND TEST_FILES tests/bfs_algorithm_test.cc)
 
-add_executable(train-model apps/train_model_main.cc ${CORE_SOURCE_FILES})
-target_include_directories(train-model PRIVATE include)
-
 ci_make_app(
         APP_NAME        sketchpad-classifier
         CINDER_PATH     ${CINDER_PATH}
@@ -70,7 +67,7 @@ ci_make_app(
 )
 
 ci_make_app(
-        APP_NAME        naive-bayes-test
+        APP_NAME        path-algorithm-test
         CINDER_PATH     ${CINDER_PATH}
         SOURCES         tests/test_main.cc ${SOURCE_FILES} ${TEST_FILES}
         INCLUDES        include

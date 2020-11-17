@@ -1,6 +1,6 @@
 #include <visualizer/path_algorithm_app.h>
 
-using algorithm::visualizer::NaiveBayesApp;
+using graph_algorithm::visualizer::NaiveBayesApp;
 
 void prepareSettings(NaiveBayesApp::Settings* settings) {
   settings->setResizable(false);

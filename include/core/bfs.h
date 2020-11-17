@@ -7,6 +7,7 @@
 
 #include <vector>
 #include "core/graph.h"
+
 namespace graph_algorithm {
 
 namespace bfs {

@@ -3,10 +3,31 @@
 //
 
 #include <catch2/catch.hpp>
+#include <vector>
+#include <core/graph.h>
+#include <core/bfs.h>
+
+using std::vector;
+using graph_algorithm::Graph;
+using graph_algorithm::bfs::BFS;
 
 TEST_CASE("Testing the BFS class") {
-  SECTION("Testing the RunBPS function") {
+  SECTION("Testing the RunBFS function") {
+    vector<vector<int>> board = {{0, 0, 0, 0},
+                                 {0, 1, 1, 1},
+                                 {0, 1, 1, 1},
+                                 {0, 1, 1, 1}};
 
+    vector<vector<int>> output = {{0, 2, 2, 0},
+                                  {2, 1, 1, 1},
+                                  {2, 1, 1, 1},
+                                  {0, 1, 1, 1}};
+
+    Graph *board_graph = new Graph(board);
+
+    BFS *bfs_algorithm = new BFS(board_graph);
+
+    REQUIRE(bfs_algorithm->RunBFS(3, 0) == output);
   }
 }
 

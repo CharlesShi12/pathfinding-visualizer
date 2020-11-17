@@ -6,18 +6,26 @@
 
 #IncludeRegexTransform: 
 
+../include/core/dfs.h
+vector
+-
+graph.h
+../include/core/graph.h
+
 ../include/core/graph.h
 vector
 -
 unordered_map
 -
 
-/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/graph_test.cc
+/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/dfs_algorithm_test.cc
 catch2/catch.hpp
+-
+vector
 -
 core/graph.h
 -
-vector
+core/dfs.h
 -
 
 _deps/catch2-src/single_include/catch2/catch.hpp

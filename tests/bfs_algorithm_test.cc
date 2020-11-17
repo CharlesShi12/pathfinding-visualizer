@@ -1,8 +1,12 @@
+//
+// Created by Charles Shi on 11/17/20.
+//
+
 #include <catch2/catch.hpp>
 
-#include <core/graph_traversal_algorithm.h>
+TEST_CASE("Testing the BFS class") {
+  SECTION("Testing the RunBPS function") {
 
-using algorithm::GraphTraversalAlgorithm;
-
-TEST_CASE("Check that 126 is the best class") {
+  }
 }
+

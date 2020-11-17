@@ -19,6 +19,7 @@ class Graph {
     int row;
     int col;
     vector<int> adjacent;
+
     Node(int row_coordinate, int col_coordinate) {
       row = row_coordinate;
       col = col_coordinate;
@@ -26,14 +27,14 @@ class Graph {
   };
 
   Graph(const vector<vector<int>> &board);
-  const unordered_map<int, Node *> &GetNodes();
+  const unordered_map<size_t, Node *> &GetNodes();
   const vector<vector<int>> &GetBoard();
   size_t GetDimension();
 
  private:
   size_t dimension_;
   vector<vector<int>> board_;
-  unordered_map<int, Node *> nodes_;
+  unordered_map<size_t, Node *> nodes_;
 };
 
 } // namespace graph_algorithm

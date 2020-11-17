@@ -360,6 +360,60 @@ tests/bfs_algorithm_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bfs_algorithm_test.cc.s
 .PHONY : tests/bfs_algorithm_test.cc.s
 
+tests/dfs_algorithm_test.o: tests/dfs_algorithm_test.cc.o
+
+.PHONY : tests/dfs_algorithm_test.o
+
+# target to build an object file
+tests/dfs_algorithm_test.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/dfs_algorithm_test.cc.o
+.PHONY : tests/dfs_algorithm_test.cc.o
+
+tests/dfs_algorithm_test.i: tests/dfs_algorithm_test.cc.i
+
+.PHONY : tests/dfs_algorithm_test.i
+
+# target to preprocess a source file
+tests/dfs_algorithm_test.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/dfs_algorithm_test.cc.i
+.PHONY : tests/dfs_algorithm_test.cc.i
+
+tests/dfs_algorithm_test.s: tests/dfs_algorithm_test.cc.s
+
+.PHONY : tests/dfs_algorithm_test.s
+
+# target to generate assembly for a file
+tests/dfs_algorithm_test.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/dfs_algorithm_test.cc.s
+.PHONY : tests/dfs_algorithm_test.cc.s
+
+tests/graph_test.o: tests/graph_test.cc.o
+
+.PHONY : tests/graph_test.o
+
+# target to build an object file
+tests/graph_test.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.o
+.PHONY : tests/graph_test.cc.o
+
+tests/graph_test.i: tests/graph_test.cc.i
+
+.PHONY : tests/graph_test.i
+
+# target to preprocess a source file
+tests/graph_test.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.i
+.PHONY : tests/graph_test.cc.i
+
+tests/graph_test.s: tests/graph_test.cc.s
+
+.PHONY : tests/graph_test.s
+
+# target to generate assembly for a file
+tests/graph_test.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.s
+.PHONY : tests/graph_test.cc.s
+
 tests/test_main.o: tests/test_main.cc.o
 
 .PHONY : tests/test_main.o
@@ -418,6 +472,12 @@ help:
 	@echo "... tests/bfs_algorithm_test.o"
 	@echo "... tests/bfs_algorithm_test.i"
 	@echo "... tests/bfs_algorithm_test.s"
+	@echo "... tests/dfs_algorithm_test.o"
+	@echo "... tests/dfs_algorithm_test.i"
+	@echo "... tests/dfs_algorithm_test.s"
+	@echo "... tests/graph_test.o"
+	@echo "... tests/graph_test.i"
+	@echo "... tests/graph_test.s"
 	@echo "... tests/test_main.o"
 	@echo "... tests/test_main.i"
 	@echo "... tests/test_main.s"

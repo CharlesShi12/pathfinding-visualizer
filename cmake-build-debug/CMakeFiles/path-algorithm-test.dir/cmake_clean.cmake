@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/path-algorithm-test.dir/src/visualizer/path_algorithm_app.cc.o"
   "CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.o"
   "CMakeFiles/path-algorithm-test.dir/tests/bfs_algorithm_test.cc.o"
+  "CMakeFiles/path-algorithm-test.dir/tests/dfs_algorithm_test.cc.o"
+  "CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.o"
   "CMakeFiles/path-algorithm-test.dir/tests/test_main.cc.o"
   "Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test"
   "Debug/path-algorithm-test/path-algorithm-test.app/Contents/Resources/CinderApp.icns"

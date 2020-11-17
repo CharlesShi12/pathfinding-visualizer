@@ -166,6 +166,12 @@
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/bfs_algorithm_test.cc">
 			<Option target="path-algorithm-test"/>
 		</Unit>
+		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/dfs_algorithm_test.cc">
+			<Option target="path-algorithm-test"/>
+		</Unit>
+		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/graph_test.cc">
+			<Option target="path-algorithm-test"/>
+		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/test_main.cc">
 			<Option target="path-algorithm-test"/>
 		</Unit>

@@ -40,7 +40,7 @@ Graph::Graph(const vector<vector<int>> &board) {
   }
 }
 
-const unordered_map<int, Graph::Node *> &Graph::GetNodes() {
+const unordered_map<size_t, Graph::Node *> &Graph::GetNodes() {
   return nodes_;
 }
 

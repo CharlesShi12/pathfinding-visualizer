@@ -2,7 +2,7 @@
 
 using graph_algorithm::visualizer::PathVisualizerApp;
 
-void prepareSettings(PathVisualizerApp1::Settings* settings) {
+void prepareSettings(PathVisualizerApp::Settings* settings) {
   settings->setResizable(false);
 }
 

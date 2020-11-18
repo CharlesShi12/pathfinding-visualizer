@@ -13,6 +13,9 @@ namespace graph_algorithm {
 using std::vector;
 using std::unordered_map;
 
+/**
+ * This class stores a graph.
+ */
 class Graph {
  public:
   struct Node {
@@ -26,9 +29,32 @@ class Graph {
     }
   };
 
+  /**
+   * Creates a Graph object.
+   *
+   * @param board the board represented as a 2D vector of integers
+   */
   Graph(const vector<vector<int>> &board);
+
+  /**
+   * Returns the nodes from the current Graph.
+   *
+   * @return the nodes from the current Graph
+   */
   const unordered_map<size_t, Node *> &GetNodes();
+
+  /**
+   * Returns the board from the current Graph.
+   *
+   * @return the board from the current Graph
+   */
   const vector<vector<int>> &GetBoard();
+
+  /**
+   * Returns the dimension from the current Graph.
+   *
+   * @return the dimension from the current Graph
+   */
   size_t GetDimension();
 
  private:

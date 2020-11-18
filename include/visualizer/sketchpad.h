@@ -52,10 +52,18 @@ class Sketchpad {
   void HandleBrush(const glm::vec2& brush_screen_coords);
 
   /**
-   * Set all of the sketchpad pixels to an unshaded state.
+   * Set all of the sketchpad pixels to an unshaded state, aside from the start
+   * and end pixels.
    */
   void Clear();
 
+  /**
+   * Runs a graph traversal algorithm (either BFS or DFS) on the current
+   * sketchpad.
+   *
+   * @param isBFS this boolean represents whether the user wants the BFS
+   * algorithm or DFS algorithm to be executed
+   */
   void RunGraphTraversalAlgorithm(bool isBFS);
 
  private:

@@ -9,6 +9,8 @@ namespace graph_algorithm {
 
 namespace visualizer {
 
+using graph_algorithm::visualizer::Sketchpad;
+
 /**
  * Allows a user to draw a digit on a sketchpad and uses Naive Bayes to
  * classify it.
@@ -26,7 +28,7 @@ class NaiveBayesApp : public ci::app::App {
   const size_t kImageDimension = 15;
 
  private:
-  graph_algorithm::visualizer::Sketchpad sketchpad_;
+  Sketchpad sketchpad_;
 };
 
 }  // namespace visualizer

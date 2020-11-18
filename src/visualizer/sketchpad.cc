@@ -17,10 +17,12 @@ Sketchpad::Sketchpad(const vec2& top_left_corner, size_t num_pixels_per_side,
       brush_radius_(brush_radius) {
   current_board_ = vector<vector<int>>(num_pixels_per_side_,
                                        vector<int>(num_pixels_per_side_, 0));
+  // generating a random number from a certain interval
   std::random_device dev;
   std::mt19937 rng(dev());
   std::uniform_int_distribution<std::mt19937::result_type>
       dist(1, num_pixels_per_side_ - 1);
+
   start_row_ = 0;
   start_col_ = 0;
   end_row_ = dist(rng);
@@ -68,6 +70,7 @@ void Sketchpad::HandleBrush(const vec2& brush_screen_coords) {
     for (size_t col = 0; col < num_pixels_per_side_; ++col) {
       vec2 pixel_center = {col + 0.5, row + 0.5};
 
+      // make sure the user is not drawing over the start and end positions
       if (glm::distance(brush_sketchpad_coords, pixel_center) <=
           brush_radius_ && current_board_[row][col] != kStartAndEndNode) {
         current_board_[row][col] = kWall;
@@ -94,6 +97,8 @@ void Sketchpad::RunGraphTraversalAlgorithm(bool isBFS) {
     auto* dfs_algorithm = new dfs::DFS(board_graph);
     current_board_ = dfs_algorithm->RunDFS(end_row_, end_col_);
   }
+
+  // mark the start and end nodes for the user to see
   current_board_[start_row_][start_col_] = kStartAndEndNode;
   current_board_[end_row_][end_col_] = kStartAndEndNode;
 }

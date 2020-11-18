@@ -18,11 +18,14 @@ void DFS::RecursiveDFS(int node, size_t end_row, size_t end_col,
                        vector<bool> &visited_nodes) {
   if (!found_destination_) {
     visited_nodes[node] = true;
+
+    // make sure to stop visiting nodes once we have found the destination node
     if (board_graph_->GetNodes().at(node)->row == end_row
         && board_graph_->GetNodes().at(node)->col == end_col) {
       found_destination_ = true;
 
     } else {
+      // recursively iterate through the current node's adjacent nodes
       for (int i : board_graph_->GetNodes().at(node)->adjacent) {
         if (!visited_nodes[i]) {
           RecursiveDFS(i, end_row, end_col, visited_nodes);
@@ -36,10 +39,14 @@ vector<vector<int>> DFS::RunDFS(size_t end_row, size_t end_col) {
   size_t dimension = board_graph_->GetDimension();
   vector<vector<int>> output_board = board_graph_->GetBoard();
 
+  // keeps track of every node we visit
   vector<bool> visited_nodes = vector<bool>(dimension * dimension, false);
 
+  // run the DFS recursion on the first node (0)
   RecursiveDFS(0, end_row, end_col, visited_nodes);
 
+  // update the output board to show the nodes we've visited from the start to
+  // find the end destination
   for (int i = 0; i < dimension * dimension; i++) {
     if (visited_nodes[i]) {
       Graph::Node *node = board_graph_->GetNodes().at(i);

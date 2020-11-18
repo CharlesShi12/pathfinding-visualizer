@@ -6,7 +6,7 @@
 #define PATH_ALGORITHM_VISUALIZER_BFS_H
 
 #include <vector>
-#include "core/graph.h"
+#include "graph.h"
 
 namespace graph_algorithm {
 

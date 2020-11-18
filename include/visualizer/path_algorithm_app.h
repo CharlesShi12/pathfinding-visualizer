@@ -15,9 +15,9 @@ using graph_algorithm::visualizer::Sketchpad;
  * Allows a user to draw a digit on a sketchpad and uses Naive Bayes to
  * classify it.
  */
-class NaiveBayesApp : public ci::app::App {
+class PathVisualizerApp : public ci::app::App {
  public:
-  NaiveBayesApp();
+  PathVisualizerApp();
   void draw() override;
   void mouseDown(ci::app::MouseEvent event) override;
   void mouseDrag(ci::app::MouseEvent event) override;

@@ -23,7 +23,7 @@ TEST_CASE("Testing the BFS class") {
                                   {2, 1, 1, 1},
                                   {2, 1, 1, 1}};
 
-    Graph *board_graph = new Graph(board);
+    auto *board_graph = new Graph(board);
     BFS *bfs_algorithm = new BFS(board_graph);
 
     REQUIRE(bfs_algorithm->RunBFS(3, 0) == output);
@@ -42,7 +42,7 @@ TEST_CASE("Testing the BFS class") {
                                   {2, 1, 1, 1, 1},
                                   {0, 1, 1, 1, 1}};
 
-    Graph *board_graph = new Graph(board);
+    auto *board_graph = new Graph(board);
     BFS *bfs_algorithm = new BFS(board_graph);
 
     REQUIRE(bfs_algorithm->RunBFS(0, 4) == output);

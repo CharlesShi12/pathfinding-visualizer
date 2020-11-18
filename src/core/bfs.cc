@@ -3,9 +3,9 @@
 //
 
 #include <core/graph.h>
-#include <queue>
 #include <visualizer/sketchpad.h>
-#include "core/bfs.h"
+#include <core/bfs.h>
+#include <queue>
 
 namespace graph_algorithm {
 
@@ -23,7 +23,7 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
   vector<bool> visited_nodes = vector<bool>(dimension * dimension, false);
 
   // create a queue of nodes to visit next
-  std::queue<int> next_nodes;
+  std::queue<size_t> next_nodes;
 
   // push the first node (starting point) to the queue
   size_t first_node = 0;
@@ -40,7 +40,7 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
     }
 
     // push the adjacent nodes of the current node to the queue
-    for (int neighbor : vertex->adjacent) {
+    for (size_t neighbor : vertex->adjacent) {
       if (!visited_nodes[neighbor]) {
         next_nodes.push(neighbor);
       }
@@ -49,7 +49,7 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
 
   // update the output board to show the nodes we've visited from the start to
   // find the end destination
-  for (int i = 0; i < dimension * dimension; i++) {
+  for (size_t i = 0; i < dimension * dimension; i++) {
     if (visited_nodes[i]) {
       Graph::Node *node = board_graph_->GetNodes().at(i);
       output_board[node->row][node->col] = graph_algorithm::kPath;

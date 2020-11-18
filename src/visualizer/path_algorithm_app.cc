@@ -4,13 +4,13 @@ namespace graph_algorithm {
 
 namespace visualizer {
 
-NaiveBayesApp::NaiveBayesApp()
+PathVisualizerApp::PathVisualizerApp()
     : sketchpad_(glm::vec2(kMargin, kMargin), kImageDimension,
                  kWindowSize - 2 * kMargin) {
   ci::app::setWindowSize((int) kWindowSize, (int) kWindowSize);
 }
 
-void NaiveBayesApp::draw() {
+void PathVisualizerApp::draw() {
   ci::Color8u background_color(206, 235, 251);
   ci::gl::clear(background_color);
 
@@ -21,15 +21,15 @@ void NaiveBayesApp::draw() {
       glm::vec2(kWindowSize / 2, kMargin / 2), ci::Color("black"));
 }
 
-void NaiveBayesApp::mouseDown(ci::app::MouseEvent event) {
+void PathVisualizerApp::mouseDown(ci::app::MouseEvent event) {
   sketchpad_.HandleBrush(event.getPos());
 }
 
-void NaiveBayesApp::mouseDrag(ci::app::MouseEvent event) {
+void PathVisualizerApp::mouseDrag(ci::app::MouseEvent event) {
   sketchpad_.HandleBrush(event.getPos());
 }
 
-void NaiveBayesApp::keyDown(ci::app::KeyEvent event) {
+void PathVisualizerApp::keyDown(ci::app::KeyEvent event) {
   switch (event.getCode()) {
     case ci::app::KeyEvent::KEY_1:
       sketchpad_.RunGraphTraversalAlgorithm(true);

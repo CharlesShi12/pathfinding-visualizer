@@ -31,7 +31,7 @@ class DFS {
    * @param visited_nodes a vector that stores the nodes that this algorithm
    * has already visited
    */
-  void RecursiveDFS(int node, size_t end_row, size_t end_col,
+  void RecursiveDFS(size_t node, size_t end_row, size_t end_col,
                     vector<bool> &visited_nodes);
 
  public:

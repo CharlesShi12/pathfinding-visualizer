@@ -14,7 +14,7 @@ TEST_CASE("Testing the Graph class") {
     vector<vector<int>> board = {{0, 0},
                                  {1, 0}};
 
-    Graph *board_graph = new Graph(board);
+    auto *board_graph = new Graph(board);
 
     REQUIRE(board_graph->GetDimension() == 2);
     REQUIRE(board_graph->GetBoard() == board);
@@ -45,7 +45,7 @@ TEST_CASE("Testing the Graph class") {
                                  {0, 0, 1},
                                  {0, 1, 1}};
 
-    Graph *board_graph = new Graph(board);
+    auto *board_graph = new Graph(board);
 
     REQUIRE(board_graph->GetDimension() == 3);
     REQUIRE(board_graph->GetBoard() == board);

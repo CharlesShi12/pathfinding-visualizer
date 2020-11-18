@@ -3,7 +3,7 @@
 //
 
 #include <visualizer/sketchpad.h>
-#include "core/graph.h"
+#include <core/graph.h>
 
 namespace graph_algorithm {
 
@@ -12,8 +12,8 @@ Graph::Graph(const vector<vector<int>> &board) {
   dimension_ = board_.size();
 
   // insert all the new nodes into a map
-  for (int row = 0; row < dimension_; row++) {
-    for (int col = 0; col < dimension_; col++) {
+  for (size_t row = 0; row < dimension_; row++) {
+    for (size_t col = 0; col < dimension_; col++) {
       Node *node = new Node(row, col);
       nodes_.insert({col + row * dimension_, node});
     }
@@ -32,15 +32,16 @@ Graph::Graph(const vector<vector<int>> &board) {
                                          {row + 1, col}, {row + 1, col - 1}};
 
         for (const vector<int> &position : positions) {
-          int row = position[0];
-          int col = position[1];
+          int adjacent_row = position[0];
+          int adjacent_col = position[1];
 
-          // if it is a valid adjacent node and not marked, then add to
+          // if it is a valid adjacent node and not a wall, then add to
           // adjacent list
-          if ((row > -1 && row < dimension_) && (col > -1 && col < dimension_)) {
-            if (board[row][col] != graph_algorithm::kWall) {
-              current_node->adjacent.push_back(col + row * dimension_);
-            }
+          if ((adjacent_row > -1 && adjacent_row < dimension_) &&
+              (adjacent_col > -1 && adjacent_col < dimension_) &&
+              board[adjacent_row][adjacent_col] != graph_algorithm::kWall) {
+              current_node->adjacent.push_back(adjacent_col +
+                                               adjacent_row * dimension_);
           }
         }
       }

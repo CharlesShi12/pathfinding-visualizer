@@ -9,8 +9,10 @@
 
 using std::vector;
 using graph_algorithm::Graph;
-using graph_algorithm::dfs::DFS;
+using graph_algorithm::DFS;
 
+// write tests that check for a path
+// helper function that takes in output; iterate through the board to return true or false to hceck if the path is valid
 TEST_CASE("Testing the DFS class") {
   SECTION("Testing the RunDFS function for a board") {
     vector<vector<int>> board = {{0, 0, 0, 0},

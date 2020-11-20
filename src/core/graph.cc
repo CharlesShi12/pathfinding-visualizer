@@ -15,7 +15,7 @@ Graph::Graph(const vector<vector<int>> &board) {
   for (size_t row = 0; row < dimension_; row++) {
     for (size_t col = 0; col < dimension_; col++) {
       Node *node = new Node(row, col);
-      nodes_.insert({col + row * dimension_, node});
+      nodes_.push_back(node);
     }
   }
 
@@ -49,7 +49,7 @@ Graph::Graph(const vector<vector<int>> &board) {
   }
 }
 
-const unordered_map<size_t, Graph::Node *> &Graph::GetNodes() {
+const vector<Graph::Node *> &Graph::GetNodes() {
   return nodes_;
 }
 

@@ -11,7 +11,6 @@
 namespace graph_algorithm {
 
 using std::vector;
-using std::unordered_map;
 
 /**
  * This class stores a graph.
@@ -41,7 +40,7 @@ class Graph {
    *
    * @return the nodes from the current Graph
    */
-  const unordered_map<size_t, Node *> &GetNodes();
+  const vector<Node *> &GetNodes();
 
   /**
    * Returns the board from the current Graph.
@@ -60,7 +59,7 @@ class Graph {
  private:
   size_t dimension_;
   vector<vector<int>> board_;
-  unordered_map<size_t, Node *> nodes_;
+  vector<Node *> nodes_;
 };
 
 } // namespace graph_algorithm

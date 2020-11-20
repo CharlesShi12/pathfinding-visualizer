@@ -7,8 +7,6 @@
 
 namespace graph_algorithm {
 
-namespace dfs {
-
 DFS::DFS(Graph *board_graph) {
   board_graph_ = board_graph;
   found_destination_ = false;
@@ -55,7 +53,5 @@ vector<vector<int>> DFS::RunDFS(size_t end_row, size_t end_col) {
   }
   return output_board;
 }
-
-} // namespace dfs
 
 } // namespace graph_algorithm

@@ -9,8 +9,6 @@
 
 namespace graph_algorithm {
 
-namespace bfs {
-
 BFS::BFS(Graph *board_graph) {
   board_graph_ = board_graph;
 }
@@ -57,7 +55,5 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
   }
   return output_board;
 }
-
-} // namespace bfs
 
 } // namespace graph_algorithm

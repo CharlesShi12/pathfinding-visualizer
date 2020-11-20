@@ -87,15 +87,15 @@ void Sketchpad::Clear() {
 }
 
 void Sketchpad::RunGraphTraversalAlgorithm(bool isBFS) {
-  auto* board_graph = new Graph(current_board_);
+  Graph board_graph(current_board_);
 
   if (isBFS) {
-    auto* bfs_algorithm = new bfs::BFS(board_graph);
-    current_board_ = bfs_algorithm->RunBFS(end_row_, end_col_);
+    BFS bfs_algorithm(&board_graph);
+    current_board_ = bfs_algorithm.RunBFS(end_row_, end_col_);
 
   } else {
-    auto* dfs_algorithm = new dfs::DFS(board_graph);
-    current_board_ = dfs_algorithm->RunDFS(end_row_, end_col_);
+    DFS dfs_algorithm(&board_graph);
+    current_board_ = dfs_algorithm.RunDFS(end_row_, end_col_);
   }
 
   // mark the start and end nodes for the user to see

@@ -10,8 +10,6 @@
 
 namespace graph_algorithm {
 
-namespace dfs {
-
 using std::vector;
 
 /**
@@ -51,8 +49,6 @@ class DFS {
    */
   vector<vector<int>> RunDFS(size_t end_row, size_t end_col);
 };
-
-} // namespace dfs
 
 } // namespace graph_algorithm
 

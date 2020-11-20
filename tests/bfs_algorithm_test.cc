@@ -9,7 +9,7 @@
 
 using std::vector;
 using graph_algorithm::Graph;
-using graph_algorithm::bfs::BFS;
+using graph_algorithm::BFS;
 
 TEST_CASE("Testing the BFS class") {
   SECTION("Testing the RunBFS function for a 4x4 board") {

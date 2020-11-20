@@ -163,10 +163,7 @@
 			<Option target="path-algorithm-test"/>
 			<Option target="sketchpad-classifier"/>
 		</Unit>
-		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/bfs_algorithm_test.cc">
-			<Option target="path-algorithm-test"/>
-		</Unit>
-		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/dfs_algorithm_test.cc">
+		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/bfs_and_dfs_test.cc">
 			<Option target="path-algorithm-test"/>
 		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/graph_test.cc">

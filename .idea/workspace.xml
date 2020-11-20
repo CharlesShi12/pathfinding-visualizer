@@ -20,8 +20,8 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="path-algorithm-visualizer" targetName="path-algorithm-test" />
       <config projectName="path-algorithm-visualizer" targetName="sketchpad-classifier" />
+      <config projectName="path-algorithm-visualizer" targetName="path-algorithm-test" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -31,18 +31,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6944f33e-0890-4955-9a12-95e7cd2e7b0b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/bfs_and_dfs_test.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/core/dfs.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/core/dfs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/core/graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/core/graph.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graph.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graph.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visualizer/sketchpad.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/visualizer/sketchpad.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/dfs_algorithm_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dfs_algorithm_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/tests/bfs_algorithm_test.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/path-algorithm-test.dir/tests/dfs_algorithm_test.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/catch2-src" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/catch2-src" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/path-algorithm-visualizer.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/path-algorithm-visualizer.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/bfs_algorithm_test.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/dfs_algorithm_test.cc" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,20 +92,25 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.sketchpad-classifier">
-    <configuration name="Testing the BFS class" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path-algorithm-visualizer" TARGET_NAME="path-algorithm-test" RUN_TARGET_PROJECT_NAME="path-algorithm-visualizer" RUN_TARGET_NAME="path-algorithm-test" TEST_METHOD="Testing the BFS class" TEST_MODE="SUITE_TEST">
+  <component name="RunManager" selected="Catch.path-algorithm-test">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testing the BFS class" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path-algorithm-visualizer" TARGET_NAME="path-algorithm-test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="path-algorithm-visualizer" RUN_TARGET_NAME="path-algorithm-test" TEST_METHOD="Testing the BFS class" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Testing the DFS class" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path-algorithm-visualizer" TARGET_NAME="path-algorithm-test" RUN_TARGET_PROJECT_NAME="path-algorithm-visualizer" RUN_TARGET_NAME="path-algorithm-test" TEST_METHOD="Testing the DFS class" TEST_MODE="SUITE_TEST">
+    <configuration name="Testing the DFS class" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path-algorithm-visualizer" TARGET_NAME="path-algorithm-test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="path-algorithm-visualizer" RUN_TARGET_NAME="path-algorithm-test" TEST_METHOD="Testing the DFS class" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Testing the Graph class" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path-algorithm-visualizer" TARGET_NAME="path-algorithm-test" RUN_TARGET_PROJECT_NAME="path-algorithm-visualizer" RUN_TARGET_NAME="path-algorithm-test" TEST_METHOD="Testing the Graph class" TEST_MODE="SUITE_TEST">
+    <configuration name="Testing the Graph class" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path-algorithm-visualizer" TARGET_NAME="path-algorithm-test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="path-algorithm-visualizer" RUN_TARGET_NAME="path-algorithm-test" TEST_METHOD="Testing the Graph class" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -105,6 +120,11 @@
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="sketchpad-classifier" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path-algorithm-visualizer" TARGET_NAME="sketchpad-classifier" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="path-algorithm-visualizer" RUN_TARGET_NAME="sketchpad-classifier">
@@ -143,7 +163,8 @@
       <workItem from="1605646676839" duration="124000" />
       <workItem from="1605646845922" duration="6539000" />
       <workItem from="1605667588912" duration="5952000" />
-      <workItem from="1605730096915" duration="3374000" />
+      <workItem from="1605730096915" duration="5059000" />
+      <workItem from="1605909693306" duration="253000" />
     </task>
     <servers />
   </component>
@@ -170,10 +191,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1605644076422" />
-    <state width="1398" height="194" key="GridCell.Tab.0.bottom" timestamp="1605905959186">
+    <state width="1878" height="242" key="GridCell.Tab.0.bottom" timestamp="1605908909654">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="243" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605673457010" />
+    <state width="1878" height="242" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605908909654" />
     <state width="1398" height="194" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605896583481" />
     <state width="1398" height="194" key="GridCell.Tab.0.bottom/0.23.1440.813/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605905959186" />
     <state width="1398" height="166" key="GridCell.Tab.0.bottom/0.23.1440.813/1440.23.1920.993@1440.23.1920.993" timestamp="1605654284671" />
@@ -182,10 +203,10 @@
     <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.23.1440.815@0.23.1440.815" timestamp="1605560783940" />
     <state width="1398" height="260" key="GridCell.Tab.0.bottom/0.23.1440.817/1440.23.1920.1057@1440.23.1920.1057" timestamp="1605402438561" />
     <state width="1398" height="166" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.23.1920.993@1440.23.1920.993" timestamp="1605654076498" />
-    <state width="1398" height="194" key="GridCell.Tab.0.center" timestamp="1605905959183">
+    <state width="1878" height="242" key="GridCell.Tab.0.center" timestamp="1605908909652">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="243" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605673457006" />
+    <state width="1878" height="242" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605908909652" />
     <state width="1398" height="194" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605896583478" />
     <state width="1398" height="194" key="GridCell.Tab.0.center/0.23.1440.813/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605905959183" />
     <state width="1398" height="166" key="GridCell.Tab.0.center/0.23.1440.813/1440.23.1920.993@1440.23.1920.993" timestamp="1605654284670" />
@@ -194,10 +215,10 @@
     <state width="1398" height="244" key="GridCell.Tab.0.center/0.23.1440.815@0.23.1440.815" timestamp="1605560783937" />
     <state width="1398" height="260" key="GridCell.Tab.0.center/0.23.1440.817/1440.23.1920.1057@1440.23.1920.1057" timestamp="1605402438560" />
     <state width="1398" height="166" key="GridCell.Tab.0.center/0.23.1440.877/1440.23.1920.993@1440.23.1920.993" timestamp="1605654076496" />
-    <state width="1398" height="194" key="GridCell.Tab.0.left" timestamp="1605905959180">
+    <state width="1878" height="242" key="GridCell.Tab.0.left" timestamp="1605908909651">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="243" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605673457004" />
+    <state width="1878" height="242" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605908909651" />
     <state width="1398" height="194" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605896583477" />
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.23.1440.815" timestamp="1605493159338" />
     <state width="1398" height="194" key="GridCell.Tab.0.left/0.23.1440.813/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605905959180" />
@@ -207,10 +228,10 @@
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.23.1440.815@0.23.1440.815" timestamp="1605560783936" />
     <state width="1398" height="260" key="GridCell.Tab.0.left/0.23.1440.817/1440.23.1920.1057@1440.23.1920.1057" timestamp="1605402438560" />
     <state width="1398" height="166" key="GridCell.Tab.0.left/0.23.1440.877/1440.23.1920.993@1440.23.1920.993" timestamp="1605654076495" />
-    <state width="1398" height="194" key="GridCell.Tab.0.right" timestamp="1605905959185">
+    <state width="1878" height="242" key="GridCell.Tab.0.right" timestamp="1605908909653">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="243" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605673457009" />
+    <state width="1878" height="242" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605908909653" />
     <state width="1398" height="194" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605896583479" />
     <state width="1398" height="194" key="GridCell.Tab.0.right/0.23.1440.813/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605905959185" />
     <state width="1398" height="166" key="GridCell.Tab.0.right/0.23.1440.813/1440.23.1920.993@1440.23.1920.993" timestamp="1605654284670" />

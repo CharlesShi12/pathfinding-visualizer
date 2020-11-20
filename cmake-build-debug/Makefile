@@ -333,59 +333,32 @@ src/visualizer/sketchpad.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.s
 .PHONY : src/visualizer/sketchpad.cc.s
 
-tests/bfs_algorithm_test.o: tests/bfs_algorithm_test.cc.o
+tests/bfs_and_dfs_test.o: tests/bfs_and_dfs_test.cc.o
 
-.PHONY : tests/bfs_algorithm_test.o
-
-# target to build an object file
-tests/bfs_algorithm_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bfs_algorithm_test.cc.o
-.PHONY : tests/bfs_algorithm_test.cc.o
-
-tests/bfs_algorithm_test.i: tests/bfs_algorithm_test.cc.i
-
-.PHONY : tests/bfs_algorithm_test.i
-
-# target to preprocess a source file
-tests/bfs_algorithm_test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bfs_algorithm_test.cc.i
-.PHONY : tests/bfs_algorithm_test.cc.i
-
-tests/bfs_algorithm_test.s: tests/bfs_algorithm_test.cc.s
-
-.PHONY : tests/bfs_algorithm_test.s
-
-# target to generate assembly for a file
-tests/bfs_algorithm_test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bfs_algorithm_test.cc.s
-.PHONY : tests/bfs_algorithm_test.cc.s
-
-tests/dfs_algorithm_test.o: tests/dfs_algorithm_test.cc.o
-
-.PHONY : tests/dfs_algorithm_test.o
+.PHONY : tests/bfs_and_dfs_test.o
 
 # target to build an object file
-tests/dfs_algorithm_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/dfs_algorithm_test.cc.o
-.PHONY : tests/dfs_algorithm_test.cc.o
+tests/bfs_and_dfs_test.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.o
+.PHONY : tests/bfs_and_dfs_test.cc.o
 
-tests/dfs_algorithm_test.i: tests/dfs_algorithm_test.cc.i
+tests/bfs_and_dfs_test.i: tests/bfs_and_dfs_test.cc.i
 
-.PHONY : tests/dfs_algorithm_test.i
+.PHONY : tests/bfs_and_dfs_test.i
 
 # target to preprocess a source file
-tests/dfs_algorithm_test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/dfs_algorithm_test.cc.i
-.PHONY : tests/dfs_algorithm_test.cc.i
+tests/bfs_and_dfs_test.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.i
+.PHONY : tests/bfs_and_dfs_test.cc.i
 
-tests/dfs_algorithm_test.s: tests/dfs_algorithm_test.cc.s
+tests/bfs_and_dfs_test.s: tests/bfs_and_dfs_test.cc.s
 
-.PHONY : tests/dfs_algorithm_test.s
+.PHONY : tests/bfs_and_dfs_test.s
 
 # target to generate assembly for a file
-tests/dfs_algorithm_test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/dfs_algorithm_test.cc.s
-.PHONY : tests/dfs_algorithm_test.cc.s
+tests/bfs_and_dfs_test.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.s
+.PHONY : tests/bfs_and_dfs_test.cc.s
 
 tests/graph_test.o: tests/graph_test.cc.o
 
@@ -469,12 +442,9 @@ help:
 	@echo "... src/visualizer/sketchpad.o"
 	@echo "... src/visualizer/sketchpad.i"
 	@echo "... src/visualizer/sketchpad.s"
-	@echo "... tests/bfs_algorithm_test.o"
-	@echo "... tests/bfs_algorithm_test.i"
-	@echo "... tests/bfs_algorithm_test.s"
-	@echo "... tests/dfs_algorithm_test.o"
-	@echo "... tests/dfs_algorithm_test.i"
-	@echo "... tests/dfs_algorithm_test.s"
+	@echo "... tests/bfs_and_dfs_test.o"
+	@echo "... tests/bfs_and_dfs_test.i"
+	@echo "... tests/bfs_and_dfs_test.s"
 	@echo "... tests/graph_test.o"
 	@echo "... tests/graph_test.i"
 	@echo "... tests/graph_test.s"

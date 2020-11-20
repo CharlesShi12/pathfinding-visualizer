@@ -4290,15 +4290,11 @@ CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.o: /Users/charles
 CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.o: /Users/charlesshi/Downloads/Cinder/include/glm/vector_relational.hpp
 CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.o: ../src/visualizer/sketchpad.cc
 
-CMakeFiles/path-algorithm-test.dir/tests/bfs_algorithm_test.cc.o: ../include/core/bfs.h
-CMakeFiles/path-algorithm-test.dir/tests/bfs_algorithm_test.cc.o: ../include/core/graph.h
-CMakeFiles/path-algorithm-test.dir/tests/bfs_algorithm_test.cc.o: ../tests/bfs_algorithm_test.cc
-CMakeFiles/path-algorithm-test.dir/tests/bfs_algorithm_test.cc.o: _deps/catch2-src/single_include/catch2/catch.hpp
-
-CMakeFiles/path-algorithm-test.dir/tests/dfs_algorithm_test.cc.o: ../include/core/dfs.h
-CMakeFiles/path-algorithm-test.dir/tests/dfs_algorithm_test.cc.o: ../include/core/graph.h
-CMakeFiles/path-algorithm-test.dir/tests/dfs_algorithm_test.cc.o: ../tests/dfs_algorithm_test.cc
-CMakeFiles/path-algorithm-test.dir/tests/dfs_algorithm_test.cc.o: _deps/catch2-src/single_include/catch2/catch.hpp
+CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.o: ../include/core/bfs.h
+CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.o: ../include/core/dfs.h
+CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.o: ../include/core/graph.h
+CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.o: ../tests/bfs_and_dfs_test.cc
+CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.o: _deps/catch2-src/single_include/catch2/catch.hpp
 
 CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.o: ../include/core/graph.h
 CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.o: ../tests/graph_test.cc

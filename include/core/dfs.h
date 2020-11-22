@@ -32,7 +32,6 @@ class DFS {
    */
   void RecursiveDFS(size_t node_index, size_t end_row, size_t end_col,
                          vector<bool> &visited_nodes);
-//  vector<Graph::Node *> LocatePath(const vector<vector<int>> &board_graph);
 
  public:
   /**

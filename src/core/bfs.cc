@@ -23,7 +23,8 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
   // create a queue of nodes to visit next
   std::queue<size_t> next_nodes;
 
-  // push the first node (starting point) to the queue
+  // push the first node (starting point) to the queue and set starting distance
+  // to 0
   size_t first_node = 0;
   next_nodes.push(first_node);
   Graph::Node *start = board_graph_->GetNodes().at(first_node);
@@ -58,22 +59,32 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
     }
   }
 
-  vector<Graph::Node *> path;
+  // draw the final shortest path for the BFS
+  vector<Graph::Node *> shortest_path;
   Graph::Node *node = board_graph_->GetNodes().at(end_row * dimension + end_col);
 
+  // retrace our steps from the end destination until we reach the starting
+  // node (row 0, col 0)
   while (node->row != 0 || node->col != 0) {
-    path.push_back(node);
+    shortest_path.push_back(node);
+
     for (size_t neighbor : node->adjacent) {
       Graph::Node *adjacent = board_graph_->GetNodes().at(neighbor);
-      if (adjacent->distance != INFINITY && adjacent->distance == node->distance - 1) {
+
+      if (adjacent->distance != INFINITY &&
+          adjacent->distance == node->distance - 1) {
         node = adjacent;
         break;
       }
     }
   }
-  path.push_back(node);
 
-  for (Graph::Node *final_path : path) {
+  // push back the start node
+  shortest_path.push_back(node);
+
+  // update the output board to show the nodes we've visited in our final
+  // shortest path
+  for (Graph::Node *final_path : shortest_path) {
     output_board[final_path->row][final_path->col] = kPath;
   }
 

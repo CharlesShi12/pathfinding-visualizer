@@ -29,7 +29,8 @@ class BFS {
   BFS(Graph *board_graph);
 
   /**
-   * Runs the Breadth First Search.
+   * Runs the Breadth First Search and outputs the shortest path from the start
+   * destination to end destination.
    *
    * @param end_row the row coordinate of the end destination
    * @param end_col the column coordinate of the end destination

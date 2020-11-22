@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/core/bfs.h
-vector
--
-graph.h
-../include/core/graph.h
-
 ../include/core/dfs.h
 vector
 -
@@ -7834,13 +7828,9 @@ detail/setup.hpp
 detail/func_vector_relational.inl
 /Users/charlesshi/Downloads/Cinder/include/glm/detail/func_vector_relational.inl
 
-/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/visualizer/sketchpad.cc
+/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/dfs.cc
 visualizer/sketchpad.h
 -
-core/bfs.h
--
 core/dfs.h
--
-random
 -
 

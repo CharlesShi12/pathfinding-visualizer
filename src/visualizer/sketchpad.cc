@@ -44,7 +44,7 @@ void Sketchpad::Draw() const {
         ci::gl::color(ci::Color8u(21, 52, 80));
 
       } else if (current_board_[row][col] == kPath) {
-        ci::gl::color(ci::Color8u(127, 23, 31gi));
+        ci::gl::color(ci::Color8u(127, 23, 31));
 
       } else {
         ci::gl::color(ci::Color8u(240, 236, 235));

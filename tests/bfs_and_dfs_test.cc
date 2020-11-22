@@ -72,10 +72,10 @@ TEST_CASE("Testing the BFS and DFS class") {
 
     // make sure that the start and end nodes are marked and also that the
     // final path traverses only the nodes that are reachable and not walls
-    vector<vector<int>> bfs_output = {{2, 2, 2, 2},
-                                      {2, 1, 1, 1},
-                                      {2, 1, 1, 1},
-                                      {2, 1, 1, 1}};
+    vector<vector<int>> bfs_output = {{4, 2, 2, 2},
+                                      {4, 1, 1, 1},
+                                      {4, 1, 1, 1},
+                                      {4, 1, 1, 1}};
 
     vector<vector<int>> dfs_output = {{2, 2, 2, 2},
                                       {2, 1, 1, 1},
@@ -101,7 +101,7 @@ TEST_CASE("Testing the BFS and DFS class") {
 
     // make sure that the start and end nodes are marked and also that the
     // final path traverses only the nodes that are reachable and not walls
-    vector<vector<int>> bfs_output = {{2, 2, 2, 2, 2},
+    vector<vector<int>> bfs_output = {{4, 4, 4, 4, 4},
                                       {2, 1, 1, 1, 1},
                                       {2, 1, 1, 1, 1},
                                       {2, 1, 1, 1, 1},
@@ -125,24 +125,24 @@ TEST_CASE("Testing the BFS and DFS class") {
   SECTION("Testing the RunBFS and RunDFS function for a board with one possible "
           "valid path and one node that is unreachable") {
     vector<vector<int>> board = {{0, 1, 1, 1, 0},
-                                 {1, 0, 1, 1, 1},
-                                 {1, 1, 0, 1, 1},
-                                 {1, 1, 1, 0, 1},
-                                 {1, 1, 1, 1, 0}};
+                                 {0, 1, 1, 1, 1},
+                                 {0, 1, 1, 1, 1},
+                                 {0, 1, 1, 1, 1},
+                                 {0, 0, 0, 0, 0}};
 
     // the node at row 0 and column 4 should never be traversed in either one
     // of the DFS and BFS paths
-    vector<vector<int>> bfs_output = {{2, 1, 1, 1, 0},
-                                      {1, 2, 1, 1, 1},
-                                      {1, 1, 2, 1, 1},
-                                      {1, 1, 1, 2, 1},
-                                      {1, 1, 1, 1, 2}};
+    vector<vector<int>> bfs_output = {{4, 1, 1, 1, 0},
+                                      {4, 1, 1, 1, 1},
+                                      {4, 1, 1, 1, 1},
+                                      {4, 1, 1, 1, 1},
+                                      {4, 4, 4, 4, 4}};
 
     vector<vector<int>> dfs_output = {{2, 1, 1, 1, 0},
-                                      {1, 2, 1, 1, 1},
-                                      {1, 1, 2, 1, 1},
-                                      {1, 1, 1, 2, 1},
-                                      {1, 1, 1, 1, 2}};
+                                      {2, 1, 1, 1, 1},
+                                      {2, 1, 1, 1, 1},
+                                      {2, 1, 1, 1, 1},
+                                      {2, 2, 2, 2, 2}};
 
     Graph board_graph(board);
 
@@ -153,7 +153,7 @@ TEST_CASE("Testing the BFS and DFS class") {
     REQUIRE(dfs_algorithm.RunDFS(4, 4) == dfs_output);
   }
 
-  SECTION("Testing the RunBFS and RunDFS function for a board with multiple "
+  SECTION("Testing the RunBFS and RunDFS function for a board with multiple"
           "possible valid paths and one node that is unreachable") {
     vector<vector<int>> board = {{0, 0, 0, 0, 0},
                                  {0, 1, 1, 1, 0},
@@ -163,11 +163,11 @@ TEST_CASE("Testing the BFS and DFS class") {
 
     // the node at row 2 and column 2 should never be traversed in either one
     // of the DFS and BFS paths
-    vector<vector<int>> bfs_output = {{2, 2, 2, 2, 2},
-                                      {2, 1, 1, 1, 2},
-                                      {2, 1, 0, 1, 2},
-                                      {2, 1, 1, 1, 2},
-                                      {2, 2, 2, 2, 2}};
+    vector<vector<int>> bfs_output = {{4, 4, 4, 4, 4},
+                                      {2, 1, 1, 1, 4},
+                                      {2, 1, 0, 1, 4},
+                                      {2, 1, 1, 1, 4},
+                                      {2, 2, 2, 2, 4}};
 
     vector<vector<int>> dfs_output = {{2, 2, 2, 2, 2},
                                       {0, 1, 1, 1, 2},
@@ -184,7 +184,7 @@ TEST_CASE("Testing the BFS and DFS class") {
     REQUIRE(dfs_algorithm.RunDFS(4, 4) == dfs_output);
   }
 
-  SECTION("Testing the RunBFS and RunDFS function for a board with one possible "
+  SECTION("Testing the RunBFS and RunDFS function for a board with one possible"
           "valid path and multiple nodes that are unreachable") {
     vector<vector<int>> board = {{0, 0, 0, 0, 0},
                                  {1, 1, 1, 1, 0},
@@ -192,11 +192,11 @@ TEST_CASE("Testing the BFS and DFS class") {
                                  {1, 0, 0, 1, 0},
                                  {1, 1, 1, 1, 0}};
 
-    vector<vector<int>> bfs_output = {{2, 2, 2, 2, 2},
-                                      {1, 1, 1, 1, 2},
-                                      {1, 0, 0, 1, 2},
-                                      {1, 0, 0, 1, 2},
-                                      {1, 1, 1, 1, 2}};
+    vector<vector<int>> bfs_output = {{4, 4, 4, 4, 4},
+                                      {1, 1, 1, 1, 4},
+                                      {1, 0, 0, 1, 4},
+                                      {1, 0, 0, 1, 4},
+                                      {1, 1, 1, 1, 4}};
 
     vector<vector<int>> dfs_output = {{2, 2, 2, 2, 2},
                                       {1, 1, 1, 1, 2},
@@ -221,17 +221,17 @@ TEST_CASE("Testing the BFS and DFS class") {
                                  {0, 0, 1, 0, 0},
                                  {0, 0, 1, 0, 0}};
 
-    vector<vector<int>> bfs_output = {{2, 2, 2, 2, 2},
+    vector<vector<int>> bfs_output = {{4, 4, 4, 4, 4},
+                                      {2, 2, 2, 2, 4},
+                                      {1, 1, 1, 2, 4},
+                                      {0, 0, 1, 2, 4},
+                                      {0, 0, 1, 2, 4}};
+
+    vector<vector<int>> dfs_output = {{2, 2, 2, 2, 2},
                                       {2, 2, 2, 2, 2},
                                       {1, 1, 1, 2, 2},
                                       {0, 0, 1, 2, 2},
-                                      {0, 0, 1, 0, 2}};
-
-    vector<vector<int>> dfs_output = {{2, 2, 2, 2, 2},
-                                      {0, 2, 2, 2, 2},
-                                      {1, 1, 1, 2, 2},
-                                      {0, 0, 1, 2, 2},
-                                      {0, 0, 1, 0, 2}};
+                                      {0, 0, 1, 2, 2}};
 
     Graph board_graph(board);
 

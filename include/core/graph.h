@@ -21,11 +21,12 @@ class Graph {
     int row;
     int col;
     vector<int> adjacent;
-    float distance = INFINITY;
+    float distance;
 
     Node(int row_coordinate, int col_coordinate) {
       row = row_coordinate;
       col = col_coordinate;
+      distance = INFINITY;
     }
   };
 

@@ -26,6 +26,8 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
   // push the first node (starting point) to the queue
   size_t first_node = 0;
   next_nodes.push(first_node);
+  Graph::Node *start = board_graph_->GetNodes().at(first_node);
+  start->distance = 0;
 
   while (!next_nodes.empty()) {
     Graph::Node *vertex = board_graph_->GetNodes().at(next_nodes.front());
@@ -41,6 +43,8 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
     for (size_t neighbor : vertex->adjacent) {
       if (!visited_nodes[neighbor]) {
         next_nodes.push(neighbor);
+        Graph::Node *adjacent = board_graph_->GetNodes().at(neighbor);
+        adjacent->distance = vertex->distance + 1;
       }
     }
   }
@@ -50,9 +54,29 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
   for (size_t i = 0; i < dimension * dimension; i++) {
     if (visited_nodes[i]) {
       Graph::Node *node = board_graph_->GetNodes().at(i);
-      output_board[node->row][node->col] = graph_algorithm::kPath;
+      output_board[node->row][node->col] = graph_algorithm::kTraversedNodes;
     }
   }
+
+  vector<Graph::Node *> path;
+  Graph::Node *node = board_graph_->GetNodes().at(end_row * dimension + end_col);
+
+  while (node->row != 0 || node->col != 0) {
+    path.push_back(node);
+    for (size_t neighbor : node->adjacent) {
+      Graph::Node *adjacent = board_graph_->GetNodes().at(neighbor);
+      if (adjacent->distance != INFINITY && adjacent->distance == node->distance - 1) {
+        node = adjacent;
+        break;
+      }
+    }
+  }
+  path.push_back(node);
+
+  for (Graph::Node *final_path : path) {
+    output_board[final_path->row][final_path->col] = kPath;
+  }
+
   return output_board;
 }
 

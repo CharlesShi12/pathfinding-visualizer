@@ -8,8 +8,9 @@ namespace graph_algorithm {
 using std::vector;
 
 constexpr size_t kWall = 1;
-constexpr size_t kPath = 2;
+constexpr size_t kTraversedNodes = 2;
 constexpr size_t kStartAndEndNode = 3;
+constexpr size_t kPath = 4;
 
 namespace visualizer {
 

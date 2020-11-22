@@ -37,14 +37,17 @@ void Sketchpad::Draw() const {
       if (current_board_[row][col] == kWall) {
         ci::gl::color(ci::Color("black"));
 
-      } else if (current_board_[row][col] == kPath) {
-        ci::gl::color(ci::Color("gray"));
+      } else if (current_board_[row][col] == kTraversedNodes) {
+        ci::gl::color(ci::Color8u(108, 116, 118));
 
       } else if (current_board_[row][col] == kStartAndEndNode) {
-        ci::gl::color(ci::Color("blue"));
+        ci::gl::color(ci::Color8u(21, 52, 80));
+
+      } else if (current_board_[row][col] == kPath) {
+        ci::gl::color(ci::Color8u(127, 23, 31gi));
 
       } else {
-        ci::gl::color(ci::Color("white"));
+        ci::gl::color(ci::Color8u(240, 236, 235));
       }
 
       vec2 pixel_top_left = top_left_corner_ + vec2(col * pixel_side_length_,

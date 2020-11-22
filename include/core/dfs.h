@@ -19,6 +19,7 @@ class DFS {
  private:
   Graph *board_graph_;
   bool found_destination_;
+  vector<Graph::Node *> path_;
 
   /**
    * Recursive helper method that helps run the Depth First Search algorithm.
@@ -29,8 +30,9 @@ class DFS {
    * @param visited_nodes a vector that stores the nodes that this algorithm
    * has already visited
    */
-  void RecursiveDFS(size_t node, size_t end_row, size_t end_col,
-                    vector<bool> &visited_nodes);
+  void RecursiveDFS(size_t node_index, size_t end_row, size_t end_col,
+                         vector<bool> &visited_nodes);
+//  vector<Graph::Node *> LocatePath(const vector<vector<int>> &board_graph);
 
  public:
   /**

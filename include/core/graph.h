@@ -21,6 +21,7 @@ class Graph {
     int row;
     int col;
     vector<int> adjacent;
+    float distance = INFINITY;
 
     Node(int row_coordinate, int col_coordinate) {
       row = row_coordinate;

@@ -26,10 +26,8 @@ Graph::Graph(const vector<vector<int>> &board) {
 
       if (board[row][col] != graph_algorithm::kWall) {
         // all of the possible positions the node is adjacent to
-        vector<vector<int>> positions = {{row - 1, col - 1}, {row - 1, col},
-                                         {row, col - 1}, {row + 1, col + 1},
-                                         {row - 1, col + 1}, {row, col + 1},
-                                         {row + 1, col}, {row + 1, col - 1}};
+        vector<vector<int>> positions = {{row - 1, col}, {row, col - 1},
+                                         {row, col + 1}, {row + 1, col}};
 
         for (const vector<int> &position : positions) {
           int adjacent_row = position[0];

@@ -7,6 +7,8 @@
 #include <core/bfs.h>
 #include <queue>
 
+//TODO: Ask if I should split the functions into a "Draw BFS" function (lines 56-92)
+
 namespace graph_algorithm {
 
 BFS::BFS(Graph *board_graph) {

@@ -7,6 +7,8 @@
 #include <map>
 #include <visualizer/sketchpad.h>
 
+//TODO: Ask if I should split the functions into a "Draw A*" function (lines 93-105)
+
 namespace graph_algorithm {
 
 using std::priority_queue;
@@ -66,13 +68,14 @@ vector<vector<int>> AStar::RunAStar(int end_row, int end_col) {
     }
 
     for (size_t neighbor : current_node->adjacent) {
-      // compute the g cost for the neighbor nodes
-      double neighbor_cost = cost[current_node_index] + 1;
+      // only add the node if it hasn't been traversed
+      if (!visited_nodes[neighbor]) {
+        // compute the g cost for the neighbor node
+        double neighbor_cost = cost[current_node_index] + 1;
 
-      // check if the neighbor has been visited or if the current node has a
-      // smaller g cost than the previous nodes
-      if (cost[neighbor] == 0.0 || neighbor_cost < cost[neighbor]) {
+        // update the path so that we can backtrack from the end to start
         path[neighbor] = current_node_index;
+
         Graph::Node *neighbor_node = nodes.at(neighbor);
         cost[neighbor] = neighbor_cost;
 

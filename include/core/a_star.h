@@ -13,7 +13,7 @@ namespace graph_algorithm {
 class AStar {
  private:
   Graph *board_graph_;
-  double Distance(Graph::Node *start, int end_row, int end_col);
+  double Distance(int start_row, int start_col, int end_row, int end_col);
 
  public:
   AStar(Graph *board_graph);

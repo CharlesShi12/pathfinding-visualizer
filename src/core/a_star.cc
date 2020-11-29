@@ -72,6 +72,12 @@ vector<vector<int>> AStar::RunAStar(int end_row, int end_col) {
   }
 
 
+  while(end_node != 0) {
+    Graph::Node *node = board_graph_->GetNodes().at(end_node);
+    output_board[node->row][node->col] = graph_algorithm::kPath;
+    end_node = path[end_node];
+  }
+
   return output_board;
 
 }

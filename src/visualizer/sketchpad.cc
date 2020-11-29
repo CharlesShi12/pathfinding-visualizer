@@ -2,12 +2,14 @@
 #include <core/bfs.h>
 #include <core/dfs.h>
 #include <random>
+#include <core/a_star.h>
 
 namespace graph_algorithm {
 
 namespace visualizer {
 
 using glm::vec2;
+using std::string;
 
 Sketchpad::Sketchpad(const vec2& top_left_corner, size_t num_pixels_per_side,
                      double sketchpad_size, double brush_radius)
@@ -89,16 +91,20 @@ void Sketchpad::Clear() {
   current_board_[end_row_][end_col_] = kStartAndEndNode;
 }
 
-void Sketchpad::RunGraphTraversalAlgorithm(bool isBFS) {
+void Sketchpad::RunGraphTraversalAlgorithm(const string &algorithm) {
   Graph board_graph(current_board_);
 
-  if (isBFS) {
+  if (algorithm == "BFS") {
     BFS bfs_algorithm(&board_graph);
     current_board_ = bfs_algorithm.RunBFS(end_row_, end_col_);
 
-  } else {
+  } else if (algorithm == "DFS"){
     DFS dfs_algorithm(&board_graph);
     current_board_ = dfs_algorithm.RunDFS(end_row_, end_col_);
+
+  } else {
+    AStar a_star_algorithm(&board_graph);
+    current_board_ = a_star_algorithm.RunAStar(end_row_, end_col_);
   }
 
   // mark the start and end nodes for the user to see

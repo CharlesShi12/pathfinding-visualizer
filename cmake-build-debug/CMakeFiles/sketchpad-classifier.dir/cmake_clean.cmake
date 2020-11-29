@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.o"
+  "CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o"
   "CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o"
   "CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o"
   "CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.o"

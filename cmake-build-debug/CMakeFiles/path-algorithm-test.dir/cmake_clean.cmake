@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/path-algorithm-test.dir/src/core/a_star.cc.o"
   "CMakeFiles/path-algorithm-test.dir/src/core/bfs.cc.o"
   "CMakeFiles/path-algorithm-test.dir/src/core/dfs.cc.o"
   "CMakeFiles/path-algorithm-test.dir/src/core/graph.cc.o"

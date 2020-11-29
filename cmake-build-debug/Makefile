@@ -183,6 +183,36 @@ apps/cinder_app_main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.s
 .PHONY : apps/cinder_app_main.cc.s
 
+src/core/a_star.o: src/core/a_star.cc.o
+
+.PHONY : src/core/a_star.o
+
+# target to build an object file
+src/core/a_star.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/a_star.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o
+.PHONY : src/core/a_star.cc.o
+
+src/core/a_star.i: src/core/a_star.cc.i
+
+.PHONY : src/core/a_star.i
+
+# target to preprocess a source file
+src/core/a_star.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/a_star.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.i
+.PHONY : src/core/a_star.cc.i
+
+src/core/a_star.s: src/core/a_star.cc.s
+
+.PHONY : src/core/a_star.s
+
+# target to generate assembly for a file
+src/core/a_star.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/a_star.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.s
+.PHONY : src/core/a_star.cc.s
+
 src/core/bfs.o: src/core/bfs.cc.o
 
 .PHONY : src/core/bfs.o
@@ -427,6 +457,9 @@ help:
 	@echo "... apps/cinder_app_main.o"
 	@echo "... apps/cinder_app_main.i"
 	@echo "... apps/cinder_app_main.s"
+	@echo "... src/core/a_star.o"
+	@echo "... src/core/a_star.i"
+	@echo "... src/core/a_star.s"
 	@echo "... src/core/bfs.o"
 	@echo "... src/core/bfs.i"
 	@echo "... src/core/bfs.s"

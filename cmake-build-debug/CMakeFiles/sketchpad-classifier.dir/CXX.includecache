@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../include/core/dfs.h
-vector
--
+../include/core/a_star.h
 graph.h
 ../include/core/graph.h
+queue
+-
 
 ../include/core/graph.h
 vector
@@ -7828,9 +7828,13 @@ detail/setup.hpp
 detail/func_vector_relational.inl
 /Users/charlesshi/Downloads/Cinder/include/glm/detail/func_vector_relational.inl
 
-/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/dfs.cc
-visualizer/sketchpad.h
+/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/a_star.cc
+core/a_star.h
+/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/core/a_star.h
+queue
 -
-core/dfs.h
+map
+-
+visualizer/sketchpad.h
 -
 

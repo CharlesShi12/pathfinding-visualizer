@@ -143,6 +143,10 @@
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/apps/cinder_app_main.cc">
 			<Option target="sketchpad-classifier"/>
 		</Unit>
+		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/a_star.cc">
+			<Option target="path-algorithm-test"/>
+			<Option target="sketchpad-classifier"/>
+		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bfs.cc">
 			<Option target="path-algorithm-test"/>
 			<Option target="sketchpad-classifier"/>

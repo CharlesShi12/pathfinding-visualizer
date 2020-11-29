@@ -17,7 +17,7 @@ void PathVisualizerApp::draw() {
   sketchpad_.Draw();
 
   ci::gl::drawStringCentered(
-      "Press Delete to clear. Press 1 to run BFS. Press 2 to run DPS.",
+      "Press Delete to clear. Press 1 to run BFS. Press 2 to run DFS.",
       glm::vec2(kWindowSize / 2, kMargin / 2), ci::Color("black"));
 }
 
@@ -32,12 +32,17 @@ void PathVisualizerApp::mouseDrag(ci::app::MouseEvent event) {
 void PathVisualizerApp::keyDown(ci::app::KeyEvent event) {
   switch (event.getCode()) {
     case ci::app::KeyEvent::KEY_1:
-      sketchpad_.RunGraphTraversalAlgorithm(true);
+      sketchpad_.RunGraphTraversalAlgorithm("BFS");
       sketchpad_.Draw();
       break;
 
     case ci::app::KeyEvent::KEY_2:
-      sketchpad_.RunGraphTraversalAlgorithm(false);
+      sketchpad_.RunGraphTraversalAlgorithm("DFS");
+      sketchpad_.Draw();
+      break;
+
+    case ci::app::KeyEvent::KEY_3:
+      sketchpad_.RunGraphTraversalAlgorithm("AStar");
       sketchpad_.Draw();
       break;
 

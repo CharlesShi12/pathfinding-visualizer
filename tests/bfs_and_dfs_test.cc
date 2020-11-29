@@ -9,6 +9,8 @@
 #include <core/dfs.h>
 //#include <visualizer/sketchpad.h>
 
+//TODO: Ask if these tests are sufficient for BFS and DFS
+
 using std::vector;
 using graph_algorithm::Graph;
 using graph_algorithm::BFS;

@@ -6,6 +6,7 @@
 namespace graph_algorithm {
 
 using std::vector;
+using std::string;
 
 constexpr size_t kWall = 1;
 constexpr size_t kTraversedNodes = 2;
@@ -65,7 +66,7 @@ class Sketchpad {
    * @param isBFS this boolean represents whether the user wants the BFS
    * algorithm or DFS algorithm to be executed
    */
-  void RunGraphTraversalAlgorithm(bool isBFS);
+  void RunGraphTraversalAlgorithm(const string &algorithm);
 
  private:
   vector<vector<int>> current_board_;

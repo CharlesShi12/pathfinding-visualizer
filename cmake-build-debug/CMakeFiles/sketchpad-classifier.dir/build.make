@@ -133,9 +133,22 @@ CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph.cc -o CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.s
 
+CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o: CMakeFiles/sketchpad-classifier.dir/flags.make
+CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o: ../src/core/a_star.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/a_star.cc
+
+CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/a_star.cc > CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.i
+
+CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/a_star.cc -o CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.s
+
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o: CMakeFiles/sketchpad-classifier.dir/flags.make
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o: ../src/visualizer/path_algorithm_app.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/visualizer/path_algorithm_app.cc
 
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.i: cmake_force
@@ -148,7 +161,7 @@ CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.s: cmak
 
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: CMakeFiles/sketchpad-classifier.dir/flags.make
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: ../src/visualizer/sketchpad.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/visualizer/sketchpad.cc
 
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.i: cmake_force
@@ -165,6 +178,7 @@ sketchpad__classifier_OBJECTS = \
 "CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o" \
 "CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o" \
 "CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.o" \
+"CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o" \
 "CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o" \
 "CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o"
 
@@ -175,6 +189,7 @@ Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-cla
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.o
+Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/build.make
@@ -182,7 +197,7 @@ Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-cla
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: /Users/charlesshi/Downloads/Cinder/lib/macosx/libboost_system.a
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: /Users/charlesshi/Downloads/Cinder/lib/macosx/libboost_filesystem.a
 Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sketchpad-classifier.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

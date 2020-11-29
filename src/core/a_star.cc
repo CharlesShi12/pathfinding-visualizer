@@ -31,10 +31,6 @@ vector<vector<int>> AStar::RunAStar(int end_row, int end_col) {
   // keep track of the nodes we have already visited
   vector<bool> visited_nodes = vector<bool>(dimension * dimension, false);
 
-  // keep track of current costs at each node, essentially it stores the g
-  // cost for each node
-  vector<double> cost = vector<double>(dimension * dimension, 0.0);
-
   // stores the final shortest path for the algorithm
   vector<int> path = vector<int>(dimension * dimension);
 
@@ -49,9 +45,12 @@ vector<vector<int>> AStar::RunAStar(int end_row, int end_col) {
   // adding the starting node to the data structures
   size_t starting_node = 0;
   next_nodes.emplace(0.0, starting_node);
-  cost[starting_node] = 0.0;
   path[starting_node] = starting_node;
   visited_nodes[starting_node] = true;
+
+  // set starting distance to 0
+  Graph::Node *start = nodes.at(starting_node);
+  start->distance = 0;
 
   while (!next_nodes.empty()) {
     // retrieve the current node's information
@@ -71,18 +70,18 @@ vector<vector<int>> AStar::RunAStar(int end_row, int end_col) {
       // only add the node if it hasn't been traversed
       if (!visited_nodes[neighbor]) {
         // compute the g cost for the neighbor node
-        double neighbor_cost = cost[current_node_index] + 1;
+        Graph::Node *adjacent = nodes.at(neighbor);
+        adjacent->distance = current_node->distance + 1;
 
         // update the path so that we can backtrack from the end to start
         path[neighbor] = current_node_index;
 
         Graph::Node *neighbor_node = nodes.at(neighbor);
-        cost[neighbor] = neighbor_cost;
 
         // compute the f cost for the neighbor nodes which is the g cost
         // (movement from the starting node to the current node) plus the h cost
         // (heuristic movement from current node to end node)
-        double neighbor_f_cost = neighbor_cost +
+        double neighbor_f_cost = adjacent->distance +
             Distance(neighbor_node->row, neighbor_node->col, end_row, end_col);
         next_nodes.emplace(neighbor_f_cost, neighbor);
       }

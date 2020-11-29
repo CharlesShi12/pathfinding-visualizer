@@ -36,7 +36,7 @@ vector<vector<int>> AStar::RunAStar(int end_row, int end_col) {
   // stores the final shortest path for the algorithm
   vector<int> path = vector<int>(dimension * dimension);
 
-  // create min-heap for the next nodes to visit
+  // create min-heap for the next nodes to visit based on the smallest f cost
   priority_queue<pair<double, int>,
                  vector<pair<double, int>>,
                  std::greater<pair<double, int>>> next_nodes;
@@ -44,7 +44,7 @@ vector<vector<int>> AStar::RunAStar(int end_row, int end_col) {
   // keep track of the end destination node id
   int end_node = 0;
 
-  // initialize the data structures with the starting node
+  // adding the starting node to the data structures
   size_t starting_node = 0;
   next_nodes.emplace(0.0, starting_node);
   cost[starting_node] = 0.0;
@@ -70,18 +70,18 @@ vector<vector<int>> AStar::RunAStar(int end_row, int end_col) {
       double neighbor_cost = cost[current_node_index] + 1;
 
       // check if the neighbor has been visited or if the current node has a
-      // shorter cost than the previous nodes
+      // smaller g cost than the previous nodes
       if (cost[neighbor] == 0.0 || neighbor_cost < cost[neighbor]) {
         path[neighbor] = current_node_index;
-        Graph::Node *adjacent = nodes.at(neighbor);
+        Graph::Node *neighbor_node = nodes.at(neighbor);
         cost[neighbor] = neighbor_cost;
 
         // compute the f cost for the neighbor nodes which is the g cost
         // (movement from the starting node to the current node) plus the h cost
         // (heuristic movement from current node to end node)
-        double f_neighbor_cost = neighbor_cost +
-            Distance(adjacent->row, adjacent->col, end_row, end_col);
-        next_nodes.emplace(f_neighbor_cost, neighbor);
+        double neighbor_f_cost = neighbor_cost +
+            Distance(neighbor_node->row, neighbor_node->col, end_row, end_col);
+        next_nodes.emplace(neighbor_f_cost, neighbor);
       }
     }
   }

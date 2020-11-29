@@ -12,7 +12,7 @@ graph.h
 queue
 -
 
-../include/core/bfs.h
+../include/core/dfs.h
 vector
 -
 graph.h
@@ -7844,13 +7844,9 @@ map
 visualizer/sketchpad.h
 -
 
-/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bfs.cc
-core/graph.h
--
+/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/dfs.cc
 visualizer/sketchpad.h
 -
-core/bfs.h
--
-queue
+core/dfs.h
 -
 

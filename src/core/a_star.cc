@@ -70,7 +70,7 @@ vector<vector<int>> AStar::RunAStar(int end_row, int end_col) {
       output_board[node->row][node->col] = graph_algorithm::kTraversedNodes;
     }
   }
-g
+
 
   return output_board;
 

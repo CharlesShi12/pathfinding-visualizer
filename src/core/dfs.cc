@@ -16,7 +16,7 @@ void DFS::RecursiveDFS(size_t node_index, size_t end_row, size_t end_col,
                        vector<bool> &visited_nodes) {
   if (!found_destination_) {
     visited_nodes[node_index] = true;
-    Graph::Node *current_node = board_graph_->GetNodes().at(node_index);
+    Graph::Node *current_node = board_graph_->GetNodes()[node_index];
 
     // stop visiting other nodes once we have found the destination node
     if (current_node->row == end_row && current_node->col == end_col) {
@@ -47,7 +47,7 @@ vector<vector<int>> DFS::RunDFS(size_t end_row, size_t end_col) {
   // find the end destination
   for (size_t i = 0; i < dimension * dimension; i++) {
     if (visited_nodes[i]) {
-      Graph::Node *node = board_graph_->GetNodes().at(i);
+      Graph::Node *node = board_graph_->GetNodes()[i];
       output_board[node->row][node->col] = graph_algorithm::kTraversedNodes;
     }
   }

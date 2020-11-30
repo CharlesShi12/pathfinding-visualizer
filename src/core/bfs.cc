@@ -30,11 +30,11 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
   // to 0
   size_t starting_node = 0;
   next_nodes.push(starting_node);
-  Graph::Node *start = nodes.at(starting_node);
+  Graph::Node *start = nodes[starting_node];
   start->distance = 0;
 
   while (!next_nodes.empty()) {
-    Graph::Node *current_node = nodes.at(next_nodes.front());
+    Graph::Node *current_node = nodes[next_nodes.front()];
     visited_nodes[next_nodes.front()] = true;
     next_nodes.pop();
 
@@ -47,7 +47,7 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
     for (size_t neighbor : current_node->adjacent) {
       if (!visited_nodes[neighbor]) {
         next_nodes.push(neighbor);
-        Graph::Node *adjacent = nodes.at(neighbor);
+        Graph::Node *adjacent = nodes[neighbor];
         adjacent->distance = current_node->distance + 1;
       }
     }
@@ -57,14 +57,14 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
   // find the end destination
   for (size_t i = 0; i < dimension * dimension; i++) {
     if (visited_nodes[i]) {
-      Graph::Node *node = nodes.at(i);
+      Graph::Node *node = nodes[i];
       output_board[node->row][node->col] = graph_algorithm::kTraversedNodes;
     }
   }
 
   // draw the final shortest path for the BFS
   vector<Graph::Node *> shortest_path;
-  Graph::Node *node = nodes.at(end_row * dimension + end_col);
+  Graph::Node *node = nodes[end_row * dimension + end_col];
 
   // return traversed nodes if we cannot find a shortest path
   if (node->distance == INFINITY) {
@@ -77,7 +77,7 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
     shortest_path.push_back(node);
 
     for (size_t neighbor : node->adjacent) {
-      Graph::Node *adjacent = nodes.at(neighbor);
+      Graph::Node *adjacent = nodes[neighbor];
 
       if (adjacent->distance != INFINITY &&
           adjacent->distance == node->distance - 1) {

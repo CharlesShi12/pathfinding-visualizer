@@ -76,13 +76,11 @@ vector<vector<int>> AStar::RunAStar(int end_row, int end_col) {
         // update the path so that we can backtrack from the end to start
         path[neighbor] = current_node_index;
 
-        Graph::Node *neighbor_node = nodes.at(neighbor);
-
         // compute the f cost for the neighbor nodes which is the g cost
         // (movement from the starting node to the current node) plus the h cost
         // (heuristic movement from current node to end node)
         double neighbor_f_cost = adjacent->distance +
-            Distance(neighbor_node->row, neighbor_node->col, end_row, end_col);
+                      Distance(adjacent->row, adjacent->col, end_row, end_col);
         next_nodes.emplace(neighbor_f_cost, neighbor);
       }
     }

@@ -32,7 +32,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6944f33e-0890-4955-9a12-95e7cd2e7b0b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/bfs.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/bfs.cc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,9 +100,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Catch.path-algorithm-test" />
       <item itemvalue="Catch.Testing the BFS and DFS class" />
       <item itemvalue="Catch.Testing the Graph class" />
-      <item itemvalue="Catch.path-algorithm-test" />
       <item itemvalue="CMake Application.sketchpad-classifier" />
     </list>
     <recent_temporary>
@@ -134,6 +136,7 @@
       <workItem from="1606514120742" duration="7639000" />
       <workItem from="1606620742196" duration="2000" />
       <workItem from="1606630356752" duration="10103000" />
+      <workItem from="1606694371057" duration="728000" />
     </task>
     <servers />
   </component>

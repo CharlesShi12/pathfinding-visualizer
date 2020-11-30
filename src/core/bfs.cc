@@ -66,6 +66,11 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
   vector<Graph::Node *> shortest_path;
   Graph::Node *node = nodes.at(end_row * dimension + end_col);
 
+  // return traversed nodes if we cannot find a shortest path
+  if (node->distance == INFINITY) {
+    return output_board;
+  }
+
   // retrace our steps from the end destination until we reach the starting
   // node (row 0, col 0)
   while (node->row != 0 || node->col != 0) {

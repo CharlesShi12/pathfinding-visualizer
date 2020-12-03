@@ -3,6 +3,7 @@
 #include <core/dfs.h>
 #include <random>
 #include <core/a_star.h>
+#include <core/bidirectional_bfs.h>
 
 namespace graph_algorithm {
 
@@ -47,6 +48,9 @@ void Sketchpad::Draw() const {
 
       } else if (current_board_[row][col] == kPath) {
         ci::gl::color(ci::Color8u(127, 23, 31));
+
+      } else if (current_board_[row][col] == kAlternativeTraversedNodes){
+        ci::gl::color(ci::Color8u(169, 169, 169));
 
       } else {
         ci::gl::color(ci::Color8u(240, 236, 235));
@@ -102,9 +106,13 @@ void Sketchpad::RunGraphTraversalAlgorithm(const string &algorithm) {
     DFS dfs_algorithm(&board_graph);
     current_board_ = dfs_algorithm.RunDFS(end_row_, end_col_);
 
-  } else {
+  } else if (algorithm == "AStar"){
     AStar a_star_algorithm(&board_graph);
     current_board_ = a_star_algorithm.RunAStar(end_row_, end_col_);
+
+  } else if (algorithm == "BidirectionalBFS") {
+    BidirectionalBFS bidirectional_bfs_algorithm(&board_graph);
+    current_board_ = bidirectional_bfs_algorithm.RunBidirectionalBFS(end_row_, end_col_);
   }
 
   // mark the start and end nodes for the user to see

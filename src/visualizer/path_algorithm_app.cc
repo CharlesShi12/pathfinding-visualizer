@@ -46,6 +46,11 @@ void PathVisualizerApp::keyDown(ci::app::KeyEvent event) {
       sketchpad_.Draw();
       break;
 
+    case ci::app::KeyEvent::KEY_4:
+      sketchpad_.RunGraphTraversalAlgorithm("BidirectionalBFS");
+      sketchpad_.Draw();
+      break;
+
     case ci::app::KeyEvent::KEY_DELETE:
       sketchpad_.Clear();
       break;

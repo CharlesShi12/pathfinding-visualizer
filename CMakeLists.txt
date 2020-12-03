@@ -53,6 +53,7 @@ list(APPEND CORE_SOURCE_FILES src/core/bfs.cc)
 list(APPEND CORE_SOURCE_FILES src/core/dfs.cc)
 list(APPEND CORE_SOURCE_FILES src/core/graph.cc)
 list(APPEND CORE_SOURCE_FILES src/core/a_star.cc)
+list(APPEND CORE_SOURCE_FILES src/core/bidirectional_bfs.cc)
 
 list(APPEND SOURCE_FILES    ${CORE_SOURCE_FILES}
         src/visualizer/path_algorithm_app.cc
@@ -60,6 +61,7 @@ list(APPEND SOURCE_FILES    ${CORE_SOURCE_FILES}
 
 list(APPEND TEST_FILES tests/bfs_and_dfs_test.cc)
 list(APPEND TEST_FILES tests/graph_test.cc)
+list(APPEND TEST_FILES tests/a_star_test.cc)
 
 ci_make_app(
         APP_NAME        sketchpad-classifier

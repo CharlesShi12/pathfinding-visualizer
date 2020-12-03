@@ -23,7 +23,8 @@ class AStar {
    * @param end_row the row coordinate of the end destination
    * @param end_col the column coordinate of the end destination
    */
-  double Distance(int start_row, int start_col, int end_row, int end_col);
+  double Distance(size_t start_row, size_t start_col, size_t end_row,
+                  size_t end_col);
 
  public:
   /**
@@ -40,7 +41,7 @@ class AStar {
    * @param end_row the row coordinate of the end destination
    * @param end_col the column coordinate of the end destination
    */
-  vector<vector<int>> RunAStar(int end_row, int end_col);
+  vector<vector<int>> RunAStar(size_t end_row, size_t end_col);
 };
 
 } // namespace graph_algorithm

@@ -243,6 +243,36 @@ src/core/bfs.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.s
 .PHONY : src/core/bfs.cc.s
 
+src/core/bidirectional_bfs.o: src/core/bidirectional_bfs.cc.o
+
+.PHONY : src/core/bidirectional_bfs.o
+
+# target to build an object file
+src/core/bidirectional_bfs.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/bidirectional_bfs.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bidirectional_bfs.cc.o
+.PHONY : src/core/bidirectional_bfs.cc.o
+
+src/core/bidirectional_bfs.i: src/core/bidirectional_bfs.cc.i
+
+.PHONY : src/core/bidirectional_bfs.i
+
+# target to preprocess a source file
+src/core/bidirectional_bfs.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/bidirectional_bfs.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bidirectional_bfs.cc.i
+.PHONY : src/core/bidirectional_bfs.cc.i
+
+src/core/bidirectional_bfs.s: src/core/bidirectional_bfs.cc.s
+
+.PHONY : src/core/bidirectional_bfs.s
+
+# target to generate assembly for a file
+src/core/bidirectional_bfs.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/bidirectional_bfs.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bidirectional_bfs.cc.s
+.PHONY : src/core/bidirectional_bfs.cc.s
+
 src/core/dfs.o: src/core/dfs.cc.o
 
 .PHONY : src/core/dfs.o
@@ -363,6 +393,33 @@ src/visualizer/sketchpad.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.s
 .PHONY : src/visualizer/sketchpad.cc.s
 
+tests/a_star_test.o: tests/a_star_test.cc.o
+
+.PHONY : tests/a_star_test.o
+
+# target to build an object file
+tests/a_star_test.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.o
+.PHONY : tests/a_star_test.cc.o
+
+tests/a_star_test.i: tests/a_star_test.cc.i
+
+.PHONY : tests/a_star_test.i
+
+# target to preprocess a source file
+tests/a_star_test.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.i
+.PHONY : tests/a_star_test.cc.i
+
+tests/a_star_test.s: tests/a_star_test.cc.s
+
+.PHONY : tests/a_star_test.s
+
+# target to generate assembly for a file
+tests/a_star_test.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.s
+.PHONY : tests/a_star_test.cc.s
+
 tests/bfs_and_dfs_test.o: tests/bfs_and_dfs_test.cc.o
 
 .PHONY : tests/bfs_and_dfs_test.o
@@ -463,6 +520,9 @@ help:
 	@echo "... src/core/bfs.o"
 	@echo "... src/core/bfs.i"
 	@echo "... src/core/bfs.s"
+	@echo "... src/core/bidirectional_bfs.o"
+	@echo "... src/core/bidirectional_bfs.i"
+	@echo "... src/core/bidirectional_bfs.s"
 	@echo "... src/core/dfs.o"
 	@echo "... src/core/dfs.i"
 	@echo "... src/core/dfs.s"
@@ -475,6 +535,9 @@ help:
 	@echo "... src/visualizer/sketchpad.o"
 	@echo "... src/visualizer/sketchpad.i"
 	@echo "... src/visualizer/sketchpad.s"
+	@echo "... tests/a_star_test.o"
+	@echo "... tests/a_star_test.i"
+	@echo "... tests/a_star_test.s"
 	@echo "... tests/bfs_and_dfs_test.o"
 	@echo "... tests/bfs_and_dfs_test.i"
 	@echo "... tests/bfs_and_dfs_test.s"

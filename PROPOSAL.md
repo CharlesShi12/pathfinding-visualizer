@@ -1,13 +1,14 @@
 The project I want to do is create a Cinder visualization application for the A* pathfinding 
-algorithm, the Bidirectional Breadth-First Search, and the Breadth-First Search. The program would 
-allow users to drag and create a terrain for the algorithms to run using something similar to the 
-Naive Bayes structure (users click on the mouse to draw a black square). Then, there would be a 
-finish and start block which the algorithm would use to find the shortest path. The users would be 
-allowed to select which algorithm they want to run. After this, the algorithm would run, highlighting 
-squares that it would use as a red color. Some stretch goals I could implement would be allowing 
-the users to place down a starting place and ending place. Moreover, I could implement other 
-algorithms for pathfinding/searching. I could also compare how fast each pathfinding/search algorithm
- is at finding the shortest path for the same terrain. 
+algorithm, the bi-directional Breadth-First Search algorithm, and the Breadth-First Search. The 
+program would allow users to drag and create a terrain for the algorithms to run using something 
+similar to the Naive Bayes structure (users click on the mouse to draw a black square). Then, there 
+would be a finish and start block which the algorithm would use to find the shortest path. The users
+would be allowed to select which algorithm they want to run. After this, the algorithm would run, 
+highlighting squares that it would use as a color and the shortest path (if possible) with another 
+color. Some stretch goals I could implement would be allowing the users to place down a starting 
+place and ending place. Moreover, I could implement other algorithms for pathfinding/searching. I 
+could also compare how fast each pathfinding/search algorithm is at finding the shortest path for 
+the same terrain. 
 
 I have some basic background knowledge on general algorithms, but I felt that I wanted to understand 
 pathfinding/search algorithms at a deeper level because of their efficiency and effectiveness in the 

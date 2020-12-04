@@ -11,11 +11,7 @@
 
 namespace graph_algorithm {
 
-BFS::BFS(Graph *board_graph) {
-  board_graph_ = board_graph;
-}
-
-vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
+vector<vector<int>> BFS::Find(size_t end_row, size_t end_col) {
   vector<vector<int>> output_board = board_graph_->GetBoard();
   vector<Graph::Node*> nodes = board_graph_->GetNodes();
   size_t dimension = board_graph_->GetDimension();
@@ -62,6 +58,8 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
     }
   }
 
+  // protected helper in pathfinder, takes in visited_nodes
+
   // draw the final shortest path for the BFS
   vector<Graph::Node *> shortest_path;
   Graph::Node *node = nodes[end_row * dimension + end_col];
@@ -95,6 +93,8 @@ vector<vector<int>> BFS::RunBFS(size_t end_row, size_t end_col) {
   for (Graph::Node *final_path : shortest_path) {
     output_board[final_path->row][final_path->col] = kPath;
   }
+
+  // call protected method
 
   return output_board;
 }

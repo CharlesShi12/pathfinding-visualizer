@@ -7,6 +7,7 @@
 
 #include <vector>
 #include "graph.h"
+#include "pathfinder.h"
 
 namespace graph_algorithm {
 
@@ -15,9 +16,8 @@ using std::vector;
 /**
  * This class runs the Depth First Search.
  */
-class DFS {
+class DFS : public Pathfinder {
  private:
-  Graph *board_graph_;
   bool found_destination_;
   vector<Graph::Node *> path_;
 
@@ -40,7 +40,9 @@ class DFS {
    * @param board_graph the board represented as a Graph object (or also known
    * as an adjacency matrix)
    */
-  DFS(Graph *board_graph);
+  DFS(Graph *board_graph) : Pathfinder(board_graph) {
+    found_destination_ = false;
+  }
 
   /**
    * Runs the Depth First Search.
@@ -48,7 +50,7 @@ class DFS {
    * @param end_row the row coordinate of the end destination
    * @param end_col the column coordinate of the end destination
    */
-  vector<vector<int>> RunDFS(size_t end_row, size_t end_col);
+  vector<vector<int>> Find(size_t end_row, size_t end_col);
 };
 
 } // namespace graph_algorithm

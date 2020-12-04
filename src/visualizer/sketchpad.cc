@@ -20,7 +20,8 @@ Sketchpad::Sketchpad(const vec2& top_left_corner, size_t num_pixels_per_side,
       brush_radius_(brush_radius) {
   current_board_ = vector<vector<int>>(num_pixels_per_side_,
                                        vector<int>(num_pixels_per_side_, 0));
-  // generating a random number from a certain interval
+  // generating a random number from a certain interval, specifically (1, 1) to
+  // the (num_pixels_per_side - 1, num_pixels_per_side - 1)
   std::random_device dev;
   std::mt19937 rng(dev());
   std::uniform_int_distribution<std::mt19937::result_type>
@@ -41,7 +42,7 @@ void Sketchpad::Draw() const {
         ci::gl::color(ci::Color("black"));
 
       } else if (current_board_[row][col] == kTraversedNodes) {
-        ci::gl::color(ci::Color8u(108, 116, 118));
+        ci::gl::color(ci::Color8u(105, 105, 105));
 
       } else if (current_board_[row][col] == kStartAndEndNode) {
         ci::gl::color(ci::Color8u(21, 52, 80));
@@ -100,19 +101,19 @@ void Sketchpad::RunGraphTraversalAlgorithm(const string &algorithm) {
 
   if (algorithm == "BFS") {
     BFS bfs_algorithm(&board_graph);
-    current_board_ = bfs_algorithm.RunBFS(end_row_, end_col_);
+    current_board_ = bfs_algorithm.Find(end_row_, end_col_);
 
   } else if (algorithm == "DFS"){
     DFS dfs_algorithm(&board_graph);
-    current_board_ = dfs_algorithm.RunDFS(end_row_, end_col_);
+    current_board_ = dfs_algorithm.Find(end_row_, end_col_);
 
   } else if (algorithm == "AStar"){
     AStar a_star_algorithm(&board_graph);
-    current_board_ = a_star_algorithm.RunAStar(end_row_, end_col_);
+    current_board_ = a_star_algorithm.Find(end_row_, end_col_);
 
   } else if (algorithm == "BidirectionalBFS") {
     BidirectionalBFS bidirectional_bfs_algorithm(&board_graph);
-    current_board_ = bidirectional_bfs_algorithm.RunBidirectionalBFS(end_row_, end_col_);
+    current_board_ = bidirectional_bfs_algorithm.Find(end_row_, end_col_);
   }
 
   // mark the start and end nodes for the user to see

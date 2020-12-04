@@ -15,17 +15,13 @@ using std::priority_queue;
 using std::pair;
 using std::unordered_map;
 
-AStar::AStar(Graph *board_graph) {
-  board_graph_ = board_graph;
-}
-
 double AStar::Distance(size_t start_row, size_t start_col, size_t end_row,
                        size_t end_col) {
   return sqrt((end_col - start_col) * (end_col - start_col) +
               (end_row - start_row) * (end_row - start_row));
 }
 
-vector<vector<int>> AStar::RunAStar(size_t end_row, size_t end_col) {
+vector<vector<int>> AStar::Find(size_t end_row, size_t end_col) {
   vector<vector<int>> output_board = board_graph_->GetBoard();
   size_t dimension = board_graph_->GetDimension();
   vector<Graph::Node*> nodes = board_graph_->GetNodes();

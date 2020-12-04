@@ -880,6 +880,7 @@ CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.o: ../apps/cinder_ap
 
 CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o: ../include/core/a_star.h
 CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o: ../include/core/graph.h
+CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o: ../include/core/pathfinder.h
 CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o: ../include/visualizer/sketchpad.h
 CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o: /Users/charlesshi/Downloads/Cinder/include/boost/assert.hpp
 CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o: /Users/charlesshi/Downloads/Cinder/include/boost/cerrno.hpp
@@ -1733,6 +1734,7 @@ CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o: ../src/core/a_star.cc
 
 CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o: ../include/core/bfs.h
 CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o: ../include/core/graph.h
+CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o: ../include/core/pathfinder.h
 CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o: ../include/visualizer/sketchpad.h
 CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o: /Users/charlesshi/Downloads/Cinder/include/boost/assert.hpp
 CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o: /Users/charlesshi/Downloads/Cinder/include/boost/cerrno.hpp
@@ -2586,6 +2588,7 @@ CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o: ../src/core/bfs.cc
 
 CMakeFiles/sketchpad-classifier.dir/src/core/bidirectional_bfs.cc.o: ../include/core/bidirectional_bfs.h
 CMakeFiles/sketchpad-classifier.dir/src/core/bidirectional_bfs.cc.o: ../include/core/graph.h
+CMakeFiles/sketchpad-classifier.dir/src/core/bidirectional_bfs.cc.o: ../include/core/pathfinder.h
 CMakeFiles/sketchpad-classifier.dir/src/core/bidirectional_bfs.cc.o: ../include/visualizer/sketchpad.h
 CMakeFiles/sketchpad-classifier.dir/src/core/bidirectional_bfs.cc.o: /Users/charlesshi/Downloads/Cinder/include/boost/assert.hpp
 CMakeFiles/sketchpad-classifier.dir/src/core/bidirectional_bfs.cc.o: /Users/charlesshi/Downloads/Cinder/include/boost/cerrno.hpp
@@ -3439,6 +3442,7 @@ CMakeFiles/sketchpad-classifier.dir/src/core/bidirectional_bfs.cc.o: ../src/core
 
 CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o: ../include/core/dfs.h
 CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o: ../include/core/graph.h
+CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o: ../include/core/pathfinder.h
 CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o: ../include/visualizer/sketchpad.h
 CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o: /Users/charlesshi/Downloads/Cinder/include/boost/assert.hpp
 CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o: /Users/charlesshi/Downloads/Cinder/include/boost/cerrno.hpp
@@ -6024,6 +6028,7 @@ CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: ../include/co
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: ../include/core/bidirectional_bfs.h
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: ../include/core/dfs.h
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: ../include/core/graph.h
+CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: ../include/core/pathfinder.h
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: ../include/visualizer/sketchpad.h
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: /Users/charlesshi/Downloads/Cinder/include/boost/assert.hpp
 CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o: /Users/charlesshi/Downloads/Cinder/include/boost/cerrno.hpp

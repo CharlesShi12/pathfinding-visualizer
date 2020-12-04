@@ -7,11 +7,6 @@
 
 namespace graph_algorithm {
 
-DFS::DFS(Graph *board_graph) {
-  board_graph_ = board_graph;
-  found_destination_ = false;
-}
-
 void DFS::RecursiveDFS(size_t node_index, size_t end_row, size_t end_col,
                        vector<bool> &visited_nodes) {
   if (!found_destination_) {
@@ -33,7 +28,7 @@ void DFS::RecursiveDFS(size_t node_index, size_t end_row, size_t end_col,
   }
 }
 
-vector<vector<int>> DFS::RunDFS(size_t end_row, size_t end_col) {
+vector<vector<int>> DFS::Find(size_t end_row, size_t end_col) {
   size_t dimension = board_graph_->GetDimension();
   vector<vector<int>> output_board = board_graph_->GetBoard();
 

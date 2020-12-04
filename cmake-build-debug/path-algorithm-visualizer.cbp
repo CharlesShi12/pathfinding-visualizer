@@ -163,6 +163,10 @@
 			<Option target="path-algorithm-test"/>
 			<Option target="sketchpad-classifier"/>
 		</Unit>
+		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/pathfinder.cc">
+			<Option target="path-algorithm-test"/>
+			<Option target="sketchpad-classifier"/>
+		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/visualizer/path_algorithm_app.cc">
 			<Option target="path-algorithm-test"/>
 			<Option target="sketchpad-classifier"/>

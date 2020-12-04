@@ -76,10 +76,6 @@ vector<vector<int>> BidirectionalBFS::Find(size_t end_row, size_t end_col) {
     }
   }
 
-  if (intersection_node_index == -1) {
-    return output_board;
-  }
-
   return output_board;
 }
 

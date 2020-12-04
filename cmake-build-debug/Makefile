@@ -333,6 +333,36 @@ src/core/graph.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.s
 .PHONY : src/core/graph.cc.s
 
+src/core/pathfinder.o: src/core/pathfinder.cc.o
+
+.PHONY : src/core/pathfinder.o
+
+# target to build an object file
+src/core/pathfinder.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/pathfinder.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/pathfinder.cc.o
+.PHONY : src/core/pathfinder.cc.o
+
+src/core/pathfinder.i: src/core/pathfinder.cc.i
+
+.PHONY : src/core/pathfinder.i
+
+# target to preprocess a source file
+src/core/pathfinder.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/pathfinder.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/pathfinder.cc.i
+.PHONY : src/core/pathfinder.cc.i
+
+src/core/pathfinder.s: src/core/pathfinder.cc.s
+
+.PHONY : src/core/pathfinder.s
+
+# target to generate assembly for a file
+src/core/pathfinder.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/pathfinder.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/pathfinder.cc.s
+.PHONY : src/core/pathfinder.cc.s
+
 src/visualizer/path_algorithm_app.o: src/visualizer/path_algorithm_app.cc.o
 
 .PHONY : src/visualizer/path_algorithm_app.o
@@ -529,6 +559,9 @@ help:
 	@echo "... src/core/graph.o"
 	@echo "... src/core/graph.i"
 	@echo "... src/core/graph.s"
+	@echo "... src/core/pathfinder.o"
+	@echo "... src/core/pathfinder.i"
+	@echo "... src/core/pathfinder.s"
 	@echo "... src/visualizer/path_algorithm_app.o"
 	@echo "... src/visualizer/path_algorithm_app.i"
 	@echo "... src/visualizer/path_algorithm_app.s"

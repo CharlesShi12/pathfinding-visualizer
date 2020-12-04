@@ -87,23 +87,15 @@ vector<vector<int>> AStar::Find(size_t end_row, size_t end_col) {
     }
   }
 
-  // update the output board to show the nodes we've visited from the start to
-  // find the end destination
-  for (size_t i = 0; i < dimension * dimension; i++) {
-    if (visited_nodes[i]) {
-      Graph::Node *node = nodes[i];
-      output_board[node->row][node->col] = graph_algorithm::kTraversedNodes;
-    }
-  }
+  vector<Graph::Node *> shortest_path;
 
-  // draw the final shortest path for the A* algorithm
   while (end_node != 0) {
     Graph::Node *node = nodes[end_node];
-    output_board[node->row][node->col] = graph_algorithm::kPath;
+    shortest_path.push_back(node);
     end_node = path[end_node];
   }
 
-  return output_board;
+  return ConstructBoard(visited_nodes, shortest_path);
 }
 
 }

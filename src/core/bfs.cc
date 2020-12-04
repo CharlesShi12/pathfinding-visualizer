@@ -3,16 +3,12 @@
 //
 
 #include <core/graph.h>
-#include <visualizer/sketchpad.h>
 #include <core/bfs.h>
 #include <queue>
-
-//TODO: Ask if I should split the functions into a "Draw BFS" function (lines 56-92)
 
 namespace graph_algorithm {
 
 vector<vector<int>> BFS::Find(size_t end_row, size_t end_col) {
-  vector<vector<int>> output_board = board_graph_->GetBoard();
   vector<Graph::Node*> nodes = board_graph_->GetNodes();
   size_t dimension = board_graph_->GetDimension();
 
@@ -49,25 +45,8 @@ vector<vector<int>> BFS::Find(size_t end_row, size_t end_col) {
     }
   }
 
-  // update the output board to show the nodes we've visited from the start to
-  // find the end destination
-  for (size_t i = 0; i < dimension * dimension; i++) {
-    if (visited_nodes[i]) {
-      Graph::Node *node = nodes[i];
-      output_board[node->row][node->col] = graph_algorithm::kTraversedNodes;
-    }
-  }
-
-  // protected helper in pathfinder, takes in visited_nodes
-
-  // draw the final shortest path for the BFS
   vector<Graph::Node *> shortest_path;
   Graph::Node *node = nodes[end_row * dimension + end_col];
-
-  // return traversed nodes if we cannot find a shortest path
-  if (node->distance == INFINITY) {
-    return output_board;
-  }
 
   // retrace our steps from the end destination until we reach the starting
   // node (row 0, col 0)
@@ -88,15 +67,7 @@ vector<vector<int>> BFS::Find(size_t end_row, size_t end_col) {
   // push back the start node (optional)
   shortest_path.push_back(node);
 
-  // update the output board to show the nodes we've visited in our final
-  // shortest path
-  for (Graph::Node *final_path : shortest_path) {
-    output_board[final_path->row][final_path->col] = kPath;
-  }
-
-  // call protected method
-
-  return output_board;
+  return ConstructBoard(visited_nodes, shortest_path);
 }
 
 } // namespace graph_algorithm

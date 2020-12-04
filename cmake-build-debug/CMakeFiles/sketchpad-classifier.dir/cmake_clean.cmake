@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/sketchpad-classifier.dir/src/core/bidirectional_bfs.cc.o"
   "CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o"
   "CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.o"
+  "CMakeFiles/sketchpad-classifier.dir/src/core/pathfinder.cc.o"
   "CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o"
   "CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o"
   "Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier"

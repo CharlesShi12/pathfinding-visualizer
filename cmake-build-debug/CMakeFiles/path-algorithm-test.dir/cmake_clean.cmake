@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/path-algorithm-test.dir/src/core/bidirectional_bfs.cc.o"
   "CMakeFiles/path-algorithm-test.dir/src/core/dfs.cc.o"
   "CMakeFiles/path-algorithm-test.dir/src/core/graph.cc.o"
+  "CMakeFiles/path-algorithm-test.dir/src/core/pathfinder.cc.o"
   "CMakeFiles/path-algorithm-test.dir/src/visualizer/path_algorithm_app.cc.o"
   "CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.o"
   "CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.o"

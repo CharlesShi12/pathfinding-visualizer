@@ -20,17 +20,10 @@ Sketchpad::Sketchpad(const vec2& top_left_corner, size_t num_pixels_per_side,
       brush_radius_(brush_radius) {
   current_board_ = vector<vector<int>>(num_pixels_per_side_,
                                        vector<int>(num_pixels_per_side_, 0));
-  // generating a random number from a certain interval, specifically (1, 1) to
-  // the (num_pixels_per_side - 1, num_pixels_per_side - 1)
-  std::random_device dev;
-  std::mt19937 rng(dev());
-  std::uniform_int_distribution<std::mt19937::result_type>
-      dist(1, num_pixels_per_side_ - 1);
-
   start_row_ = 0;
   start_col_ = 0;
-  end_row_ = dist(rng);
-  end_col_ = dist(rng);
+  end_row_ = num_pixels_per_side_ - 1;
+  end_col_ = num_pixels_per_side_ - 1;
   current_board_[start_row_][start_col_] = kStartAndEndNode;
   current_board_[end_row_][end_col_] = kStartAndEndNode;
 }
@@ -50,8 +43,11 @@ void Sketchpad::Draw() const {
       } else if (current_board_[row][col] == kPath) {
         ci::gl::color(ci::Color8u(127, 23, 31));
 
-      } else if (current_board_[row][col] == kAlternativeTraversedNodes){
+      } else if (current_board_[row][col] == kAlternativeTraversedNodes) {
         ci::gl::color(ci::Color8u(169, 169, 169));
+
+      } else if (current_board_[row][col] == kIntersectionNode) {
+        ci::gl::color(ci::Color8u(34, 139, 34));
 
       } else {
         ci::gl::color(ci::Color8u(240, 236, 235));

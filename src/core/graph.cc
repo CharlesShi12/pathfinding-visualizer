@@ -11,6 +11,10 @@ Graph::Graph(const vector<vector<int>> &board) {
   board_ = board;
   dimension_ = board_.size();
 
+  // all of the possible positions the node is adjacent to
+  vector<vector<int>> positions = {{-1, 0}, {0, -1},
+                                   {0, 1}, {1, 0}};
+
   // insert all the new nodes into a map
   for (size_t row = 0; row < dimension_; row++) {
     for (size_t col = 0; col < dimension_; col++) {
@@ -25,13 +29,10 @@ Graph::Graph(const vector<vector<int>> &board) {
       Node *current_node = nodes_[col + row * dimension_];
 
       if (board[row][col] != graph_algorithm::kWall) {
-        // all of the possible positions the node is adjacent to
-        vector<vector<int>> positions = {{row - 1, col}, {row, col - 1},
-                                         {row, col + 1}, {row + 1, col}};
 
         for (const vector<int> &position : positions) {
-          int adjacent_row = position[0];
-          int adjacent_col = position[1];
+          int adjacent_row = position[0] + row;
+          int adjacent_col = position[1] + col;
 
           // if it is a valid adjacent node and not a wall, then add to
           // adjacent list

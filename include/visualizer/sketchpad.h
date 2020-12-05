@@ -13,6 +13,7 @@ constexpr size_t kTraversedNodes = 2;
 constexpr size_t kStartAndEndNode = 3;
 constexpr size_t kPath = 4;
 constexpr size_t kAlternativeTraversedNodes = 5;
+constexpr size_t kIntersectionNode = 6;
 
 namespace visualizer {
 

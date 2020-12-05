@@ -3,11 +3,8 @@
 //
 
 #include "core/a_star.h"
-#include <visualizer/sketchpad.h>
 #include <queue>
 #include <map>
-
-//TODO: Ask if I should split the functions into a "Draw A*" function (lines 93-105)
 
 namespace graph_algorithm {
 
@@ -98,4 +95,4 @@ vector<vector<int>> AStar::Find(size_t end_row, size_t end_col) {
   return ConstructBoard(visited_nodes, shortest_path);
 }
 
-}
+} // namespace graph_algorithm

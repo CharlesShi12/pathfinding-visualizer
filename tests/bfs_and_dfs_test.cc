@@ -7,7 +7,6 @@
 #include <core/graph.h>
 #include <core/bfs.h>
 #include <core/dfs.h>
-//#include <visualizer/sketchpad.h>
 
 //TODO: Ask if these tests are sufficient for BFS and DFS
 
@@ -59,7 +58,7 @@ TEST_CASE("Testing the BFS and DFS class") {
                                       {2, 1, 1, 1, 1},
                                       {2, 1, 1, 1, 1},
                                       {2, 1, 1, 1, 1},
-                                      {0, 1, 1, 1, 1}};
+                                      {2, 1, 1, 1, 1}};
 
     vector<vector<int>> dfs_output = {{2, 2, 2, 2, 2},
                                       {0, 1, 1, 1, 1},

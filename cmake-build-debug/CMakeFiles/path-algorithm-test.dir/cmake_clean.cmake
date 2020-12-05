@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.o"
   "CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.o"
   "CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.o"
+  "CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.o"
   "CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.o"
   "CMakeFiles/path-algorithm-test.dir/tests/test_main.cc.o"
   "Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test"

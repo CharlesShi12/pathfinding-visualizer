@@ -181,6 +181,9 @@
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/bfs_and_dfs_test.cc">
 			<Option target="path-algorithm-test"/>
 		</Unit>
+		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/bidirectional_bfs_test.cc">
+			<Option target="path-algorithm-test"/>
+		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/graph_test.cc">
 			<Option target="path-algorithm-test"/>
 		</Unit>

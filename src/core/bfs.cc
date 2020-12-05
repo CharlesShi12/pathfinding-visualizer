@@ -24,10 +24,10 @@ vector<vector<int>> BFS::Find(size_t end_row, size_t end_col) {
   next_nodes.push(starting_node);
   Graph::Node *start = nodes[starting_node];
   start->distance = 0;
+  visited_nodes[starting_node] = true;
 
   while (!next_nodes.empty()) {
     Graph::Node *current_node = nodes[next_nodes.front()];
-    visited_nodes[next_nodes.front()] = true;
     next_nodes.pop();
 
     // check if this node is our final destination
@@ -39,6 +39,7 @@ vector<vector<int>> BFS::Find(size_t end_row, size_t end_col) {
     for (size_t neighbor : current_node->adjacent) {
       if (!visited_nodes[neighbor]) {
         next_nodes.push(neighbor);
+        visited_nodes[neighbor] = true;
         Graph::Node *adjacent = nodes[neighbor];
         adjacent->distance = current_node->distance + 1;
       }

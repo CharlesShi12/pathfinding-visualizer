@@ -477,6 +477,33 @@ tests/bfs_and_dfs_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.s
 .PHONY : tests/bfs_and_dfs_test.cc.s
 
+tests/bidirectional_bfs_test.o: tests/bidirectional_bfs_test.cc.o
+
+.PHONY : tests/bidirectional_bfs_test.o
+
+# target to build an object file
+tests/bidirectional_bfs_test.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.o
+.PHONY : tests/bidirectional_bfs_test.cc.o
+
+tests/bidirectional_bfs_test.i: tests/bidirectional_bfs_test.cc.i
+
+.PHONY : tests/bidirectional_bfs_test.i
+
+# target to preprocess a source file
+tests/bidirectional_bfs_test.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.i
+.PHONY : tests/bidirectional_bfs_test.cc.i
+
+tests/bidirectional_bfs_test.s: tests/bidirectional_bfs_test.cc.s
+
+.PHONY : tests/bidirectional_bfs_test.s
+
+# target to generate assembly for a file
+tests/bidirectional_bfs_test.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.s
+.PHONY : tests/bidirectional_bfs_test.cc.s
+
 tests/graph_test.o: tests/graph_test.cc.o
 
 .PHONY : tests/graph_test.o
@@ -574,6 +601,9 @@ help:
 	@echo "... tests/bfs_and_dfs_test.o"
 	@echo "... tests/bfs_and_dfs_test.i"
 	@echo "... tests/bfs_and_dfs_test.s"
+	@echo "... tests/bidirectional_bfs_test.o"
+	@echo "... tests/bidirectional_bfs_test.i"
+	@echo "... tests/bidirectional_bfs_test.s"
 	@echo "... tests/graph_test.o"
 	@echo "... tests/graph_test.i"
 	@echo "... tests/graph_test.s"

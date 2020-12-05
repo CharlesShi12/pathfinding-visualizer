@@ -30,8 +30,8 @@ class DFS : public Pathfinder {
    * @param visited_nodes a vector that stores the nodes that this algorithm
    * has already visited
    */
-  void RecursiveDFS(size_t node_index, size_t end_row, size_t end_col,
-                         vector<bool> &visited_nodes);
+  bool RecursiveDFS(size_t node_index, size_t end_row, size_t end_col,
+                         vector<bool> &visited_nodes, vector<Graph::Node*> &path);
 
  public:
   /**

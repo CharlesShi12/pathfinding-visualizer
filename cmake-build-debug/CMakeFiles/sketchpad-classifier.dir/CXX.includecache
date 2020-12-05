@@ -6,50 +6,10 @@
 
 #IncludeRegexTransform: 
 
-../include/core/a_star.h
-graph.h
-../include/core/graph.h
-pathfinder.h
-../include/core/pathfinder.h
-queue
--
-
-../include/core/bfs.h
-vector
--
-graph.h
-../include/core/graph.h
-pathfinder.h
-../include/core/pathfinder.h
-
-../include/core/bidirectional_bfs.h
-graph.h
-../include/core/graph.h
-pathfinder.h
-../include/core/pathfinder.h
-vector
--
-queue
--
-
-../include/core/dfs.h
-vector
--
-graph.h
-../include/core/graph.h
-pathfinder.h
-../include/core/pathfinder.h
-
 ../include/core/graph.h
 vector
 -
 unordered_map
--
-
-../include/core/pathfinder.h
-graph.h
-../include/core/graph.h
-vector
 -
 
 ../include/visualizer/sketchpad.h
@@ -7862,17 +7822,9 @@ detail/setup.hpp
 detail/func_vector_relational.inl
 /Users/charlesshi/Downloads/Cinder/include/glm/detail/func_vector_relational.inl
 
-/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/visualizer/sketchpad.cc
+/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph.cc
 visualizer/sketchpad.h
 -
-core/bfs.h
--
-core/dfs.h
--
-random
--
-core/a_star.h
--
-core/bidirectional_bfs.h
+core/graph.h
 -
 

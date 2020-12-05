@@ -12,8 +12,8 @@ Graph::Graph(const vector<vector<int>> &board) {
   dimension_ = board_.size();
 
   // all of the possible positions the node is adjacent to
-  vector<vector<int>> positions = {{-1, 0}, {0, -1},
-                                   {0, 1}, {1, 0}};
+  vector<vector<int>> positions = {{1, 0}, {0, 1},
+                                   {0, -1}, {-1, 0}};
 
   // insert all the new nodes into a map
   for (size_t row = 0; row < dimension_; row++) {

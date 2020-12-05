@@ -11,6 +11,9 @@ namespace graph_algorithm {
 
 using std::queue;
 
+// todo : potentially make the output path into a function?
+// todo : potentially make the shortest path into a private function?
+
 void BidirectionalBFS::BFS(queue<size_t> &next_nodes, vector<bool> &visited_nodes, vector<int> &path) {
   int current_node_index = next_nodes.front();
   Graph::Node *current_node = board_graph_->GetNodes()[next_nodes.front()];

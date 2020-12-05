@@ -16,8 +16,8 @@ using graph_algorithm::BFS;
 using graph_algorithm::DFS;
 
 TEST_CASE("Testing the BFS and DFS class") {
-  SECTION("Testing the RunBFS and RunDFS function for a 4x4 board with multiple"
-          "possible paths") {
+  SECTION("Testing the Find function for a 4x4 board with multiple possible "
+          "paths") {
     vector<vector<int>> board = {{0, 0, 0, 0},
                                  {0, 1, 1, 1},
                                  {0, 1, 1, 1},
@@ -44,8 +44,8 @@ TEST_CASE("Testing the BFS and DFS class") {
     REQUIRE(dfs_algorithm.Find(3, 0) == dfs_output);
   }
 
-  SECTION("Testing the RunBFS and RunDFS function for a 5x5 board with multiple"
-          "possible paths") {
+  SECTION("Testing the Find function for a 5x5 board with multiple possible "
+          "paths") {
     vector<vector<int>> board = {{0, 0, 0, 0, 0},
                                  {0, 1, 1, 1, 1},
                                  {0, 1, 1, 1, 1},
@@ -75,8 +75,8 @@ TEST_CASE("Testing the BFS and DFS class") {
     REQUIRE(dfs_algorithm.Find(0, 4) == dfs_output);
   }
 
-  SECTION("Testing the RunBFS and RunDFS function for a board with one possible "
-          "valid path and one node that is unreachable") {
+  SECTION("Testing the Find function for a board with one possible valid path "
+          "and one node that is unreachable") {
     vector<vector<int>> board = {{0, 1, 1, 1, 0},
                                  {0, 1, 1, 1, 1},
                                  {0, 1, 1, 1, 1},
@@ -106,8 +106,8 @@ TEST_CASE("Testing the BFS and DFS class") {
     REQUIRE(dfs_algorithm.Find(4, 4) == dfs_output);
   }
 
-  SECTION("Testing the RunBFS and RunDFS function for a board with multiple"
-          "possible valid paths and one node that is unreachable") {
+  SECTION("Testing the Find function for a board with multiple possible valid "
+          "paths and one node that is unreachable") {
     vector<vector<int>> board = {{0, 0, 0, 0, 0},
                                  {0, 1, 1, 1, 0},
                                  {0, 1, 0, 1, 0},
@@ -137,8 +137,8 @@ TEST_CASE("Testing the BFS and DFS class") {
     REQUIRE(dfs_algorithm.Find(4, 4) == dfs_output);
   }
 
-  SECTION("Testing the RunBFS and RunDFS function for a board with one possible"
-          "valid path and multiple nodes that are unreachable") {
+  SECTION("Testing the Find function for a board with one possible valid path "
+          "and multiple nodes that are unreachable") {
     vector<vector<int>> board = {{0, 0, 0, 0, 0},
                                  {1, 1, 1, 1, 0},
                                  {1, 0, 0, 1, 0},
@@ -166,8 +166,8 @@ TEST_CASE("Testing the BFS and DFS class") {
     REQUIRE(dfs_algorithm.Find(4, 4) == dfs_output);
   }
 
-  SECTION("Testing the RunBFS and RunDFS function for a board with multiple "
-          "possible valid paths and multiple nodes that are unreachable") {
+  SECTION("Testing the Find function for a board with multiple possible valid "
+          "paths and multiple nodes that are unreachable") {
     vector<vector<int>> board = {{0, 0, 0, 0, 0},
                                  {0, 0, 0, 0, 0},
                                  {1, 1, 1, 0, 0},

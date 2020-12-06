@@ -25,11 +25,10 @@ Graph::Graph(const vector<vector<int>> &board) {
 
   for (int row = 0; row < dimension_; row++) {
     for (int col = 0; col < dimension_; col++) {
-      // get the current node we are modifying from the map
-      Node *current_node = nodes_[col + row * dimension_];
+      // get the current node we are modifying from the nodes container
+      Node *current_node = nodes_[row * dimension_ + col];
 
       if (board[row][col] != graph_algorithm::kWall) {
-
         for (const vector<int> &position : positions) {
           int adjacent_row = position[0] + row;
           int adjacent_col = position[1] + col;

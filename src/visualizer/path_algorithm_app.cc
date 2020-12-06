@@ -17,7 +17,8 @@ void PathVisualizerApp::draw() {
   sketchpad_.Draw();
 
   ci::gl::drawStringCentered(
-      "Press Delete to clear, 1 to run BFS, 2 to run DFS, and 3 to run A*.",
+      "Press Delete to clear, 1 to run BFS, 2 to run DFS, 3 to run A*, and 4 "
+      "to run Bidirectional BFS.",
       glm::vec2(kWindowSize / 2, kMargin / 2), ci::Color("black"));
 }
 

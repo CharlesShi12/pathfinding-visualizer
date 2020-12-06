@@ -18,19 +18,16 @@ using std::vector;
  */
 class DFS : public Pathfinder {
  private:
-  bool found_destination_;
-  vector<Graph::Node *> path_;
-
   /**
    * Recursive helper method that helps run the Depth First Search algorithm.
    *
-   * @param node the current node that is being visited
+   * @param current_node_index the index of the current node that is being visited
    * @param end_row the row coordinate of the end destination
    * @param end_col the column coordinate of the end destination
    * @param visited_nodes a vector that stores the nodes that this algorithm
    * has already visited
    */
-  bool RecursiveDFS(size_t node_index, size_t end_row, size_t end_col,
+  bool RecursiveDFS(size_t current_node_index, size_t end_row, size_t end_col,
                          vector<bool> &visited_nodes, vector<Graph::Node*> &path);
 
  public:
@@ -40,9 +37,7 @@ class DFS : public Pathfinder {
    * @param board_graph the board represented as a Graph object (or also known
    * as an adjacency matrix)
    */
-  DFS(Graph *board_graph) : Pathfinder(board_graph) {
-    found_destination_ = false;
-  }
+  DFS(Graph *board_graph) : Pathfinder(board_graph) {}
 
   /**
    * Runs the Depth First Search.

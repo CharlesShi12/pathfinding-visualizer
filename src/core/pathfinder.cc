@@ -26,10 +26,9 @@ vector<vector<int>> Pathfinder::ConstructBoard(const vector<bool> &visited_nodes
     }
   }
 
-  // update the output board to show the nodes we've visited in our final
-  // path
-  for (Graph::Node *final_path : path) {
-    output_board[final_path->row][final_path->col] = kPath;
+  // update the output board to show the nodes we've visited in our final path
+  for (Graph::Node *node : path) {
+    output_board[node->row][node->col] = kPath;
   }
 
   return output_board;

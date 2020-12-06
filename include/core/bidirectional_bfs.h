@@ -19,7 +19,7 @@ using std::queue;
  */
 class BidirectionalBFS : public Pathfinder {
    private:
-  void BFS(queue<size_t> &next_nodes, vector<bool> &visited_nodes, vector<int> &path);
+  void BFS(queue<size_t> &next_nodes, vector<bool> &visited_nodes, vector<size_t> &path);
   int IsCollided(vector<bool> start_visited_nodes, vector<bool> end_visited_nodes);
 
    public:

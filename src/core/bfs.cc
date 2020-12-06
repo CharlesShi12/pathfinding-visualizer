@@ -18,13 +18,14 @@ vector<vector<int>> BFS::Find(size_t end_row, size_t end_col) {
   // create a queue of nodes to visit next
   std::queue<size_t> next_nodes;
 
-  // push the first node (starting point) to the queue and set starting distance
-  // to 0
-  size_t starting_node = 0;
-  next_nodes.push(starting_node);
-  Graph::Node *start = nodes[starting_node];
+  // add the first node (starting point) to the data structures and update them
+  size_t starting_node_index = 0;
+  next_nodes.push(starting_node_index);
+  visited_nodes[starting_node_index] = true;
+
+  // set starting distance to 0
+  Graph::Node *start = nodes[starting_node_index];
   start->distance = 0;
-  visited_nodes[starting_node] = true;
 
   while (!next_nodes.empty()) {
     Graph::Node *current_node = nodes[next_nodes.front()];
@@ -46,13 +47,13 @@ vector<vector<int>> BFS::Find(size_t end_row, size_t end_col) {
     }
   }
 
-  vector<Graph::Node *> shortest_path;
+  vector<Graph::Node *> output_path;
   Graph::Node *node = nodes[end_row * dimension + end_col];
 
   // retrace our steps from the end destination until we reach the starting
   // node (row 0, col 0)
   while (node->row != 0 || node->col != 0) {
-    shortest_path.push_back(node);
+    output_path.push_back(node);
 
     for (size_t neighbor : node->adjacent) {
       Graph::Node *adjacent = nodes[neighbor];
@@ -66,9 +67,9 @@ vector<vector<int>> BFS::Find(size_t end_row, size_t end_col) {
   }
 
   // push back the start node (optional)
-  shortest_path.push_back(node);
+  output_path.push_back(node);
 
-  return ConstructBoard(visited_nodes, shortest_path);
+  return ConstructBoard(visited_nodes, output_path);
 }
 
 } // namespace graph_algorithm

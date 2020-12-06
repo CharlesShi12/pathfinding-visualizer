@@ -23,9 +23,9 @@ class PathVisualizerApp : public ci::app::App {
   void mouseDrag(ci::app::MouseEvent event) override;
   void keyDown(ci::app::KeyEvent event) override;
 
-  const double kWindowSize = 400;
+  const double kWindowSize = 600;
   const double kMargin = 75;
-  const size_t kImageDimension = 15;
+  const size_t kImageDimension = 20;
 
  private:
   Sketchpad sketchpad_;

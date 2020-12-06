@@ -25,11 +25,11 @@ class BFS: public Pathfinder {
   BFS(Graph *board_graph) : Pathfinder(board_graph) {}
 
   /**
-   * Runs the Breadth First Search and outputs the shortest path from the start
-   * destination to end destination.
+   * Runs the Breadth First Search.
    *
    * @param end_row the row coordinate of the end destination
    * @param end_col the column coordinate of the end destination
+   * @retun the board after running the Breadth First Search
    */
   std::vector<std::vector<int>> Find(size_t end_row, size_t end_col);
 };

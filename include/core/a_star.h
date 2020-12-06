@@ -18,15 +18,18 @@ class AStar: public Pathfinder {
   /**
    * Calculates Euclidean distance between two points.
    *
+   * @param start_row the row coordinate of the start destination
+   * @param start_col the column coordinate of the start destination
    * @param end_row the row coordinate of the end destination
    * @param end_col the column coordinate of the end destination
+   * @return the Euclidean distance between two points
    */
   double Distance(size_t start_row, size_t start_col, size_t end_row,
                   size_t end_col);
 
  public:
   /**
-   * Creates a AStar object.
+   * Creates an AStar object.
    *
    * @param board_graph the board represented as a Graph object (or also known
    * as an adjacency matrix)
@@ -38,6 +41,7 @@ class AStar: public Pathfinder {
    *
    * @param end_row the row coordinate of the end destination
    * @param end_col the column coordinate of the end destination
+   * @return the board after running the A* Search algorithm
    */
   std::vector<std::vector<int>> Find(size_t end_row, size_t end_col);
 };

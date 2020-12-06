@@ -7882,22 +7882,6 @@ core/graph.h
 visualizer/sketchpad.h
 -
 
-/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/dfs.cc
-core/dfs.h
--
-
-/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph.cc
-visualizer/sketchpad.h
--
-core/graph.h
--
-
-/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/pathfinder.cc
-core/pathfinder.h
-/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/core/pathfinder.h
-visualizer/sketchpad.h
--
-
 /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/visualizer/sketchpad.cc
 visualizer/sketchpad.h
 -

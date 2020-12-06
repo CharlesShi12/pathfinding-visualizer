@@ -27,7 +27,7 @@ vector<vector<int>> AStar::Find(size_t end_row, size_t end_col) {
   vector<bool> visited_nodes = vector<bool>(dimension * dimension, false);
 
   // stores the parent node for the current node
-  vector<size_t> path = vector<size_t>(dimension * dimension, -1);
+  vector<size_t> parent = vector<size_t>(dimension * dimension, -1);
 
   // create min-heap for the next nodes to visit based on the smallest f cost
   // the heap sorts from lowest to highest for the first element of the pair
@@ -41,7 +41,7 @@ vector<vector<int>> AStar::Find(size_t end_row, size_t end_col) {
   // adding the starting node to the data structures
   size_t starting_node_index = 0;
   next_nodes.emplace(0.0, starting_node_index);
-  path[starting_node_index] = starting_node_index;
+  parent[starting_node_index] = starting_node_index;
   visited_nodes[starting_node_index] = true;
 
   // set starting distance to 0
@@ -64,14 +64,14 @@ vector<vector<int>> AStar::Find(size_t end_row, size_t end_col) {
 
     for (size_t neighbor : current_node->adjacent) {
       // only add the node if it hasn't been traversed
-      if (path[neighbor] == -1) {
+      if (parent[neighbor] == -1) {
         // compute the g cost for the neighbor node
         Graph::Node *adjacent = nodes.at(neighbor);
         adjacent->distance = current_node->distance + 1;
 
-        // update the path so that we can backtrack from the end to start for
-        // the final shortest path
-        path[neighbor] = current_node_index;
+        // update the parent so that we can backtrack from the end to start for
+        // the final path
+        parent[neighbor] = current_node_index;
 
         // compute the f cost which is the g cost (movement from the starting
         // node to the current node) plus the h cost (heuristic movement from
@@ -89,7 +89,7 @@ vector<vector<int>> AStar::Find(size_t end_row, size_t end_col) {
   while (end_node_index != 0) {
     Graph::Node *node = nodes[end_node_index];
     output_path.push_back(node);
-    end_node_index = path[end_node_index];
+    end_node_index = parent[end_node_index];
   }
 
   return ConstructBoard(visited_nodes, output_path);

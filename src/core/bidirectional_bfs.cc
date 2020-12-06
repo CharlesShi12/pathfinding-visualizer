@@ -11,7 +11,7 @@ namespace graph_algorithm {
 using std::queue;
 
 void BidirectionalBFS::BFS(queue<size_t> &next_nodes,
-                           vector<bool> &visited_nodes, vector<size_t> &path) {
+                           vector<bool> &visited_nodes, vector<size_t> &parent) {
   size_t current_node_index = next_nodes.front();
   Graph::Node *current_node = board_graph_->GetNodes()[current_node_index];
   next_nodes.pop();
@@ -21,13 +21,13 @@ void BidirectionalBFS::BFS(queue<size_t> &next_nodes,
     if (!visited_nodes[neighbor]) {
       visited_nodes[neighbor] = true;
       next_nodes.push(neighbor);
-      path[neighbor] = current_node_index;
+      parent[neighbor] = current_node_index;
     }
   }
 }
 
-int BidirectionalBFS::IsCollided(vector<bool> start_visited_nodes,
-                                 vector<bool> end_visited_nodes) {
+int BidirectionalBFS::CollisionNode(vector<bool> start_visited_nodes,
+                                    vector<bool> end_visited_nodes) {
   for (size_t i = 0; i < start_visited_nodes.size(); i++) {
     if (start_visited_nodes[i] && end_visited_nodes[i]) {
       return i;
@@ -48,8 +48,8 @@ vector<vector<int>> BidirectionalBFS::Find(size_t end_row, size_t end_col) {
 
   // keep track of the parent nodes for every node for both start and end
   // breadth first searches
-  vector<size_t> start_path = vector<size_t>(dimension * dimension, -1);
-  vector<size_t> end_path = vector<size_t>(dimension * dimension, -1);
+  vector<size_t> start_parent = vector<size_t>(dimension * dimension, -1);
+  vector<size_t> end_parent = vector<size_t>(dimension * dimension, -1);
 
   // create a queue of nodes to visit next for both start and end breadth first
   // searches
@@ -69,11 +69,12 @@ vector<vector<int>> BidirectionalBFS::Find(size_t end_row, size_t end_col) {
   int intersection_node_index;
 
   while (!start_next_nodes.empty() && !end_next_nodes.empty()) {
-    BFS(start_next_nodes, start_visited_nodes, start_path);
-    BFS(end_next_nodes, end_visited_nodes, end_path);
+    BFS(start_next_nodes, start_visited_nodes, start_parent);
+    BFS(end_next_nodes, end_visited_nodes, end_parent);
 
-    // check if the start or end breadth first searches collide with each other
-    intersection_node_index = IsCollided(start_visited_nodes, end_visited_nodes);
+    // find the node, if there is a node, that the start and end breadth first
+    // searches collided with
+    intersection_node_index = CollisionNode(start_visited_nodes, end_visited_nodes);
     if (intersection_node_index != -1) {
       // stop traversing if start and end breadth first searches collide
       break;
@@ -102,7 +103,7 @@ vector<vector<int>> BidirectionalBFS::Find(size_t end_row, size_t end_col) {
   while (current_node_index != start_node_index) {
     Graph::Node *node = nodes[current_node_index];
     output_path.push_back(node);
-    current_node_index = start_path[current_node_index];
+    current_node_index = start_parent[current_node_index];
   }
 
   // traverse the from the intersection node to the end node and keep track of
@@ -111,7 +112,7 @@ vector<vector<int>> BidirectionalBFS::Find(size_t end_row, size_t end_col) {
   while (current_node_index != end_node_index) {
     Graph::Node *node = nodes[current_node_index];
     output_path.push_back(node);
-    current_node_index = end_path[current_node_index];
+    current_node_index = end_parent[current_node_index];
   }
 
   // update the output board to show the nodes we've visited in our final path

@@ -19,8 +19,7 @@ namespace visualizer {
 
 /**
  * A sketchpad which will be displayed in the Cinder application and respond to
- * mouse events. Furthermore, the sketchpad can output its current state in the
- * same format as the Naive Bayes image data files.
+ * mouse and keyboard events.
  */
 class Sketchpad {
  public:
@@ -51,7 +50,7 @@ class Sketchpad {
    * pixel.)
    *
    * @param brush_screen_coords the screen coordinates at which the brush is
-   *           located
+   * located
    */
   void HandleBrush(const glm::vec2& brush_screen_coords);
 
@@ -62,11 +61,10 @@ class Sketchpad {
   void Clear();
 
   /**
-   * Runs a graph traversal algorithm (either BFS or DFS) on the current
-   * sketchpad.
+   * Runs a graph traversal algorithm on the current sketchpad terrain.
    *
-   * @param isBFS this boolean represents whether the user wants the BFS
-   * algorithm or DFS algorithm to be executed
+   * @param algorithm this string represents whether the user wants BFS, DFS,
+   * A*, or Bidirectional BFS
    */
   void RunGraphTraversalAlgorithm(const string &algorithm);
 

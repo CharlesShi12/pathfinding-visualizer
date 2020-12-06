@@ -24,6 +24,9 @@ class DFS: public Pathfinder {
    * @param end_col the column coordinate of the end destination
    * @param visited_nodes a vector that stores the nodes that this algorithm
    * has already visited
+   * @param the final path of the Depth First Search
+   * @return a boolean representing whether we've reached our final destination
+   * or not
    */
   bool RecursiveDFS(size_t current_node_index, size_t end_row, size_t end_col,
                     std::vector<bool> &visited_nodes, std::vector<Graph::Node *> &path);
@@ -42,6 +45,7 @@ class DFS: public Pathfinder {
    *
    * @param end_row the row coordinate of the end destination
    * @param end_col the column coordinate of the end destination
+   * @return the board after running Depth First Search
    */
   std::vector<std::vector<int>> Find(size_t end_row, size_t end_col);
 };

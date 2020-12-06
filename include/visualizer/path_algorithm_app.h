@@ -12,8 +12,8 @@ namespace visualizer {
 using graph_algorithm::visualizer::Sketchpad;
 
 /**
- * Allows a user to draw a digit on a sketchpad and uses Naive Bayes to
- * classify it.
+ * Allows a user to draw a terrain on a sketchpad and visualize a pathfinding
+ * algorithm.
  */
 class PathVisualizerApp : public ci::app::App {
  public:

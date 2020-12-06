@@ -6,6 +6,8 @@
 
 namespace graph_algorithm {
 
+using std::vector;
+
 bool DFS::RecursiveDFS(size_t current_node_index, size_t end_row, size_t end_col,
                        vector<bool> &visited_nodes, vector<Graph::Node*> &path) {
   if (visited_nodes[current_node_index]) {

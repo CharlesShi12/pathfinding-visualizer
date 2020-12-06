@@ -5,18 +5,16 @@
 #ifndef PATH_ALGORITHM_VISUALIZER_DFS_H
 #define PATH_ALGORITHM_VISUALIZER_DFS_H
 
-#include <vector>
 #include "graph.h"
 #include "pathfinder.h"
+#include <vector>
 
 namespace graph_algorithm {
-
-using std::vector;
 
 /**
  * This class runs the Depth First Search.
  */
-class DFS : public Pathfinder {
+class DFS: public Pathfinder {
  private:
   /**
    * Recursive helper method that helps run the Depth First Search algorithm.
@@ -28,7 +26,7 @@ class DFS : public Pathfinder {
    * has already visited
    */
   bool RecursiveDFS(size_t current_node_index, size_t end_row, size_t end_col,
-                         vector<bool> &visited_nodes, vector<Graph::Node*> &path);
+                    std::vector<bool> &visited_nodes, std::vector<Graph::Node *> &path);
 
  public:
   /**
@@ -45,7 +43,7 @@ class DFS : public Pathfinder {
    * @param end_row the row coordinate of the end destination
    * @param end_col the column coordinate of the end destination
    */
-  vector<vector<int>> Find(size_t end_row, size_t end_col);
+  std::vector<std::vector<int>> Find(size_t end_row, size_t end_col);
 };
 
 } // namespace graph_algorithm

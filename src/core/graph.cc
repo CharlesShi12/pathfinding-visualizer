@@ -7,6 +7,8 @@
 
 namespace graph_algorithm {
 
+using std::vector;
+
 Graph::Graph(const vector<vector<int>> &board) {
   board_ = board;
   dimension_ = board_.size();

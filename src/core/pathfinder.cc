@@ -7,6 +7,8 @@
 
 namespace graph_algorithm {
 
+using std::vector;
+
 Pathfinder::Pathfinder(Graph *board_graph) {
   board_graph_ = board_graph;
 }

@@ -5,18 +5,16 @@
 #ifndef PATH_ALGORITHM_VISUALIZER_BFS_H
 #define PATH_ALGORITHM_VISUALIZER_BFS_H
 
-#include <vector>
 #include "graph.h"
 #include "pathfinder.h"
+#include <vector>
 
 namespace graph_algorithm {
-
-using std::vector;
 
 /**
  * This class runs the Breadth First Search.
  */
-class BFS : public Pathfinder {
+class BFS: public Pathfinder {
  public:
   /**
    * Creates a BFS object.
@@ -33,7 +31,7 @@ class BFS : public Pathfinder {
    * @param end_row the row coordinate of the end destination
    * @param end_col the column coordinate of the end destination
    */
-  vector<vector<int>> Find(size_t end_row, size_t end_col);
+  std::vector<std::vector<int>> Find(size_t end_row, size_t end_col);
 };
 
 } // namespace algorithm

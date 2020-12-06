@@ -5,7 +5,6 @@
 #include "core/bidirectional_bfs.h"
 #include <core/graph.h>
 #include <visualizer/sketchpad.h>
-#include <queue>
 
 namespace graph_algorithm {
 
@@ -127,7 +126,5 @@ vector<vector<int>> BidirectionalBFS::Find(size_t end_row, size_t end_col) {
 
   return output_board;
 }
-
-// PULL-REQUEST
 
 } // namespace graph_algorithm

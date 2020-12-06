@@ -10,8 +10,6 @@
 
 namespace graph_algorithm {
 
-using std::vector;
-
 /**
  * This class stores a graph.
  */
@@ -20,7 +18,7 @@ class Graph {
   struct Node {
     int row;
     int col;
-    vector<int> adjacent;
+    std::vector<int> adjacent;
     float distance;
 
     Node(int row_coordinate, int col_coordinate) {
@@ -35,21 +33,21 @@ class Graph {
    *
    * @param board the board represented as a 2D vector of integers
    */
-  Graph(const vector<vector<int>> &board);
+  Graph(const std::vector<std::vector<int>> &board);
 
   /**
    * Returns the nodes from the current Graph.
    *
    * @return the nodes from the current Graph
    */
-  const vector<Node *> &GetNodes();
+  const std::vector<Node *> &GetNodes();
 
   /**
    * Returns the board from the current Graph.
    *
    * @return the board from the current Graph
    */
-  const vector<vector<int>> &GetBoard();
+  const std::vector<std::vector<int>> &GetBoard();
 
   /**
    * Returns the dimension from the current Graph.
@@ -60,8 +58,8 @@ class Graph {
 
  private:
   size_t dimension_;
-  vector<vector<int>> board_;
-  vector<Node *> nodes_;
+  std::vector<std::vector<int>> board_;
+  std::vector<Node *> nodes_;
 };
 
 } // namespace graph_algorithm

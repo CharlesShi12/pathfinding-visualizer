@@ -3,7 +3,6 @@
 //
 
 #include "core/a_star.h"
-#include <queue>
 #include <map>
 
 namespace graph_algorithm {
@@ -11,6 +10,7 @@ namespace graph_algorithm {
 using std::priority_queue;
 using std::pair;
 using std::unordered_map;
+using std::vector;
 
 double AStar::Distance(size_t start_row, size_t start_col, size_t end_row,
                        size_t end_col) {

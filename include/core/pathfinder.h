@@ -10,18 +10,18 @@
 
 namespace graph_algorithm {
 
-using std::vector;
-
 class Pathfinder {
 
  protected:
   Graph *board_graph_;
-  vector<vector<int>> ConstructBoard(const vector<bool> &visited_nodes,
-                                     const vector<Graph::Node*> &path);
+  std::vector<std::vector<int>> ConstructBoard(
+      const std::vector<bool> &visited_nodes,
+      const std::vector<Graph::Node *> &path);
 
  public:
   Pathfinder(Graph *board_graph);
-  virtual vector<vector<int>> Find(size_t end_row, size_t end_col) = 0;
+  virtual std::vector<std::vector<int>>
+  Find(size_t end_row, size_t end_col) = 0;
 };
 
 } // namespace graph_algorithm

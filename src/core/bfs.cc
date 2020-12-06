@@ -8,6 +8,8 @@
 
 namespace graph_algorithm {
 
+using std::vector;
+
 vector<vector<int>> BFS::Find(size_t end_row, size_t end_col) {
   vector<Graph::Node*> nodes = board_graph_->GetNodes();
   size_t dimension = board_graph_->GetDimension();

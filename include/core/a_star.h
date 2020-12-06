@@ -14,7 +14,7 @@ namespace graph_algorithm {
 /**
  * This class runs the A* Search Algorithm.
  */
-class AStar : public Pathfinder {
+class AStar: public Pathfinder {
   /**
    * Calculates Euclidean distance between two points.
    *
@@ -39,7 +39,7 @@ class AStar : public Pathfinder {
    * @param end_row the row coordinate of the end destination
    * @param end_col the column coordinate of the end destination
    */
-  vector<vector<int>> Find(size_t end_row, size_t end_col);
+  std::vector<std::vector<int>> Find(size_t end_row, size_t end_col);
 };
 
 } // namespace graph_algorithm

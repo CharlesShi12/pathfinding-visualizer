@@ -119,8 +119,8 @@ void Sketchpad::RunGraphTraversalAlgorithm(const string &algorithm) {
 }
 
 pair<size_t, size_t> Sketchpad::CountShortestPathAndTraversedNodes() {
-  // set the counts to 1 because we need to count the last node as part of the
-  // shortest path and part of the nodes that we traversed
+  // set the count to 1 because we need to count the last node as part of the
+  // final path and part of the nodes that we traversed
   pair<size_t, size_t> node_count = {1, 1};
 
   for (size_t row = 0; row < num_pixels_per_side_; row++) {

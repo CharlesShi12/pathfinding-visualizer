@@ -116,6 +116,10 @@ vector<vector<int>> BidirectionalBFS::Find(size_t end_row, size_t end_col) {
     current_node_index = end_parent[current_node_index];
   }
 
+  // push the starting and ending node to the final path (optional)
+  output_path.push_back(nodes[start_node_index]);
+  output_path.push_back(nodes[end_node_index]);
+
   // update the output board to show the nodes we've visited in our final path
   for (Graph::Node *final_path : output_path) {
     output_board[final_path->row][final_path->col] = kPath;

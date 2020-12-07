@@ -60,10 +60,9 @@ list(APPEND SOURCE_FILES    ${CORE_SOURCE_FILES}
         src/visualizer/path_algorithm_app.cc
         src/visualizer/sketchpad.cc)
 
-list(APPEND TEST_FILES tests/bfs_and_dfs_test.cc)
+list(APPEND TEST_FILES tests/pathfinder_test.cc)
 list(APPEND TEST_FILES tests/graph_test.cc)
-list(APPEND TEST_FILES tests/a_star_test.cc)
-list(APPEND TEST_FILES tests/bidirectional_bfs_test.cc)
+list(APPEND TEST_FILES tests/sketchpad_test.cc)
 
 ci_make_app(
         APP_NAME        sketchpad-classifier

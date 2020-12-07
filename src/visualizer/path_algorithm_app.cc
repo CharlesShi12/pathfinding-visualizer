@@ -10,6 +10,8 @@ PathVisualizerApp::PathVisualizerApp()
     : sketchpad_(glm::vec2(kMargin, kMargin), kImageDimension,
                  kWindowSize - 2 * kMargin) {
   ci::app::setWindowSize((int) kWindowSize, (int) kWindowSize);
+  traversed_node_count_ = 0;
+  shortest_path_node_count_ = 0;
 }
 
 void PathVisualizerApp::draw() {
@@ -24,13 +26,15 @@ void PathVisualizerApp::draw() {
       glm::vec2(kWindowSize / 2, kMargin / 2), ci::Color("black"));
 
   ci::gl::drawStringCentered(
-      "Number of nodes traversed for the shortest path: " +
+      "Number of nodes traversed for the algorithm's path: " +
       std::to_string(shortest_path_node_count_),
-      glm::vec2(kWindowSize / 2, kWindowSize - kMargin / 3), ci::Color("blue"));
+      glm::vec2(kWindowSize / 2, kWindowSize - kMargin / 3),
+      ci::Color("black"));
 
   ci::gl::drawStringCentered(
-      "Number of nodes traversed: " + std::to_string(traversed_node_count_),
-      glm::vec2(kWindowSize / 2, kWindowSize - kMargin / 1.5), ci::Color("blue"));
+      "Total number of nodes traversed: " + std::to_string(traversed_node_count_),
+      glm::vec2(kWindowSize / 2, kWindowSize - kMargin / 1.5),
+      ci::Color("black"));
 }
 
 void PathVisualizerApp::mouseDown(ci::app::MouseEvent event) {

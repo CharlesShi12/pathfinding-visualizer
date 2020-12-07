@@ -92,6 +92,9 @@ vector<vector<int>> AStar::Find(size_t end_row, size_t end_col) {
     end_node_index = parent[end_node_index];
   }
 
+  // push back the starting node to the final path (optional)
+  output_path.push_back(start_node);
+
   return ConstructBoard(visited_nodes, output_path);
 }
 

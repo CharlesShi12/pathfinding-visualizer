@@ -9,7 +9,7 @@ namespace graph_algorithm {
 using std::vector;
 
 bool DFS::RecursiveDFS(size_t current_node_index, size_t end_row, size_t end_col,
-                       vector<bool> &visited_nodes, vector<Graph::Node*> &path) {
+                       vector<bool> &visited_nodes, vector<Graph::Node *> &path) {
   if (visited_nodes[current_node_index]) {
     return false;
   }
@@ -37,10 +37,11 @@ bool DFS::RecursiveDFS(size_t current_node_index, size_t end_row, size_t end_col
 
 vector<vector<int>> DFS::Find(size_t end_row, size_t end_col) {
   size_t dimension = board_graph_->GetDimension();
-  vector<Graph::Node*> nodes = board_graph_->GetNodes();
+  vector<Graph::Node *> nodes = board_graph_->GetNodes();
   vector<vector<int>> output_board = board_graph_->GetBoard();
 
-  vector<Graph::Node*> output_path;
+  // the final path for the DFS algorithm
+  vector<Graph::Node *> output_path;
 
   // keeps track of every node we visit
   vector<bool> visited_nodes = vector<bool>(dimension * dimension, false);

@@ -423,87 +423,6 @@ src/visualizer/sketchpad.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.s
 .PHONY : src/visualizer/sketchpad.cc.s
 
-tests/a_star_test.o: tests/a_star_test.cc.o
-
-.PHONY : tests/a_star_test.o
-
-# target to build an object file
-tests/a_star_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.o
-.PHONY : tests/a_star_test.cc.o
-
-tests/a_star_test.i: tests/a_star_test.cc.i
-
-.PHONY : tests/a_star_test.i
-
-# target to preprocess a source file
-tests/a_star_test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.i
-.PHONY : tests/a_star_test.cc.i
-
-tests/a_star_test.s: tests/a_star_test.cc.s
-
-.PHONY : tests/a_star_test.s
-
-# target to generate assembly for a file
-tests/a_star_test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.s
-.PHONY : tests/a_star_test.cc.s
-
-tests/bfs_and_dfs_test.o: tests/bfs_and_dfs_test.cc.o
-
-.PHONY : tests/bfs_and_dfs_test.o
-
-# target to build an object file
-tests/bfs_and_dfs_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.o
-.PHONY : tests/bfs_and_dfs_test.cc.o
-
-tests/bfs_and_dfs_test.i: tests/bfs_and_dfs_test.cc.i
-
-.PHONY : tests/bfs_and_dfs_test.i
-
-# target to preprocess a source file
-tests/bfs_and_dfs_test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.i
-.PHONY : tests/bfs_and_dfs_test.cc.i
-
-tests/bfs_and_dfs_test.s: tests/bfs_and_dfs_test.cc.s
-
-.PHONY : tests/bfs_and_dfs_test.s
-
-# target to generate assembly for a file
-tests/bfs_and_dfs_test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.s
-.PHONY : tests/bfs_and_dfs_test.cc.s
-
-tests/bidirectional_bfs_test.o: tests/bidirectional_bfs_test.cc.o
-
-.PHONY : tests/bidirectional_bfs_test.o
-
-# target to build an object file
-tests/bidirectional_bfs_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.o
-.PHONY : tests/bidirectional_bfs_test.cc.o
-
-tests/bidirectional_bfs_test.i: tests/bidirectional_bfs_test.cc.i
-
-.PHONY : tests/bidirectional_bfs_test.i
-
-# target to preprocess a source file
-tests/bidirectional_bfs_test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.i
-.PHONY : tests/bidirectional_bfs_test.cc.i
-
-tests/bidirectional_bfs_test.s: tests/bidirectional_bfs_test.cc.s
-
-.PHONY : tests/bidirectional_bfs_test.s
-
-# target to generate assembly for a file
-tests/bidirectional_bfs_test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.s
-.PHONY : tests/bidirectional_bfs_test.cc.s
-
 tests/graph_test.o: tests/graph_test.cc.o
 
 .PHONY : tests/graph_test.o
@@ -530,6 +449,60 @@ tests/graph_test.s: tests/graph_test.cc.s
 tests/graph_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.s
 .PHONY : tests/graph_test.cc.s
+
+tests/pathfinder_test.o: tests/pathfinder_test.cc.o
+
+.PHONY : tests/pathfinder_test.o
+
+# target to build an object file
+tests/pathfinder_test.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.o
+.PHONY : tests/pathfinder_test.cc.o
+
+tests/pathfinder_test.i: tests/pathfinder_test.cc.i
+
+.PHONY : tests/pathfinder_test.i
+
+# target to preprocess a source file
+tests/pathfinder_test.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.i
+.PHONY : tests/pathfinder_test.cc.i
+
+tests/pathfinder_test.s: tests/pathfinder_test.cc.s
+
+.PHONY : tests/pathfinder_test.s
+
+# target to generate assembly for a file
+tests/pathfinder_test.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.s
+.PHONY : tests/pathfinder_test.cc.s
+
+tests/sketchpad_test.o: tests/sketchpad_test.cc.o
+
+.PHONY : tests/sketchpad_test.o
+
+# target to build an object file
+tests/sketchpad_test.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.o
+.PHONY : tests/sketchpad_test.cc.o
+
+tests/sketchpad_test.i: tests/sketchpad_test.cc.i
+
+.PHONY : tests/sketchpad_test.i
+
+# target to preprocess a source file
+tests/sketchpad_test.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.i
+.PHONY : tests/sketchpad_test.cc.i
+
+tests/sketchpad_test.s: tests/sketchpad_test.cc.s
+
+.PHONY : tests/sketchpad_test.s
+
+# target to generate assembly for a file
+tests/sketchpad_test.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.s
+.PHONY : tests/sketchpad_test.cc.s
 
 tests/test_main.o: tests/test_main.cc.o
 
@@ -595,18 +568,15 @@ help:
 	@echo "... src/visualizer/sketchpad.o"
 	@echo "... src/visualizer/sketchpad.i"
 	@echo "... src/visualizer/sketchpad.s"
-	@echo "... tests/a_star_test.o"
-	@echo "... tests/a_star_test.i"
-	@echo "... tests/a_star_test.s"
-	@echo "... tests/bfs_and_dfs_test.o"
-	@echo "... tests/bfs_and_dfs_test.i"
-	@echo "... tests/bfs_and_dfs_test.s"
-	@echo "... tests/bidirectional_bfs_test.o"
-	@echo "... tests/bidirectional_bfs_test.i"
-	@echo "... tests/bidirectional_bfs_test.s"
 	@echo "... tests/graph_test.o"
 	@echo "... tests/graph_test.i"
 	@echo "... tests/graph_test.s"
+	@echo "... tests/pathfinder_test.o"
+	@echo "... tests/pathfinder_test.i"
+	@echo "... tests/pathfinder_test.s"
+	@echo "... tests/sketchpad_test.o"
+	@echo "... tests/sketchpad_test.i"
+	@echo "... tests/sketchpad_test.s"
 	@echo "... tests/test_main.o"
 	@echo "... tests/test_main.i"
 	@echo "... tests/test_main.s"

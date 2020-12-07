@@ -198,18 +198,18 @@ CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/visualizer/sketchpad.cc -o CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.s
 
-CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.o: CMakeFiles/path-algorithm-test.dir/flags.make
-CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.o: ../tests/bfs_and_dfs_test.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/bfs_and_dfs_test.cc
+CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.o: CMakeFiles/path-algorithm-test.dir/flags.make
+CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.o: ../tests/pathfinder_test.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/pathfinder_test.cc
 
-CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/bfs_and_dfs_test.cc > CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.i
+CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/pathfinder_test.cc > CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.i
 
-CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/bfs_and_dfs_test.cc -o CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.s
+CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/pathfinder_test.cc -o CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.s
 
 CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.o: CMakeFiles/path-algorithm-test.dir/flags.make
 CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.o: ../tests/graph_test.cc
@@ -224,31 +224,18 @@ CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/graph_test.cc -o CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.s
 
-CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.o: CMakeFiles/path-algorithm-test.dir/flags.make
-CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.o: ../tests/a_star_test.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/a_star_test.cc
+CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.o: CMakeFiles/path-algorithm-test.dir/flags.make
+CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.o: ../tests/sketchpad_test.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/sketchpad_test.cc
 
-CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/a_star_test.cc > CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.i
+CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/sketchpad_test.cc > CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.i
 
-CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/a_star_test.cc -o CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.s
-
-CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.o: CMakeFiles/path-algorithm-test.dir/flags.make
-CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.o: ../tests/bidirectional_bfs_test.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.o -c /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/bidirectional_bfs_test.cc
-
-CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/bidirectional_bfs_test.cc > CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.i
-
-CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/bidirectional_bfs_test.cc -o CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.s
+CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/sketchpad_test.cc -o CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.s
 
 # Object files for target path-algorithm-test
 path__algorithm__test_OBJECTS = \
@@ -261,10 +248,9 @@ path__algorithm__test_OBJECTS = \
 "CMakeFiles/path-algorithm-test.dir/src/core/pathfinder.cc.o" \
 "CMakeFiles/path-algorithm-test.dir/src/visualizer/path_algorithm_app.cc.o" \
 "CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.o" \
-"CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.o" \
+"CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.o" \
 "CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.o" \
-"CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.o" \
-"CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.o"
+"CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.o"
 
 # External object files for target path-algorithm-test
 path__algorithm__test_EXTERNAL_OBJECTS =
@@ -278,16 +264,15 @@ Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-
 Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test: CMakeFiles/path-algorithm-test.dir/src/core/pathfinder.cc.o
 Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test: CMakeFiles/path-algorithm-test.dir/src/visualizer/path_algorithm_app.cc.o
 Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test: CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.o
-Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test: CMakeFiles/path-algorithm-test.dir/tests/bfs_and_dfs_test.cc.o
+Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test: CMakeFiles/path-algorithm-test.dir/tests/pathfinder_test.cc.o
 Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test: CMakeFiles/path-algorithm-test.dir/tests/graph_test.cc.o
-Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test: CMakeFiles/path-algorithm-test.dir/tests/a_star_test.cc.o
-Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test: CMakeFiles/path-algorithm-test.dir/tests/bidirectional_bfs_test.cc.o
+Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test: CMakeFiles/path-algorithm-test.dir/tests/sketchpad_test.cc.o
 Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test: CMakeFiles/path-algorithm-test.dir/build.make
 Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test: /Users/charlesshi/Downloads/Cinder/lib/macosx/Debug/libcinder.a
 Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test: /Users/charlesshi/Downloads/Cinder/lib/macosx/libboost_system.a
 Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test: /Users/charlesshi/Downloads/Cinder/lib/macosx/libboost_filesystem.a
 Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test: CMakeFiles/path-algorithm-test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS/path-algorithm-test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/path-algorithm-test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

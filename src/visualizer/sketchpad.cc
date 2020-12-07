@@ -11,6 +11,7 @@ namespace visualizer {
 
 using glm::vec2;
 using std::string;
+using std::pair;
 
 Sketchpad::Sketchpad(const vec2& top_left_corner, size_t num_pixels_per_side,
                      double sketchpad_size, double brush_radius)
@@ -115,6 +116,30 @@ void Sketchpad::RunGraphTraversalAlgorithm(const string &algorithm) {
   // mark the start and end nodes for the user to see
   current_board_[start_row_][start_col_] = kStartAndEndNode;
   current_board_[end_row_][end_col_] = kStartAndEndNode;
+}
+
+pair<size_t, size_t> Sketchpad::CountShortestPathAndTraversedNodes() {
+  // set the counts to 1 because we need to count the last node as part of the
+  // shortest path and part of the nodes that we traversed
+  pair<size_t, size_t> node_count = {1, 1};
+
+  for (size_t row = 0; row < num_pixels_per_side_; row++) {
+    for (size_t col = 0; col < num_pixels_per_side_; col++) {
+      if (current_board_[row][col] == kTraversedNodes ||
+          current_board_[row][col] == kIntersectionNode ||
+          current_board_[row][col] == kAlternativeTraversedNodes ||
+          current_board_[row][col] == kPath) {
+        node_count.second++;
+
+        if (current_board_[row][col] == kIntersectionNode ||
+            current_board_[row][col] == kPath) {
+          node_count.first++;
+        }
+      }
+    }
+  }
+
+  return node_count;
 }
 
 }  // namespace visualizer

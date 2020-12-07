@@ -29,6 +29,8 @@ class PathVisualizerApp : public ci::app::App {
 
  private:
   Sketchpad sketchpad_;
+  size_t shortest_path_node_count_;
+  size_t traversed_node_count_;
 };
 
 }  // namespace visualizer

@@ -4,6 +4,8 @@ namespace graph_algorithm {
 
 namespace visualizer {
 
+using std::pair;
+
 PathVisualizerApp::PathVisualizerApp()
     : sketchpad_(glm::vec2(kMargin, kMargin), kImageDimension,
                  kWindowSize - 2 * kMargin) {
@@ -20,6 +22,15 @@ void PathVisualizerApp::draw() {
       "Press Delete to clear, 1 to run BFS, 2 to run DFS, 3 to run A*, and 4 "
       "to run Bidirectional BFS.",
       glm::vec2(kWindowSize / 2, kMargin / 2), ci::Color("black"));
+
+  ci::gl::drawStringCentered(
+      "Number of nodes traversed for the shortest path: " +
+      std::to_string(shortest_path_node_count_),
+      glm::vec2(kWindowSize / 2, kWindowSize - kMargin / 3), ci::Color("blue"));
+
+  ci::gl::drawStringCentered(
+      "Number of nodes traversed: " + std::to_string(traversed_node_count_),
+      glm::vec2(kWindowSize / 2, kWindowSize - kMargin / 1.5), ci::Color("blue"));
 }
 
 void PathVisualizerApp::mouseDown(ci::app::MouseEvent event) {
@@ -31,6 +42,8 @@ void PathVisualizerApp::mouseDrag(ci::app::MouseEvent event) {
 }
 
 void PathVisualizerApp::keyDown(ci::app::KeyEvent event) {
+  pair<size_t, size_t> node_counts = {0, 0};
+
   switch (event.getCode()) {
     case ci::app::KeyEvent::KEY_1:
       sketchpad_.RunGraphTraversalAlgorithm("BFS");
@@ -54,7 +67,22 @@ void PathVisualizerApp::keyDown(ci::app::KeyEvent event) {
 
     case ci::app::KeyEvent::KEY_DELETE:
       sketchpad_.Clear();
+      node_counts = {0, 0};
+      traversed_node_count_ = 0;
+      shortest_path_node_count_ = 0;
+      sketchpad_.Draw();
       break;
+  }
+
+  // if the user visualized an algorithm, analyze the algorithm's final path and
+  // traversed nodes
+  if (event.getCode() == ci::app::KeyEvent::KEY_1 ||
+      event.getCode() == ci::app::KeyEvent::KEY_2 ||
+      event.getCode() == ci::app::KeyEvent::KEY_3 ||
+      event.getCode() == ci::app::KeyEvent::KEY_4) {
+    node_counts = sketchpad_.CountShortestPathAndTraversedNodes();
+    shortest_path_node_count_ = node_counts.first;
+    traversed_node_count_ = node_counts.second;
   }
 }
 

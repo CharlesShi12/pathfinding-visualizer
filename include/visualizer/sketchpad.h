@@ -68,6 +68,16 @@ class Sketchpad {
    */
   void RunGraphTraversalAlgorithm(const string &algorithm);
 
+  /**
+   * Count the number of nodes that make up the algorithm's path and count the
+   * number of the nodes that the algorithm has traversed.
+   *
+   * @return a pair where the first value represents the number of nodes that
+   * make up the algorithm's final path and the second value represents the
+   * number of nodes that the algorithm traversed
+   */
+  std::pair<size_t, size_t> CountShortestPathAndTraversedNodes();
+
  private:
   vector<vector<int>> current_board_;
   glm::vec2 top_left_corner_;

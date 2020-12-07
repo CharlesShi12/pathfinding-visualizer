@@ -8,8 +8,6 @@
 #include <core/bfs.h>
 #include <core/dfs.h>
 
-//TODO: Ask if these tests are sufficient for BFS and DFS
-
 using std::vector;
 using graph_algorithm::Graph;
 using graph_algorithm::BFS;
@@ -30,10 +28,10 @@ TEST_CASE("Testing the BFS and DFS class") {
                                       {4, 1, 1, 1},
                                       {4, 1, 1, 1}};
 
-    vector<vector<int>> dfs_output = {{2, 2, 2, 2},
-                                      {2, 1, 1, 1},
-                                      {2, 1, 1, 1},
-                                      {2, 1, 1, 1}};
+    vector<vector<int>> dfs_output = {{4, 0, 0, 0},
+                                      {4, 1, 1, 1},
+                                      {4, 1, 1, 1},
+                                      {4, 1, 1, 1}};
 
     Graph board_graph(board);
 
@@ -60,11 +58,11 @@ TEST_CASE("Testing the BFS and DFS class") {
                                       {2, 1, 1, 1, 1},
                                       {2, 1, 1, 1, 1}};
 
-    vector<vector<int>> dfs_output = {{2, 2, 2, 2, 2},
-                                      {0, 1, 1, 1, 1},
-                                      {0, 1, 1, 1, 1},
-                                      {0, 1, 1, 1, 1},
-                                      {0, 1, 1, 1, 1}};
+    vector<vector<int>> dfs_output = {{4, 4, 4, 4, 4},
+                                      {2, 1, 1, 1, 1},
+                                      {2, 1, 1, 1, 1},
+                                      {2, 1, 1, 1, 1},
+                                      {2, 1, 1, 1, 1}};
 
     Graph board_graph(board);
 
@@ -91,11 +89,11 @@ TEST_CASE("Testing the BFS and DFS class") {
                                       {4, 1, 1, 1, 1},
                                       {4, 4, 4, 4, 4}};
 
-    vector<vector<int>> dfs_output = {{2, 1, 1, 1, 0},
-                                      {2, 1, 1, 1, 1},
-                                      {2, 1, 1, 1, 1},
-                                      {2, 1, 1, 1, 1},
-                                      {2, 2, 2, 2, 2}};
+    vector<vector<int>> dfs_output = {{4, 1, 1, 1, 0},
+                                      {4, 1, 1, 1, 1},
+                                      {4, 1, 1, 1, 1},
+                                      {4, 1, 1, 1, 1},
+                                      {4, 4, 4, 4, 4}};
 
     Graph board_graph(board);
 
@@ -116,17 +114,17 @@ TEST_CASE("Testing the BFS and DFS class") {
 
     // the node at row 2 and column 2 should never be traversed in either one
     // of the DFS and BFS paths
-    vector<vector<int>> bfs_output = {{4, 4, 4, 4, 4},
-                                      {2, 1, 1, 1, 4},
-                                      {2, 1, 0, 1, 4},
-                                      {2, 1, 1, 1, 4},
-                                      {2, 2, 2, 2, 4}};
+    vector<vector<int>> bfs_output = {{4, 2, 2, 2, 2},
+                                      {4, 1, 1, 1, 2},
+                                      {4, 1, 0, 1, 2},
+                                      {4, 1, 1, 1, 2},
+                                      {4, 4, 4, 4, 4}};
 
-    vector<vector<int>> dfs_output = {{2, 2, 2, 2, 2},
-                                      {0, 1, 1, 1, 2},
-                                      {0, 1, 0, 1, 2},
-                                      {0, 1, 1, 1, 2},
-                                      {0, 0, 0, 0, 2}};
+    vector<vector<int>> dfs_output = {{4, 0, 0, 0, 0},
+                                      {4, 1, 1, 1, 0},
+                                      {4, 1, 0, 1, 0},
+                                      {4, 1, 1, 1, 0},
+                                      {4, 4, 4, 4, 4}};
 
     Graph board_graph(board);
 
@@ -151,11 +149,11 @@ TEST_CASE("Testing the BFS and DFS class") {
                                       {1, 0, 0, 1, 4},
                                       {1, 1, 1, 1, 4}};
 
-    vector<vector<int>> dfs_output = {{2, 2, 2, 2, 2},
-                                      {1, 1, 1, 1, 2},
-                                      {1, 0, 0, 1, 2},
-                                      {1, 0, 0, 1, 2},
-                                      {1, 1, 1, 1, 2}};
+    vector<vector<int>> dfs_output = {{4, 4, 4, 4, 4},
+                                      {1, 1, 1, 1, 4},
+                                      {1, 0, 0, 1, 4},
+                                      {1, 0, 0, 1, 4},
+                                      {1, 1, 1, 1, 4}};
 
     Graph board_graph(board);
 
@@ -174,17 +172,17 @@ TEST_CASE("Testing the BFS and DFS class") {
                                  {0, 0, 1, 0, 0},
                                  {0, 0, 1, 0, 0}};
 
-    vector<vector<int>> bfs_output = {{4, 4, 4, 4, 4},
-                                      {2, 2, 2, 2, 4},
-                                      {1, 1, 1, 2, 4},
-                                      {0, 0, 1, 2, 4},
-                                      {0, 0, 1, 2, 4}};
+    vector<vector<int>> bfs_output = {{4, 2, 2, 2, 2},
+                                      {4, 4, 4, 4, 2},
+                                      {1, 1, 1, 4, 2},
+                                      {0, 0, 1, 4, 2},
+                                      {0, 0, 1, 4, 4}};
 
-    vector<vector<int>> dfs_output = {{2, 2, 2, 2, 2},
-                                      {2, 2, 2, 2, 2},
-                                      {1, 1, 1, 2, 2},
-                                      {0, 0, 1, 2, 2},
-                                      {0, 0, 1, 2, 2}};
+    vector<vector<int>> dfs_output = {{4, 0, 0, 0, 0},
+                                      {4, 4, 4, 4, 0},
+                                      {1, 1, 1, 4, 0},
+                                      {0, 0, 1, 4, 0},
+                                      {0, 0, 1, 4, 4}};
 
     Graph board_graph(board);
 

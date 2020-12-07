@@ -3,7 +3,7 @@
 //
 
 #include <core/graph.h>
-#include <core/bfs.h>
+#include "core/bfs.h"
 #include <queue>
 
 namespace graph_algorithm {

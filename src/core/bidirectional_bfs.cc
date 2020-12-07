@@ -9,6 +9,7 @@
 namespace graph_algorithm {
 
 using std::queue;
+using std::vector;
 
 void BidirectionalBFS::BFS(queue<size_t> &next_nodes,
                            vector<bool> &visited_nodes, vector<size_t> &parent) {

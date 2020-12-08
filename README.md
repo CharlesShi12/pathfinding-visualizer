@@ -40,9 +40,9 @@ Delete | Clear the sketchpad
 Color | Node Representation
 ------------ | -------------
 White | Unvisited node, but reachable node
-Gray | Visited Node
-Light-Gray | Visited Node for Alternative Algorithm (For Bidirectional BFS)
+Gray | Visited Node Starting at Start Location
+Light-Gray | Visited Node Starting at End Location (For Bidirectional BFS)
 Black | Unreachable Node
-Green | Intersected Node (For Bidirectional BFS)
+Green | Intersection Node (For Bidirectional BFS)
 Blue | Start and End Nodes
 Red | Final Output Path Node

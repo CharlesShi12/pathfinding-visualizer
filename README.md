@@ -10,5 +10,16 @@
 
 The pathfinding visualizer project is a Cinder application that displays a sketchpad where users can clear and draw terrains and mazes for the pathfinding algorithms to solve and traverse. The pathfinding algorithms that we visualize are Breadth-First Search, Depth-First Search, A*, and Bi-directional Breadth-First Search with the nodes traversed and final paths of each algorithm highlighted in with different colors. The Breadth-First Search, A*, and Bi-directional Breadth-First Search produce a path that is the shortest from the start destination to the end destination. Moreover, users can analyze the statistics about each pathfinding algorithm and compare them to each other (ex. the total length of the final path, how many nodes did this specific algorithm traverse, etc). The entire project was written in C++. 
 
-## How to build/use it
+## How to build it
 
+If you are using Ubuntu, follow the instructions here: https://www.libcinder.org/docs/guides/linux-notes/ubuntu.html.
+
+If you haven't installed CLion, then install it from https://www.jetbrains.com/clion/download. 
+
+First, download Cinder from https://libcinder.org/download and put the downloaded item into a folder. 
+
+Next, name the folder ~/Cinder and open the ~/Cinder folder in CLion. Then, click the green build button in CLion. 
+
+Create a project folder in the ~/Cinder folder and clone this repository in the project directory. 
+
+Open the clone repository and run the program. 

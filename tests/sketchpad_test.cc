@@ -75,4 +75,37 @@ TEST_CASE("Testing the Sketchpad class") {
     REQUIRE(output.first == 14);
     REQUIRE(output.second == 20);
   }
+
+  SECTION("Testing the CountPathAndTraversedNodes function for a 4x4 board with"
+          "empty nodes (represented as 0), walls (1), traversed nodes (2),"
+          "start and end nodes (3), final path (4), alternative"
+          "traversed nodes (5), and intersection node (6)") {
+    vector<vector<int>> board = {{1, 4, 0, 6},
+                                 {5, 2, 3, 2},
+                                 {6, 4, 2, 0},
+                                 {0, 5, 4, 6}};
+    sketchpad.SetCurrentBoard(board);
+
+    pair<int, int> output = sketchpad.CountPathAndTraversedNodes();
+
+    REQUIRE(output.first == 7);
+    REQUIRE(output.second == 12);
+  }
+
+  SECTION("Testing the CountPathAndTraversedNodes function for a 5x5 board with"
+          "empty nodes (represented as 0), walls (1), traversed nodes (2),"
+          "start and end nodes (3), final path (4), alternative"
+          "traversed nodes (5), and intersection node (6)") {
+    vector<vector<int>> board = {{1, 4, 0, 6, 0},
+                                 {5, 1, 3, 2, 5},
+                                 {6, 4, 2, 0, 4},
+                                 {0, 0, 4, 6, 5},
+                                 {4, 5, 6, 3, 4}};
+    sketchpad.SetCurrentBoard(board);
+
+    pair<int, int> output = sketchpad.CountPathAndTraversedNodes();
+
+    REQUIRE(output.first == 11);
+    REQUIRE(output.second == 17);
+  }
 }

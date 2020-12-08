@@ -20,9 +20,10 @@ using graph_algorithm::AStar;
 using graph_algorithm::Pathfinder;
 using std::vector;
 
-TEST_CASE("Testing the BFS, BidirectionalBFS, AStar, and DFS class") {
+TEST_CASE("Testing the Pathfinder, BFS, BidirectionalBFS, AStar, and DFS class") {
   SECTION("Testing the Find function for a 4x4 board with no walls") {
-    // make sure the algorithms' final paths are valid paths in the board
+    // make sure the algorithms' final paths are valid paths in the board and
+    // it traverses valid nodes
     vector<vector<int>> board = {{0, 0, 0, 0},
                                  {0, 0, 0, 0},
                                  {0, 0, 0, 0},
@@ -60,7 +61,8 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar, and DFS class") {
   }
 
   SECTION("Testing the Find function for a 5x5 board with no walls") {
-    // make sure the algorithms' final paths are valid paths in the board
+    // make sure the algorithms' final paths are valid paths in the board and
+    // it traverses valid nodes
     vector<vector<int>> board = {{0, 0, 0, 0, 0},
                                  {0, 0, 0, 0, 0},
                                  {0, 0, 0, 0, 0},
@@ -103,7 +105,7 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar, and DFS class") {
   }
 
   SECTION("Testing the Find function for a 4x4 board with walls") {
-    // make sure the algorithms do not traverse the walls
+    // make sure the algorithms do not use or traverse the walls
     vector<vector<int>> board = {{0, 0, 0, 0},
                                  {0, 1, 1, 0},
                                  {0, 1, 1, 0},

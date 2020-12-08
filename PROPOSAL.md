@@ -2,17 +2,16 @@ The project I want to do is create a Cinder visualization application for the A*
 algorithm, the bi-directional Breadth-First Search algorithm, and the Breadth-First Search. The 
 program would allow users to drag and create a terrain for the algorithms to run using something 
 similar to the Naive Bayes structure (users click on the mouse to draw a black square). Then, there 
-would be a finish and start block which the algorithm would use to find the shortest path. The users
+would be a finish and start block which the algorithm would use to find the final path. The users 
 would be allowed to select which algorithm they want to run. After this, the algorithm would run, 
 highlighting squares that it would use as a color and the shortest path (if possible) with another 
 color. Some stretch goals I could implement would be allowing the users to place down a starting 
-place and ending place. Moreover, I could implement other algorithms for pathfinding/searching. I 
-could also compare how fast each pathfinding/search algorithm is at finding the shortest path for 
-the same terrain. 
+place and ending place. Moreover, I could implement other algorithms for pathfinding/searching.
+I could also add statistics on each pathfinding/search algorithm for the same terrain. 
 
 I have some basic background knowledge on general algorithms, but I felt that I wanted to understand 
 pathfinding/search algorithms at a deeper level because of their efficiency and effectiveness in the 
-computer science world. I feel that if I were to implement these pathfinding/search algorithms, I 
+computer science field. I feel that if I were to implement these pathfinding/search algorithms, I 
 would be able to achieve that level of understanding that I strive for. Further, the realm of graphs 
 is very interesting to me just because I’ve never really worked with it before, and I enjoy learning 
 and implementing things that are new to me, especially in computer science. Moreover, these 

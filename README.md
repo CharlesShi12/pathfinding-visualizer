@@ -20,6 +20,29 @@ First, download Cinder from https://libcinder.org/download and put the downloade
 
 Next, name the folder ~/Cinder and open the ~/Cinder folder in CLion. Then, click the green build button in CLion. 
 
-Create a project folder in the ~/Cinder folder and clone this repository in the project directory. 
+Create a project directory called my-projects in the ~/Cinder folder and clone this repository in the my-projects directory. 
 
-Open the clone repository and run the program. 
+Open the cloned repository and run the program. 
+
+## How to use it
+
+Key | Action
+------------ | -------------
+1 | Run Breadth-First Search
+2 | Run Depth-First Search
+3 | Run A Star Search
+4 | Run Bidirectional Breadth-First Search
+Mouse Click | Draw a wall on the sketchpad
+Delete | Clear the sketchpad
+
+## Node Legend
+
+Color | Node Representation
+------------ | -------------
+White | Unvisited node, but reachable node
+Gray | Visited Node
+Light-Gray | Visited Node for Alternative Algorithm (For Bidirectional BFS)
+Black | Unreachable Node
+Green | Intersected Node (For Bidirectional BFS)
+Blue | Start and End Nodes
+Red | Final Output Path Node

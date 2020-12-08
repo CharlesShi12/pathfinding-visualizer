@@ -34,8 +34,8 @@ class BidirectionalBFS: public Pathfinder {
    * @param end_visited_nodes the nodes that the end BFS visited
    * @return the id of the collided node or -1 if there is no collided node
    */
-  int CollisionNode(std::vector<bool> start_visited_nodes,
-                    std::vector<bool> end_visited_nodes);
+  int CollisionNode(const std::vector<bool> &start_visited_nodes,
+                    const std::vector<bool> &end_visited_nodes);
 
  public:
   /**

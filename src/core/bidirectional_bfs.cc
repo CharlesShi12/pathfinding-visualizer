@@ -27,8 +27,8 @@ void BidirectionalBFS::BFS(queue<size_t> &next_nodes,
   }
 }
 
-int BidirectionalBFS::CollisionNode(vector<bool> start_visited_nodes,
-                                    vector<bool> end_visited_nodes) {
+int BidirectionalBFS::CollisionNode(const vector<bool> &start_visited_nodes,
+                                    const vector<bool> &end_visited_nodes) {
   for (size_t i = 0; i < start_visited_nodes.size(); i++) {
     if (start_visited_nodes[i] && end_visited_nodes[i]) {
       return i;

@@ -118,19 +118,25 @@ void Sketchpad::RunGraphTraversalAlgorithm(const string &algorithm) {
   current_board_[end_row_][end_col_] = kStartAndEndNode;
 }
 
-pair<size_t, size_t> Sketchpad::CountShortestPathAndTraversedNodes() {
+pair<size_t, size_t> Sketchpad::CountPathAndTraversedNodes() {
   // set the count to 1 because we need to count the last node as part of the
   // final path and part of the nodes that we traversed
   pair<size_t, size_t> node_count = {1, 1};
+  size_t dimension = current_board_.size();
 
-  for (size_t row = 0; row < num_pixels_per_side_; row++) {
-    for (size_t col = 0; col < num_pixels_per_side_; col++) {
+  for (size_t row = 0; row < dimension; row++) {
+    for (size_t col = 0; col < dimension; col++) {
+
+      // if the node is part of the traversed nodes, increment the second value
+      // of the pair
       if (current_board_[row][col] == kTraversedNodes ||
           current_board_[row][col] == kIntersectionNode ||
           current_board_[row][col] == kAlternativeTraversedNodes ||
           current_board_[row][col] == kPath) {
         node_count.second++;
 
+        // if the node is part of the final path, increment the first value of
+        // the pair
         if (current_board_[row][col] == kIntersectionNode ||
             current_board_[row][col] == kPath) {
           node_count.first++;
@@ -140,6 +146,10 @@ pair<size_t, size_t> Sketchpad::CountShortestPathAndTraversedNodes() {
   }
 
   return node_count;
+}
+
+void Sketchpad::SetCurrentBoard(const vector<vector<int>> &board) {
+  current_board_ = board;
 }
 
 }  // namespace visualizer

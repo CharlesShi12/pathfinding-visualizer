@@ -259,3 +259,13 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar, and DFS class") {
     }
   }
 }
+
+TEST_CASE("Testing the BFS, BidirectionalBFS, AStar class for shortest path") {
+  SECTION("Testing the Find function for a 5x5 board") {
+
+  }
+
+  SECTION("Testing the Find function for a 6x6 board") {
+
+  }
+}

@@ -84,7 +84,7 @@ void PathVisualizerApp::keyDown(ci::app::KeyEvent event) {
       event.getCode() == ci::app::KeyEvent::KEY_2 ||
       event.getCode() == ci::app::KeyEvent::KEY_3 ||
       event.getCode() == ci::app::KeyEvent::KEY_4) {
-    node_counts = sketchpad_.CountShortestPathAndTraversedNodes();
+    node_counts = sketchpad_.CountPathAndTraversedNodes();
     shortest_path_node_count_ = node_counts.first;
     traversed_node_count_ = node_counts.second;
   }

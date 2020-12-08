@@ -18,7 +18,10 @@ TEST_CASE("Testing the Graph class") {
     size_t dimension = board_graph->GetDimension();
     vector<Graph::Node *> nodes = board_graph->GetNodes();
 
-    vector<vector<int>> adjacent = {{2, 1}, {3, 0}, {3, 0}, {2, 1}};
+    vector<vector<int>> adjacent = {{2, 1},
+                                    {3, 0},
+                                    {3, 0},
+                                    {2, 1}};
 
     for (size_t i = 0; i < dimension; i++) {
       REQUIRE(nodes[i]->row == (i / dimension));
@@ -37,8 +40,14 @@ TEST_CASE("Testing the Graph class") {
     size_t dimension = board_graph->GetDimension();
     vector<Graph::Node *> nodes = board_graph->GetNodes();
 
-    vector<vector<int>> adjacent = {{3, 1}, {4, 2, 0}, {5, 1}, {6, 4, 0},
-                                    {7, 5, 3, 1}, {8, 4, 2}, {7, 3}, {8, 6, 4},
+    vector<vector<int>> adjacent = {{3, 1},
+                                    {4, 2, 0},
+                                    {5, 1},
+                                    {6, 4, 0},
+                                    {7, 5, 3, 1},
+                                    {8, 4, 2},
+                                    {7, 3},
+                                    {8, 6, 4},
                                     {7, 5}};
 
     for (size_t i = 0; i < dimension; i++) {
@@ -57,7 +66,10 @@ TEST_CASE("Testing the Graph class") {
     size_t dimension = board_graph->GetDimension();
     vector<Graph::Node *> nodes = board_graph->GetNodes();
 
-    vector<vector<int>> adjacent = {{1}, {3, 0}, {}, {1}};
+    vector<vector<int>> adjacent = {{1},
+                                    {3, 0},
+                                    {},
+                                    {1}};
 
     for (size_t i = 0; i < dimension; i++) {
       REQUIRE(nodes[i]->row == (i / dimension));
@@ -76,8 +88,15 @@ TEST_CASE("Testing the Graph class") {
     size_t dimension = board_graph->GetDimension();
     vector<Graph::Node *> nodes = board_graph->GetNodes();
 
-    vector<vector<int>> adjacent = {{3, 1}, {4, 2, 0}, {1}, {6, 4, 0}, {3, 1},
-                                    {}, {3}, {}, {}};
+    vector<vector<int>> adjacent = {{3, 1},
+                                    {4, 2, 0},
+                                    {1},
+                                    {6, 4, 0},
+                                    {3, 1},
+                                    {},
+                                    {3},
+                                    {},
+                                    {}};
 
     for (size_t i = 0; i < dimension; i++) {
       REQUIRE(nodes[i]->row == (i / dimension));
@@ -97,8 +116,15 @@ TEST_CASE("Testing the Graph class") {
     size_t dimension = board_graph->GetDimension();
     vector<Graph::Node *> nodes = board_graph->GetNodes();
 
-    vector<vector<int>> adjacent = {{3, 1}, {2, 0}, {1}, {6, 0}, {}, {}, {3},
-                                    {}, {}};
+    vector<vector<int>> adjacent = {{3, 1},
+                                    {2, 0},
+                                    {1},
+                                    {6, 0},
+                                    {},
+                                    {},
+                                    {3},
+                                    {},
+                                    {}};
 
     for (size_t i = 0; i < dimension; i++) {
       REQUIRE(nodes[i]->row == (i / dimension));

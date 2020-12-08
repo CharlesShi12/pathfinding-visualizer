@@ -76,7 +76,14 @@ class Sketchpad {
    * make up the algorithm's final path and the second value represents the
    * number of nodes that the algorithm traversed
    */
-  std::pair<size_t, size_t> CountShortestPathAndTraversedNodes();
+  std::pair<size_t, size_t> CountPathAndTraversedNodes();
+
+  /**
+   * Sets the current board to the inputted board.
+   *
+   * @param board the board that the current board will be set to
+   */
+  void SetCurrentBoard(const std::vector<std::vector<int>> &board);
 
  private:
   vector<vector<int>> current_board_;

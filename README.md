@@ -8,7 +8,7 @@
 
 ## About this project
 
-The pathfinding visualizer project is a Cinder application that displays a sketchpad where users can clear and draw terrains and mazes for the pathfinding algorithms to solve and traverse. The pathfinding algorithms that we visualize are Breadth-First Search, Depth-First Search, A*, and Bi-directional Breadth-First Search with the nodes traversed and final paths of each algorithm highlighted in with different colors. The Breadth-First Search, A*, and Bi-directional Breadth-First Search produce a path that is the shortest from the start destination to the end destination. Moreover, users can analyze the statistics about each pathfinding algorithm and compare them to each other (ex. the total length of the final path, how many nodes did this specific algorithm traverse, etc). The entire project was written in C++. 
+The pathfinding visualizer project is a Cinder application that displays a sketchpad where users can clear and draw terrains and mazes for the pathfinding algorithms to solve and traverse. The pathfinding algorithms that we visualize are Breadth-First Search, Depth-First Search, A*, and Bi-directional Breadth-First Search with the nodes traversed and final paths of each algorithm highlighted with different colors. The Breadth-First Search, A*, and Bi-directional Breadth-First Search produce a path that is the shortest from the start destination to the end destination. Moreover, users can analyze the statistics about each pathfinding algorithm and compare them to each other (ex. the total length of the final path, how many nodes did this specific algorithm traverse, etc). The entire project was written in C++. 
 
 ## How to build it
 
@@ -39,7 +39,7 @@ Delete | Clear the sketchpad
 
 Color | Node Representation
 ------------ | -------------
-White | Unvisited node, but reachable node
+White | Unvisited node, but Reachable Node
 Gray | Visited Node Starting at Start Location
 Light-Gray | Visited Node Starting at End Location (For Bidirectional BFS)
 Black | Unreachable Node

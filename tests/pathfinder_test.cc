@@ -22,6 +22,7 @@ using std::vector;
 
 TEST_CASE("Testing the BFS, BidirectionalBFS, AStar, and DFS class") {
   SECTION("Testing the Find function for a 4x4 board with no walls") {
+    // make sure the algorithms' final paths are valid paths in the board
     vector<vector<int>> board = {{0, 0, 0, 0},
                                  {0, 0, 0, 0},
                                  {0, 0, 0, 0},
@@ -59,6 +60,7 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar, and DFS class") {
   }
 
   SECTION("Testing the Find function for a 5x5 board with no walls") {
+    // make sure the algorithms' final paths are valid paths in the board
     vector<vector<int>> board = {{0, 0, 0, 0, 0},
                                  {0, 0, 0, 0, 0},
                                  {0, 0, 0, 0, 0},
@@ -101,6 +103,7 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar, and DFS class") {
   }
 
   SECTION("Testing the Find function for a 4x4 board with walls") {
+    // make sure the algorithms do not traverse the walls
     vector<vector<int>> board = {{0, 0, 0, 0},
                                  {0, 1, 1, 0},
                                  {0, 1, 1, 0},
@@ -138,6 +141,7 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar, and DFS class") {
   }
 
   SECTION("Testing the Find function for a 5x5 board with walls") {
+    // make sure the algorithms do not use or traverse the walls
     vector<vector<int>> board = {{0, 1, 1, 1, 0},
                                  {0, 1, 1, 1, 0},
                                  {0, 1, 1, 1, 0},
@@ -181,6 +185,7 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar, and DFS class") {
 
   SECTION("Testing the Find function for a 4x4 board with walls and an"
           "unreachable node") {
+    // make sure the algorithms do not use or traverse the unreachable node
     vector<vector<int>> board = {{0, 0, 0, 0},
                                  {1, 1, 1, 0},
                                  {1, 0, 1, 0},
@@ -219,6 +224,7 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar, and DFS class") {
 
   SECTION("Testing the Find function for a 5x5 with walls and unreachable"
           "nodes") {
+    // make sure the algorithms do not use or traverse the unreachable nodes
     vector<vector<int>> board = {{0, 0, 0, 0, 0},
                                  {0, 0, 0, 0, 0},
                                  {1, 1, 1, 0, 0},
@@ -263,6 +269,7 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar, and DFS class") {
 
 TEST_CASE("Testing the BFS, BidirectionalBFS, AStar class for shortest path") {
   SECTION("Testing the Find function for a 4x4 board") {
+    // make sure the algorithms have the shortest possible path
     vector<vector<int>> board = {{0, 0, 0, 0},
                                  {0, 1, 1, 0},
                                  {0, 0, 0, 0},
@@ -293,7 +300,7 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar class for shortest path") {
       size_t shortest_path_length = 0;
       vector<vector<int>> new_board = pathfinder[i]->Find(3, 3);
 
-      // make sure that our algorithm's path is the shortest possible path
+      // make sure that our algorithm's path is the shortest possible length
       for (size_t row = 0; row < dimension; row++) {
         for (size_t col = 0; col < dimension; col++) {
           if (new_board[row][col] == graph_algorithm::kPath ||
@@ -309,6 +316,7 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar class for shortest path") {
   }
 
   SECTION("Testing the Find function for a 5x5 board") {
+    // make sure the algorithms have the shortest possible path
     vector<vector<int>> board = {{0, 0, 0, 0, 1},
                                  {0, 1, 1, 0, 0},
                                  {0, 0, 1, 0, 1},
@@ -343,7 +351,7 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar class for shortest path") {
       size_t shortest_path_length = 0;
       vector<vector<int>> new_board = pathfinder[i]->Find(4, 4);
 
-      // make sure that our algorithm's path is the shortest possible path
+      // make sure that our algorithm's path is the shortest possible length
       for (size_t row = 0; row < dimension; row++) {
         for (size_t col = 0; col < dimension; col++) {
           if (new_board[row][col] == graph_algorithm::kPath ||
@@ -359,6 +367,7 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar class for shortest path") {
   }
 
   SECTION("Testing the Find function for a 6x6 board") {
+    // make sure the algorithms have the shortest possible path
     vector<vector<int>> board = {{0, 0, 0, 0, 1, 0},
                                  {0, 0, 1, 0, 0, 1},
                                  {1, 0, 1, 0, 0, 0},
@@ -397,7 +406,7 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar class for shortest path") {
       size_t shortest_path_length = 0;
       vector<vector<int>> new_board = pathfinder[i]->Find(5, 5);
 
-      // make sure that our algorithm's path is the shortest possible path
+      // make sure that our algorithm's path is the shortest possible length
       for (size_t row = 0; row < dimension; row++) {
         for (size_t col = 0; col < dimension; col++) {
           if (new_board[row][col] == graph_algorithm::kPath ||

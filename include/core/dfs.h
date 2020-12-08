@@ -29,7 +29,8 @@ class DFS: public Pathfinder {
    * or not
    */
   bool RecursiveDFS(size_t current_node_index, size_t end_row, size_t end_col,
-                    std::vector<bool> &visited_nodes, std::vector<Graph::Node *> &path);
+                    std::vector<bool> &visited_nodes,
+                    std::vector<Graph::Node *> &path);
 
  public:
   /**

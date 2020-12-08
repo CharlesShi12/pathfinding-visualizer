@@ -144,17 +144,17 @@ path-algorithm-test/fast:
 .PHONY : path-algorithm-test/fast
 
 #=============================================================================
-# Target rules for targets named sketchpad-classifier
+# Target rules for targets named sketchpad-visualizer
 
 # Build rule for target.
-sketchpad-classifier: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sketchpad-classifier
-.PHONY : sketchpad-classifier
+sketchpad-visualizer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sketchpad-visualizer
+.PHONY : sketchpad-visualizer
 
 # fast build rule for target.
-sketchpad-classifier/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/build
-.PHONY : sketchpad-classifier/fast
+sketchpad-visualizer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/build
+.PHONY : sketchpad-visualizer/fast
 
 apps/cinder_app_main.o: apps/cinder_app_main.cc.o
 
@@ -162,7 +162,7 @@ apps/cinder_app_main.o: apps/cinder_app_main.cc.o
 
 # target to build an object file
 apps/cinder_app_main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/apps/cinder_app_main.cc.o
 .PHONY : apps/cinder_app_main.cc.o
 
 apps/cinder_app_main.i: apps/cinder_app_main.cc.i
@@ -171,7 +171,7 @@ apps/cinder_app_main.i: apps/cinder_app_main.cc.i
 
 # target to preprocess a source file
 apps/cinder_app_main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/apps/cinder_app_main.cc.i
 .PHONY : apps/cinder_app_main.cc.i
 
 apps/cinder_app_main.s: apps/cinder_app_main.cc.s
@@ -180,7 +180,7 @@ apps/cinder_app_main.s: apps/cinder_app_main.cc.s
 
 # target to generate assembly for a file
 apps/cinder_app_main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/apps/cinder_app_main.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/apps/cinder_app_main.cc.s
 .PHONY : apps/cinder_app_main.cc.s
 
 src/core/a_star.o: src/core/a_star.cc.o
@@ -190,7 +190,7 @@ src/core/a_star.o: src/core/a_star.cc.o
 # target to build an object file
 src/core/a_star.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/a_star.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/a_star.cc.o
 .PHONY : src/core/a_star.cc.o
 
 src/core/a_star.i: src/core/a_star.cc.i
@@ -200,7 +200,7 @@ src/core/a_star.i: src/core/a_star.cc.i
 # target to preprocess a source file
 src/core/a_star.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/a_star.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/a_star.cc.i
 .PHONY : src/core/a_star.cc.i
 
 src/core/a_star.s: src/core/a_star.cc.s
@@ -210,7 +210,7 @@ src/core/a_star.s: src/core/a_star.cc.s
 # target to generate assembly for a file
 src/core/a_star.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/a_star.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/a_star.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/a_star.cc.s
 .PHONY : src/core/a_star.cc.s
 
 src/core/bfs.o: src/core/bfs.cc.o
@@ -220,7 +220,7 @@ src/core/bfs.o: src/core/bfs.cc.o
 # target to build an object file
 src/core/bfs.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/bfs.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/bfs.cc.o
 .PHONY : src/core/bfs.cc.o
 
 src/core/bfs.i: src/core/bfs.cc.i
@@ -230,7 +230,7 @@ src/core/bfs.i: src/core/bfs.cc.i
 # target to preprocess a source file
 src/core/bfs.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/bfs.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/bfs.cc.i
 .PHONY : src/core/bfs.cc.i
 
 src/core/bfs.s: src/core/bfs.cc.s
@@ -240,7 +240,7 @@ src/core/bfs.s: src/core/bfs.cc.s
 # target to generate assembly for a file
 src/core/bfs.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/bfs.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bfs.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/bfs.cc.s
 .PHONY : src/core/bfs.cc.s
 
 src/core/bidirectional_bfs.o: src/core/bidirectional_bfs.cc.o
@@ -250,7 +250,7 @@ src/core/bidirectional_bfs.o: src/core/bidirectional_bfs.cc.o
 # target to build an object file
 src/core/bidirectional_bfs.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/bidirectional_bfs.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bidirectional_bfs.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/bidirectional_bfs.cc.o
 .PHONY : src/core/bidirectional_bfs.cc.o
 
 src/core/bidirectional_bfs.i: src/core/bidirectional_bfs.cc.i
@@ -260,7 +260,7 @@ src/core/bidirectional_bfs.i: src/core/bidirectional_bfs.cc.i
 # target to preprocess a source file
 src/core/bidirectional_bfs.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/bidirectional_bfs.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bidirectional_bfs.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/bidirectional_bfs.cc.i
 .PHONY : src/core/bidirectional_bfs.cc.i
 
 src/core/bidirectional_bfs.s: src/core/bidirectional_bfs.cc.s
@@ -270,7 +270,7 @@ src/core/bidirectional_bfs.s: src/core/bidirectional_bfs.cc.s
 # target to generate assembly for a file
 src/core/bidirectional_bfs.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/bidirectional_bfs.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/bidirectional_bfs.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/bidirectional_bfs.cc.s
 .PHONY : src/core/bidirectional_bfs.cc.s
 
 src/core/dfs.o: src/core/dfs.cc.o
@@ -280,7 +280,7 @@ src/core/dfs.o: src/core/dfs.cc.o
 # target to build an object file
 src/core/dfs.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/dfs.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/dfs.cc.o
 .PHONY : src/core/dfs.cc.o
 
 src/core/dfs.i: src/core/dfs.cc.i
@@ -290,7 +290,7 @@ src/core/dfs.i: src/core/dfs.cc.i
 # target to preprocess a source file
 src/core/dfs.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/dfs.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/dfs.cc.i
 .PHONY : src/core/dfs.cc.i
 
 src/core/dfs.s: src/core/dfs.cc.s
@@ -300,7 +300,7 @@ src/core/dfs.s: src/core/dfs.cc.s
 # target to generate assembly for a file
 src/core/dfs.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/dfs.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/dfs.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/dfs.cc.s
 .PHONY : src/core/dfs.cc.s
 
 src/core/graph.o: src/core/graph.cc.o
@@ -310,7 +310,7 @@ src/core/graph.o: src/core/graph.cc.o
 # target to build an object file
 src/core/graph.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/graph.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/graph.cc.o
 .PHONY : src/core/graph.cc.o
 
 src/core/graph.i: src/core/graph.cc.i
@@ -320,7 +320,7 @@ src/core/graph.i: src/core/graph.cc.i
 # target to preprocess a source file
 src/core/graph.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/graph.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/graph.cc.i
 .PHONY : src/core/graph.cc.i
 
 src/core/graph.s: src/core/graph.cc.s
@@ -330,7 +330,7 @@ src/core/graph.s: src/core/graph.cc.s
 # target to generate assembly for a file
 src/core/graph.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/graph.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/graph.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/graph.cc.s
 .PHONY : src/core/graph.cc.s
 
 src/core/pathfinder.o: src/core/pathfinder.cc.o
@@ -340,7 +340,7 @@ src/core/pathfinder.o: src/core/pathfinder.cc.o
 # target to build an object file
 src/core/pathfinder.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/pathfinder.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/pathfinder.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/pathfinder.cc.o
 .PHONY : src/core/pathfinder.cc.o
 
 src/core/pathfinder.i: src/core/pathfinder.cc.i
@@ -350,7 +350,7 @@ src/core/pathfinder.i: src/core/pathfinder.cc.i
 # target to preprocess a source file
 src/core/pathfinder.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/pathfinder.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/pathfinder.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/pathfinder.cc.i
 .PHONY : src/core/pathfinder.cc.i
 
 src/core/pathfinder.s: src/core/pathfinder.cc.s
@@ -360,7 +360,7 @@ src/core/pathfinder.s: src/core/pathfinder.cc.s
 # target to generate assembly for a file
 src/core/pathfinder.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/core/pathfinder.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/core/pathfinder.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/core/pathfinder.cc.s
 .PHONY : src/core/pathfinder.cc.s
 
 src/visualizer/path_algorithm_app.o: src/visualizer/path_algorithm_app.cc.o
@@ -370,7 +370,7 @@ src/visualizer/path_algorithm_app.o: src/visualizer/path_algorithm_app.cc.o
 # target to build an object file
 src/visualizer/path_algorithm_app.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/visualizer/path_algorithm_app.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/visualizer/path_algorithm_app.cc.o
 .PHONY : src/visualizer/path_algorithm_app.cc.o
 
 src/visualizer/path_algorithm_app.i: src/visualizer/path_algorithm_app.cc.i
@@ -380,7 +380,7 @@ src/visualizer/path_algorithm_app.i: src/visualizer/path_algorithm_app.cc.i
 # target to preprocess a source file
 src/visualizer/path_algorithm_app.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/visualizer/path_algorithm_app.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/visualizer/path_algorithm_app.cc.i
 .PHONY : src/visualizer/path_algorithm_app.cc.i
 
 src/visualizer/path_algorithm_app.s: src/visualizer/path_algorithm_app.cc.s
@@ -390,7 +390,7 @@ src/visualizer/path_algorithm_app.s: src/visualizer/path_algorithm_app.cc.s
 # target to generate assembly for a file
 src/visualizer/path_algorithm_app.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/visualizer/path_algorithm_app.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/path_algorithm_app.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/visualizer/path_algorithm_app.cc.s
 .PHONY : src/visualizer/path_algorithm_app.cc.s
 
 src/visualizer/sketchpad.o: src/visualizer/sketchpad.cc.o
@@ -400,7 +400,7 @@ src/visualizer/sketchpad.o: src/visualizer/sketchpad.cc.o
 # target to build an object file
 src/visualizer/sketchpad.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/visualizer/sketchpad.cc.o
 .PHONY : src/visualizer/sketchpad.cc.o
 
 src/visualizer/sketchpad.i: src/visualizer/sketchpad.cc.i
@@ -410,7 +410,7 @@ src/visualizer/sketchpad.i: src/visualizer/sketchpad.cc.i
 # target to preprocess a source file
 src/visualizer/sketchpad.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/visualizer/sketchpad.cc.i
 .PHONY : src/visualizer/sketchpad.cc.i
 
 src/visualizer/sketchpad.s: src/visualizer/sketchpad.cc.s
@@ -420,7 +420,7 @@ src/visualizer/sketchpad.s: src/visualizer/sketchpad.cc.s
 # target to generate assembly for a file
 src/visualizer/sketchpad.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path-algorithm-test.dir/build.make CMakeFiles/path-algorithm-test.dir/src/visualizer/sketchpad.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/src/visualizer/sketchpad.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/src/visualizer/sketchpad.cc.s
 .PHONY : src/visualizer/sketchpad.cc.s
 
 tests/graph_test.o: tests/graph_test.cc.o
@@ -540,7 +540,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... path-algorithm-test"
-	@echo "... sketchpad-classifier"
+	@echo "... sketchpad-visualizer"
 	@echo "... apps/cinder_app_main.o"
 	@echo "... apps/cinder_app_main.i"
 	@echo "... apps/cinder_app_main.s"

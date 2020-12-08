@@ -1,4 +1,4 @@
 /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles/path-algorithm-test.dir
-/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles/sketchpad-classifier.dir
+/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles/sketchpad-visualizer.dir

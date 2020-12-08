@@ -60,14 +60,14 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Debug/path-algorithm-test/path-algorithm-test.app/Contents/MacOS"
   "Debug/path-algorithm-test/path-algorithm-test.app/Contents/Info.plist"
   "Debug/path-algorithm-test/path-algorithm-test.app/Contents/Info.plist"
-  "Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS"
-  "Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/Info.plist"
-  "Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/Info.plist"
+  "Debug/sketchpad-visualizer/sketchpad-visualizer.app/Contents/MacOS"
+  "Debug/sketchpad-visualizer/sketchpad-visualizer.app/Contents/Info.plist"
+  "Debug/sketchpad-visualizer/sketchpad-visualizer.app/Contents/Info.plist"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/path-algorithm-test.dir/DependInfo.cmake"
-  "CMakeFiles/sketchpad-classifier.dir/DependInfo.cmake"
+  "CMakeFiles/sketchpad-visualizer.dir/DependInfo.cmake"
   )

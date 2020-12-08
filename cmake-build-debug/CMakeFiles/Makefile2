@@ -74,7 +74,7 @@ CMAKE_BINARY_DIR = /Users/charlesshi/Downloads/Cinder/my-projects/final-project-
 
 # The main recursive "all" target.
 all: CMakeFiles/path-algorithm-test.dir/all
-all: CMakeFiles/sketchpad-classifier.dir/all
+all: CMakeFiles/sketchpad-visualizer.dir/all
 
 .PHONY : all
 
@@ -85,7 +85,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/path-algorithm-test.dir/clean
-clean: CMakeFiles/sketchpad-classifier.dir/clean
+clean: CMakeFiles/sketchpad-visualizer.dir/clean
 
 .PHONY : clean
 
@@ -117,31 +117,31 @@ CMakeFiles/path-algorithm-test.dir/clean:
 .PHONY : CMakeFiles/path-algorithm-test.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/sketchpad-classifier.dir
+# Target rules for target CMakeFiles/sketchpad-visualizer.dir
 
 # All Build rule for target.
-CMakeFiles/sketchpad-classifier.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23 "Built target sketchpad-classifier"
-.PHONY : CMakeFiles/sketchpad-classifier.dir/all
+CMakeFiles/sketchpad-visualizer.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23 "Built target sketchpad-visualizer"
+.PHONY : CMakeFiles/sketchpad-visualizer.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/sketchpad-classifier.dir/rule: cmake_check_build_system
+CMakeFiles/sketchpad-visualizer.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sketchpad-classifier.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sketchpad-visualizer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/sketchpad-classifier.dir/rule
+.PHONY : CMakeFiles/sketchpad-visualizer.dir/rule
 
 # Convenience name for target.
-sketchpad-classifier: CMakeFiles/sketchpad-classifier.dir/rule
+sketchpad-visualizer: CMakeFiles/sketchpad-visualizer.dir/rule
 
-.PHONY : sketchpad-classifier
+.PHONY : sketchpad-visualizer
 
 # clean rule for target.
-CMakeFiles/sketchpad-classifier.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-classifier.dir/build.make CMakeFiles/sketchpad-classifier.dir/clean
-.PHONY : CMakeFiles/sketchpad-classifier.dir/clean
+CMakeFiles/sketchpad-visualizer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sketchpad-visualizer.dir/build.make CMakeFiles/sketchpad-visualizer.dir/clean
+.PHONY : CMakeFiles/sketchpad-visualizer.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

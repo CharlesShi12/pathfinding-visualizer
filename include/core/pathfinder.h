@@ -10,6 +10,10 @@
 
 namespace graph_algorithm {
 
+/**
+ * This class is the parent class to multiple pathfinding algorithm child
+ * classes and holds the necessary information shared by these child classes.
+ */
 class Pathfinder {
  protected:
   Graph *board_graph_;

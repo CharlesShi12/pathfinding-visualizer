@@ -65,7 +65,7 @@ list(APPEND TEST_FILES tests/graph_test.cc)
 list(APPEND TEST_FILES tests/sketchpad_test.cc)
 
 ci_make_app(
-        APP_NAME        sketchpad-classifier
+        APP_NAME        sketchpad-visualizer
         CINDER_PATH     ${CINDER_PATH}
         SOURCES         apps/cinder_app_main.cc ${SOURCE_FILES}
         INCLUDES        include

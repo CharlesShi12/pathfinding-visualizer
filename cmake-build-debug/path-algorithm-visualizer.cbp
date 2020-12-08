@@ -89,8 +89,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="sketchpad-classifier">
-				<Option output="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier" prefix_auto="0" extension_auto="0"/>
+			<Target title="sketchpad-visualizer">
+				<Option output="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Debug/sketchpad-visualizer/sketchpad-visualizer.app/Contents/MacOS/sketchpad-visualizer" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
@@ -108,14 +108,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Makefile&quot;  VERBOSE=1 sketchpad-classifier"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Makefile&quot;  VERBOSE=1 sketchpad-visualizer"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="sketchpad-classifier/fast">
-				<Option output="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Debug/sketchpad-classifier/sketchpad-classifier.app/Contents/MacOS/sketchpad-classifier" prefix_auto="0" extension_auto="0"/>
+			<Target title="sketchpad-visualizer/fast">
+				<Option output="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Debug/sketchpad-visualizer/sketchpad-visualizer.app/Contents/MacOS/sketchpad-visualizer" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
@@ -133,7 +133,7 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Makefile&quot;  VERBOSE=1 sketchpad-classifier/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Makefile&quot;  VERBOSE=1 sketchpad-visualizer/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -141,39 +141,39 @@
 			</Target>
 		</Build>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/apps/cinder_app_main.cc">
-			<Option target="sketchpad-classifier"/>
+			<Option target="sketchpad-visualizer"/>
 		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/a_star.cc">
 			<Option target="path-algorithm-test"/>
-			<Option target="sketchpad-classifier"/>
+			<Option target="sketchpad-visualizer"/>
 		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bfs.cc">
 			<Option target="path-algorithm-test"/>
-			<Option target="sketchpad-classifier"/>
+			<Option target="sketchpad-visualizer"/>
 		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/bidirectional_bfs.cc">
 			<Option target="path-algorithm-test"/>
-			<Option target="sketchpad-classifier"/>
+			<Option target="sketchpad-visualizer"/>
 		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/dfs.cc">
 			<Option target="path-algorithm-test"/>
-			<Option target="sketchpad-classifier"/>
+			<Option target="sketchpad-visualizer"/>
 		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/graph.cc">
 			<Option target="path-algorithm-test"/>
-			<Option target="sketchpad-classifier"/>
+			<Option target="sketchpad-visualizer"/>
 		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/core/pathfinder.cc">
 			<Option target="path-algorithm-test"/>
-			<Option target="sketchpad-classifier"/>
+			<Option target="sketchpad-visualizer"/>
 		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/visualizer/path_algorithm_app.cc">
 			<Option target="path-algorithm-test"/>
-			<Option target="sketchpad-classifier"/>
+			<Option target="sketchpad-visualizer"/>
 		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/src/visualizer/sketchpad.cc">
 			<Option target="path-algorithm-test"/>
-			<Option target="sketchpad-classifier"/>
+			<Option target="sketchpad-visualizer"/>
 		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/tests/graph_test.cc">
 			<Option target="path-algorithm-test"/>
@@ -189,7 +189,7 @@
 		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/samples/data/CinderApp.icns">
 			<Option target="path-algorithm-test"/>
-			<Option target="sketchpad-classifier"/>
+			<Option target="sketchpad-visualizer"/>
 		</Unit>
 		<Unit filename="/Users/charlesshi/Downloads/Cinder/my-projects/final-project-CharlesShi46/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

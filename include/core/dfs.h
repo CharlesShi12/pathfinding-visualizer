@@ -45,7 +45,7 @@ class DFS: public Pathfinder {
    *
    * @param end_row the row coordinate of the end destination
    * @param end_col the column coordinate of the end destination
-   * @return the board after running Depth First Search
+   * @return the board after running the Depth First Search
    */
   std::vector<std::vector<int>> Find(size_t end_row, size_t end_col);
 };

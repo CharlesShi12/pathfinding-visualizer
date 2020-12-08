@@ -63,8 +63,8 @@ class Sketchpad {
   /**
    * Runs a graph traversal algorithm on the current sketchpad terrain.
    *
-   * @param algorithm this string represents whether the user wants BFS, DFS,
-   * A*, or Bidirectional BFS
+   * @param algorithm q string representing whether the user wants BFS, DFS,
+   * A*, or Bidirectional BFS to visualize
    */
   void RunGraphTraversalAlgorithm(const string &algorithm);
 

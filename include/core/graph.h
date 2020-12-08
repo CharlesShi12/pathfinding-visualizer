@@ -11,7 +11,7 @@
 namespace graph_algorithm {
 
 /**
- * This class stores a graph.
+ * This class stores a graph (represented as an adjacency list).
  */
 class Graph {
  public:
@@ -57,11 +57,11 @@ class Graph {
   size_t GetDimension();
 
  private:
-  size_t dimension_;
   std::vector<std::vector<int>> board_;
   std::vector<Node *> nodes_;
+  size_t dimension_;
 };
 
 } // namespace graph_algorithm
 
-#endif //PATH_ALGORITHM_VISUALIZER_GRAPH_H
+#endif 

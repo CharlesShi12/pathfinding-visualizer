@@ -11,13 +11,13 @@
 #include <core/a_star.h>
 #include <core/pathfinder.h>
 
-using std::vector;
 using graph_algorithm::Graph;
 using graph_algorithm::BFS;
 using graph_algorithm::DFS;
 using graph_algorithm::BidirectionalBFS;
 using graph_algorithm::AStar;
 using graph_algorithm::Pathfinder;
+using std::vector;
 
 TEST_CASE("Testing the BFS, BidirectionalBFS, AStar, and DFS class") {
   SECTION("Testing the Find function for a 4x4 board with no walls") {
@@ -262,10 +262,76 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar, and DFS class") {
 
 TEST_CASE("Testing the BFS, BidirectionalBFS, AStar class for shortest path") {
   SECTION("Testing the Find function for a 5x5 board") {
+    vector<vector<int>> board = {{0, 0, 0, 0, 1},
+                                 {0, 1, 1, 0, 0},
+                                 {0, 0, 1, 0, 1},
+                                 {0, 0, 0, 0, 0},
+                                 {1, 1, 0, 0, 0}};
+    Graph board_graph(board);
 
+    vector<Pathfinder *> pathfinder = {new BFS(&board_graph),
+                                       new BidirectionalBFS(&board_graph),
+                                       new AStar(&board_graph)};
+
+    vector<vector<vector<int>>> pathfinder_output = {{{4, 2, 2, 2, 1},
+                                                      {4, 1, 1, 2, 2},
+                                                      {4, 2, 1, 2, 1},
+                                                      {4, 4, 4, 2, 2},
+                                                      {1, 1, 4, 4, 4}},
+
+                                                     {{4, 2, 2, 2, 1},
+                                                      {4, 1, 1, 0, 0},
+                                                      {4, 2, 1, 5, 1},
+                                                      {4, 6, 4, 5, 5},
+                                                      {1, 1, 4, 4, 4}},
+
+                                                     {{4, 4, 4, 4, 1},
+                                                      {2, 1, 1, 4, 2},
+                                                      {2, 2, 1, 4, 1},
+                                                      {2, 2, 2, 4, 4},
+                                                      {1, 1, 2, 2, 4}}};
+
+    for (size_t i = 0; i < pathfinder.size(); i++) {
+      REQUIRE(pathfinder[i]->Find(4, 4) == pathfinder_output[i]);
+    }
   }
 
   SECTION("Testing the Find function for a 6x6 board") {
+    vector<vector<int>> board = {{0, 0, 0, 0, 1, 0},
+                                 {0, 0, 1, 0, 0, 1},
+                                 {1, 0, 1, 0, 0, 0},
+                                 {0, 0, 0, 1, 0, 0},
+                                 {0, 0, 0, 0, 0, 0},
+                                 {1, 0, 1, 1, 1, 0}};
+    Graph board_graph(board);
 
+    vector<Pathfinder *> pathfinder = {new BFS(&board_graph),
+                                       new BidirectionalBFS(&board_graph),
+                                       new AStar(&board_graph)};
+
+    vector<vector<vector<int>>> pathfinder_output = {{{4, 2, 2, 2, 1, 0},
+                                                      {4, 4, 1, 2, 2, 1},
+                                                      {1, 4, 1, 2, 2, 2},
+                                                      {2, 4, 2, 1, 2, 2},
+                                                      {2, 4, 4, 4, 4, 4},
+                                                      {1, 2, 1, 1, 1, 4}},
+
+                                                     {{4, 2, 2, 2, 1, 0},
+                                                      {4, 4, 1, 2, 0, 1},
+                                                      {1, 4, 1, 0, 5, 5},
+                                                      {2, 4, 6, 1, 5, 5},
+                                                      {0, 2, 4, 4, 4, 4},
+                                                      {1, 0, 1, 1, 1, 4}},
+
+                                                     {{4, 4, 4, 4, 1, 0},
+                                                      {2, 2, 1, 4, 2, 1},
+                                                      {1, 2, 1, 4, 4, 2},
+                                                      {0, 2, 2, 1, 4, 2},
+                                                      {0, 2, 2, 2, 4, 4},
+                                                      {1, 2, 1, 1, 1, 4}}};
+
+    for (size_t i = 0; i < pathfinder.size(); i++) {
+      REQUIRE(pathfinder[i]->Find(5, 5) == pathfinder_output[i]);
+    }
   }
 }

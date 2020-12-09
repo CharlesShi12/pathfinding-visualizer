@@ -119,9 +119,7 @@ void Sketchpad::RunGraphTraversalAlgorithm(const string &algorithm) {
 }
 
 pair<size_t, size_t> Sketchpad::CountPathAndTraversedNodes() {
-  // set the count to 1 because we need to count the last node as part of the
-  // final path and part of the nodes that we traversed
-  pair<size_t, size_t> node_count = {1, 1};
+  pair<size_t, size_t> node_count = {0, 0};
   size_t dimension = current_board_.size();
 
   for (size_t row = 0; row < dimension; row++) {

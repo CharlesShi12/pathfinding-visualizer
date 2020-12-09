@@ -36,7 +36,7 @@ vector<vector<int>> AStar::Find(size_t end_row, size_t end_col) {
                  std::greater<pair<double, size_t>>> next_nodes;
 
   // keep track of the end destination node id
-  size_t end_node_index = 0;
+  size_t end_node_index = end_row * dimension + end_col;
 
   // adding the starting node to the data structures
   size_t starting_node_index = 0;
@@ -58,7 +58,6 @@ vector<vector<int>> AStar::Find(size_t end_row, size_t end_col) {
 
     // check if this node is our final destination
     if (current_node->row == end_row && current_node->col == end_col) {
-      end_node_index = current_node_index;
       break;
     }
 
@@ -89,7 +88,7 @@ vector<vector<int>> AStar::Find(size_t end_row, size_t end_col) {
 
   // if the end node was not traversed, do not output a final path
   if (!visited_nodes[end_node_index]) {
-    return (ConstructBoard(visited_nodes, output_path));
+    return ConstructBoard(visited_nodes, output_path);
   }
 
   while (end_node_index != 0) {

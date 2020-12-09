@@ -423,3 +423,87 @@ TEST_CASE("Testing the BFS, BidirectionalBFS, AStar class for shortest path") {
     }
   }
 }
+
+TEST_CASE("Testing the BFS, DFS, BidirectionalBFS, AStar class for no possible"
+          "paths from start to end") {
+  SECTION("Testing the Find function for a 4x4 board") {
+    // there should be no kPath nodes (represented as 4) in the output boards
+    vector<vector<int>> board = {{0, 0, 0, 0},
+                                 {0, 0, 0, 0},
+                                 {0, 0, 1, 1},
+                                 {0, 0, 1, 0}};
+    Graph board_graph(board);
+
+    vector<Pathfinder *> pathfinder = {new BFS(&board_graph),
+                                       new DFS(&board_graph),
+                                       new BidirectionalBFS(&board_graph),
+                                       new AStar(&board_graph)};
+
+    vector<vector<vector<int>>> pathfinder_output = {{{2, 2, 2, 2},
+                                                      {2, 2, 2, 2},
+                                                      {2, 2, 1, 1},
+                                                      {2, 2, 1, 0}},
+
+                                                     {{2, 2, 2, 2},
+                                                      {2, 2, 2, 2},
+                                                      {2, 2, 1, 1},
+                                                      {2, 2, 1, 0}},
+
+                                                     {{2, 2, 0, 0},
+                                                      {2, 0, 0, 0},
+                                                      {0, 0, 1, 1},
+                                                      {0, 0, 1, 5}},
+
+                                                     {{2, 2, 2, 2},
+                                                      {2, 2, 2, 2},
+                                                      {2, 2, 1, 1},
+                                                      {2, 2, 1, 0}}};
+
+    for (size_t i = 0; i < pathfinder.size(); i++) {
+      REQUIRE(pathfinder[i]->Find(3, 3) == pathfinder_output[i]);
+    }
+  }
+
+  SECTION("Testing the Find function for a 5x5 board") {
+    // there should be no kPath nodes (represented as 4) in the output boards
+    vector<vector<int>> board = {{0, 0, 0, 0, 0},
+                                 {0, 0, 0, 0, 0},
+                                 {0, 0, 0, 0, 0},
+                                 {0, 0, 0, 1, 1},
+                                 {0, 0, 0, 1, 0}};
+    Graph board_graph(board);
+
+    vector<Pathfinder *> pathfinder = {new BFS(&board_graph),
+                                       new DFS(&board_graph),
+                                       new BidirectionalBFS(&board_graph),
+                                       new AStar(&board_graph)};
+
+    vector<vector<vector<int>>> pathfinder_output = {{{2, 2, 2, 2, 2},
+                                                      {2, 2, 2, 2, 2},
+                                                      {2, 2, 2, 2, 2},
+                                                      {2, 2, 2, 1, 1},
+                                                      {2, 2, 2, 1, 0}},
+
+                                                     {{2, 2, 2, 2, 2},
+                                                      {2, 2, 2, 2, 2},
+                                                      {2, 2, 2, 2, 2},
+                                                      {2, 2, 2, 1, 1},
+                                                      {2, 2, 2, 1, 0}},
+
+                                                     {{2, 2, 0, 0, 0},
+                                                      {2, 0, 0, 0, 0},
+                                                      {0, 0, 0, 0, 0},
+                                                      {0, 0, 0, 5, 1},
+                                                      {0, 0, 0, 1, 0}},
+
+                                                     {{2, 2, 2, 2, 2},
+                                                      {2, 2, 2, 2, 2},
+                                                      {2, 2, 2, 2, 2},
+                                                      {2, 2, 2, 1, 1},
+                                                      {2, 2, 2, 1, 0}}};
+
+    for (size_t i = 0; i < pathfinder.size(); i++) {
+      REQUIRE(pathfinder[i]->Find(3, 3) == pathfinder_output[i]);
+    }
+  }
+}

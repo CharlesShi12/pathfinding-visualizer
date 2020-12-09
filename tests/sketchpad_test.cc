@@ -25,8 +25,8 @@ TEST_CASE("Testing the Sketchpad class") {
 
     pair<int, int> output = sketchpad.CountPathAndTraversedNodes();
 
-    REQUIRE(output.first == 3);
-    REQUIRE(output.second == 6);
+    REQUIRE(output.first == 2);
+    REQUIRE(output.second == 5);
   }
 
   SECTION("Testing the CountPathAndTraversedNodes function for a 5x5 board with"
@@ -41,8 +41,8 @@ TEST_CASE("Testing the Sketchpad class") {
 
     pair<int, int> output = sketchpad.CountPathAndTraversedNodes();
 
-    REQUIRE(output.first == 5);
-    REQUIRE(output.second == 10);
+    REQUIRE(output.first == 4);
+    REQUIRE(output.second == 9);
   }
 
   SECTION("Testing the CountPathAndTraversedNodes function for a 4x4 board with"
@@ -56,8 +56,8 @@ TEST_CASE("Testing the Sketchpad class") {
 
     pair<int, int> output = sketchpad.CountPathAndTraversedNodes();
 
-    REQUIRE(output.first == 10);
-    REQUIRE(output.second == 13);
+    REQUIRE(output.first == 9);
+    REQUIRE(output.second == 12);
   }
 
   SECTION("Testing the CountPathAndTraversedNodes function for a 5x5 board with"
@@ -72,8 +72,8 @@ TEST_CASE("Testing the Sketchpad class") {
 
     pair<int, int> output = sketchpad.CountPathAndTraversedNodes();
 
-    REQUIRE(output.first == 14);
-    REQUIRE(output.second == 20);
+    REQUIRE(output.first == 13);
+    REQUIRE(output.second == 19);
   }
 
   SECTION("Testing the CountPathAndTraversedNodes function for a 4x4 board with"
@@ -88,8 +88,8 @@ TEST_CASE("Testing the Sketchpad class") {
 
     pair<int, int> output = sketchpad.CountPathAndTraversedNodes();
 
-    REQUIRE(output.first == 7);
-    REQUIRE(output.second == 12);
+    REQUIRE(output.first == 6);
+    REQUIRE(output.second == 11);
   }
 
   SECTION("Testing the CountPathAndTraversedNodes function for a 5x5 board with"
@@ -105,7 +105,7 @@ TEST_CASE("Testing the Sketchpad class") {
 
     pair<int, int> output = sketchpad.CountPathAndTraversedNodes();
 
-    REQUIRE(output.first == 11);
-    REQUIRE(output.second == 17);
+    REQUIRE(output.first == 10);
+    REQUIRE(output.second == 16);
   }
 }

@@ -52,6 +52,11 @@ vector<vector<int>> BFS::Find(size_t end_row, size_t end_col) {
   vector<Graph::Node *> output_path;
   Graph::Node *node = nodes[end_row * dimension + end_col];
 
+  // if the end node was not traversed, do not output a final path
+  if (node->distance == INFINITY) {
+    return ConstructBoard(visited_nodes, output_path);
+  }
+
   // retrace our steps from the end destination until we reach the starting
   // node (row 0, col 0)
   while (node->row != 0 || node->col != 0) {

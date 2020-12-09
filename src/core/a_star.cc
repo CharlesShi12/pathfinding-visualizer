@@ -86,6 +86,12 @@ vector<vector<int>> AStar::Find(size_t end_row, size_t end_col) {
 
   // traverse the board to find the shortest path
   vector<Graph::Node *> output_path;
+
+  // if the end node was not traversed, do not output a final path
+  if (!visited_nodes[end_node_index]) {
+    return (ConstructBoard(visited_nodes, output_path));
+  }
+
   while (end_node_index != 0) {
     Graph::Node *node = nodes[end_node_index];
     output_path.push_back(node);

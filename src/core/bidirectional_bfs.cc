@@ -96,6 +96,11 @@ vector<vector<int>> BidirectionalBFS::Find(size_t end_row, size_t end_col) {
     }
   }
 
+  // if the end node was not traversed, do not output a final path
+  if (intersection_node_index == -1) {
+    return output_board;
+  }
+
   vector<Graph::Node *> output_path;
 
   // traverse the from the intersection node to the start node and keep track

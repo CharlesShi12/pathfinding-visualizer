@@ -1,5 +1,7 @@
 ## Pathfinding Visualizer
 
+https://youtu.be/tj44CikxLNg
+
 ![Pathfinding Visualizer Example #1](https://github.com/uiuc-fa20-cs126/final-project-CharlesShi46/blob/week2/example_images/example%231.png)
 
 ![Pathfinding Visualizer Example #2](https://github.com/uiuc-fa20-cs126/final-project-CharlesShi46/blob/week2/example_images/example%232.png)
